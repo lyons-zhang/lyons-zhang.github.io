@@ -1,4 +1,4 @@
-gg---
+---
 title: Limit and Series
 description: Limits of sequences, Series
 categories: Digital Communication
