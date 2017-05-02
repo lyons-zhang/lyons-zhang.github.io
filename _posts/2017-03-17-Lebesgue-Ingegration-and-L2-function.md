@@ -42,7 +42,7 @@ If $${\mu}^\circ ({\cal A}) = 0$$, then $${\cal A}$$ is measurable with measure 
 ### **Lebesgue Ingegration**
 ##### **Measurable functions**
 A function $$\{ u(t) : \mathbb{R}\rightarrow\mathbb{R}\}$$ is measurable if $$\{ t : u(t) \lt b \}$$ is measurable for each $$b\in \mathbb{R}$$.  
-The Lebesgue integral exists(with perhaps an infinite value) if the function is measurable and if the limit in the figure exists.  
+The Lebesgue integral exists(with perhaps an infinite value) if the function is measurable and if the approximation to the Lebesgue integral has a limit as the vertical interval size $$\delta$$ goes to 0.  
 Sets of measure zero do not effect the integral.  
 A complex function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C} \}$$ is measurable if both $$\Re [u(t)]$$ and $$\Im [u(t)]$$ are measurable.  
 ### **$$L^2$$ Functions over $$[−T/2, T/2]$$**
