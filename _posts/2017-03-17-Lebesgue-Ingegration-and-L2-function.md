@@ -41,7 +41,7 @@ If $${\cal A}_1, {\cal A}_2,\dotsc$$ are also disjoint, then $$\mu (\cal S) = \s
 If $${\mu}^\circ ({\cal A}) = 0$$, then $${\cal A}$$ is measurable with measure 0.  
 ### **Lebesgue Ingegration**
 ##### **Measurable functions**
-A function $$\{ u(t) : \mathbb{R}\rightarrow\mathbb{R}\}$$ is measurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.  
+A function $$\{ u(t) : \mathbb{R}\rightarrow\mathbb{R}\}$$ is measurable if $$\{ t : u(t) \lt b \}$$ is measurable for each $$b\in \mathbb{R}$$.  
 The Lebesgue integral exists(with perhaps an infinite value) if the function is measurable and if the limit in the figure exists.  
 Sets of measure zero do not effect the integral.  
 A complex function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C} \}$$ is measurable if both $$\Re [u(t)]$$ and $$\Im [u(t)]$$ are measurable.  
