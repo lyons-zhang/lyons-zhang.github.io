@@ -19,7 +19,14 @@ If the output signal $$O\{ x(t)\}$$ is a scalar $$\lambda$$ multiple of the inpu
 If $$x(t) = e^{st}$$ and $$h(t)$$ is the impulse response of LTI then $$O\{ e^{st}\} = (h*x)(t) = e^{st} \int_{-\infty}^{\infty} h(\tau)e^{-st} d\tau = H(s)e^{st}$$.  
 Furthermore, the eigenvalue associated with $$e^{st}$$ is $$H(s)$$.  
 
-
+### **A Few Standard Fourier Transform Pair**
+![Fourierpair]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201705/Fourierpair.png){:.aligncenter}
+Two useful special cases of any Fourier transform pair are:
+$$u(0)=\int_{-\infty}^{\infty} \hat u(f)df \;\;\;\; \hat u(0)=\int_{-\infty}^{\infty} u(t)dt$$   
+Parseval’s theorem:   
+<center>$$\int_{-\infty}^{\infty} u(t)v^*(t) dt = \int_{-\infty}^{\infty} \hat u(f) \hat v^*(f) df $$</center>  
+Energy equation(replacing $$v(t)$$ by $$u(t)$$):  
+<center>\int_{-\infty}^{\infty}|u(t)|^2 dt = \int_{-\infty}^{\infty} |\hat u(f)|^2 df</center>
 
 
 Reference:  
