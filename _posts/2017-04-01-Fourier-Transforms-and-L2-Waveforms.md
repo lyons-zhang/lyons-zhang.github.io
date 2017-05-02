@@ -26,7 +26,7 @@ $$u(0)=\int_{-\infty}^{\infty} \hat u(f)df \;\;\;\; \hat u(0)=\int_{-\infty}^{\i
 Parseval’s theorem:   
 <center>$$\int_{-\infty}^{\infty} u(t)v^*(t) dt = \int_{-\infty}^{\infty} \hat u(f) \hat v^*(f) df $$</center>  
 Energy equation(replacing $$v(t)$$ by $$u(t)$$):  
-<center>\int_{-\infty}^{\infty}|u(t)|^2 dt = \int_{-\infty}^{\infty} |\hat u(f)|^2 df</center>
+<center>$$\int_{-\infty}^{\infty}|u(t)|^2 dt = \int_{-\infty}^{\infty} |\hat u(f)|^2 df$$</center>
 
 
 Reference:  
