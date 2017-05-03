@@ -48,7 +48,7 @@ A metric space $$(X,d)$$ is said to be *complete* iff every Cauchy sequence in $
 ##### **Compact metric spaces**
 A metric space $$(X,d)$$ is said to be *compact* iff every sequence in $$(X,d)$$ has at least one convergent subsequence. A subset $$Y$$ of a metric space $$X$$ is said to be *compact* if the subspace $$(Y,d|_{Y \times Y})$$ is compact.  
 ##### **Continuous functions**
-Let $$(X,d_x)$$ be a metric space, and let $$(Y,d_Y)$$ be another metric space, and let $$f : X \rightarrow Y$$ be a function. If $$x_0 \in X$$, we say that $$f$$ is *continuous* at $$x_0$$ iff for every $$\varepsilon \gt 0$$, there exists a $$\delta \gt 0$$ such that $$d_Y(f(x),f(x_0)) \lt \varepsilon $$ whenever $$d_x(x,x_0) \gt \delta$$. We say that $$f$$ is *continuous* iff it is continuous at every point $$x \in X$$.  
+Let $$(X,d_x)$$ be a metric space, and let $$(Y,d_Y)$$ be another metric space, and let $$\{f : X \rightarrow Y \}$$ be a function. If $$x_0 \in X$$, we say that $$f$$ is *continuous* at $$x_0$$ iff for every $$\varepsilon \gt 0$$, there exists a $$\delta \gt 0$$ such that $$d_Y(f(x),f(x_0)) \lt \varepsilon $$ whenever $$d_x(x,x_0) \gt \delta$$. We say that $$f$$ is *continuous* iff it is continuous at every point $$x \in X$$.  
 ##### **Uniform Continuity**
 Let $$f : X \rightarrow Y$$ be a map from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$. We say that $$f$$ is *uniformly continuous* if, for every $$\varepsilon \gt 0$$, there exists a $$\delta \gt 0$$ such that $$d_Y(f(x),f(x')) \lt \varepsilon$$ whenever $$x,x' \in X$$ are such that $$d_X(x,x') \lt \delta$$.
 ##### **Euclidean spaces**
