@@ -23,7 +23,7 @@ Let $$(a_n)_{n=m}^\infty$$ be a real sequence starting at some integer index $$m
 If a sequence $$(a_n)_{n=m}^\infty$$ converges to some real number $$L$$, we say that $$(a_n)_{n=m}^\infty$$ is *convergent* and that its limit is $$L$$; we write <center>$$L = \lim_{n\rightarrow\infty} a_n$$</center> denote this fact. If a sequence $$(a_n)_{n=m}^\infty$$ is not converging to any real number $$L$$, we say that the sequence $$(a_n)_{n=m}^\infty$$ is *divergent* and we leave $$\lim_{n\rightarrow\infty} a_n$$ an undefined.  
 ### **Series**
 The difference between "sum" and "series" is a subtle linguistic one. Strictly speaking, a series is an expression of the form $$\sum_{i=m}^n a_i$$; this series is mathematically (but not semantically) equal to a real number, which is then the sum of that series.  
-##### **absolutely convergent**
+##### **Absolutely convergent**
 We say that this series is *absolutely convergent* iff the series $$\sum_{(n=m)}^\infty |a_n|$$ is convergent.
 ##### **Fubini's theorem for infinite sums**
 Let $$\{ f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R} \}$$ be a function such that $$\sum_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m)$$ is *absolutely convergent*. Then we have   
