@@ -47,8 +47,7 @@ For any $$L^2$$ function $$\{ \hat u(f) : \Bbb{R} \to \Bbb{C} \}$$ and any posit
 <center>$$u_B(t) = \int_{-B}^B \hat u(f)e^{2\pi ift} df$$</center>  
 #### **Plancherel part 2**
 For any $$L^2$$ function $$\{ u(t) : \Bbb{R} \to \Bbb{C} \}$$, let $$\{ \hat u(f) : \Bbb{R} \to \Bbb{C} \}$$ be the Fourier transform of Plancherel part 1. Then 
-<center>$$ lim\limits_{B \to \infty} \int_{-\infty}^{\infty} |u(t) - u_B(t)|^2 dt = 0$$</center>  
-and the energy function.  
+<center>$$ lim\limits_{B \to \infty} \int_{-\infty}^{\infty} |u(t) - u_B(t)|^2 dt = 0.$$</center>   
 All $$L^2$$ functions have Fourier transforms in the sense of limit in mean-square equivalent ($$L^2$$ equivalent).  
 <center>$$\hat u(f) = {l.i.m.}\limits_{A \to \infty} \int_{-A}^A u(t)e^{-2\pi ift} dt; u(t) = {l.i.m.}\limits_{B \to \infty} \int_{-B}^B \hat u(f)e^{-2\pi ift} df$$</center>  
 All the Fourier transform relations in the above picture except differentiation hold for all $$L^2$$ functions.   
