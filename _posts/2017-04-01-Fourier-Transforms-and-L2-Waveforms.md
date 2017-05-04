@@ -1,6 +1,6 @@
 ---
 title: Fourier Transforms and L2 Waveforms
-description: Fourier Transform, 
+description: Fourier Transform, Plancherel
 categories: Digital Communication
 ---
 
