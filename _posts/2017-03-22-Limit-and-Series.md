@@ -8,8 +8,9 @@ categories: Digital Communication
 
 ### **Limit Notion**
 To get real numbers from retional numbers, that is to pass from a "discrete" system to a "continuous" one, and requires the *limit* notion.  
-##### **Cauchy sequences**
-A sequence $$(a_n)_{n=0}^\infty$$ of rational numbers is said to be a *Cauchy sequence* iff for every $$\varepsilon \gt 0$$, there exists an $$N \ge 0$$ such that $$d(a_j, a_k) \le \varepsilon$$ for all $$j,k \ge N$$.  
+##### **Cauchy sequences of rationals**
+A sequence $$a_0, a_1, ... is $$\varepsilon$$-steady iff $$d(a_j, a_k) \le \varepsilon$$ for all $$j,k$$; what's more, the sequence is eventually $$\varepsilon$$-steady iff there exists an $$N \ge 0$$ such that $$d(a_j, a_k) \le \varepsilon$$ for all $$j,k \ge N$$.
+A sequence $$(a_n)_{n=0}^\infty$$ of rational numbers is said to be a *Cauchy sequence* iff for every $$\varepsilon \gt 0$$, the sequence is eventually $$\varepsilon$$-steady.   
 ##### **Real numbers**
 A real number is defined to be an object of the form $$LIM_{n\rightarrow\infty} a_n$$, where $$(a_n)_{n=1}^\infty$$ is a Cauchy sequence of rational numbers.  Two real numbers $$LIM_{n\rightarrow\infty} a_n$$ and $$LIM_{n\rightarrow\infty} b_n$$ are said to be equal iff $$(a_n)_{n=1}^\infty$$ and $$(b_n)_{n=1}^\infty$$ are equivalent Cauchy sequences.  
 ##### **Cauchy sequences of reals**
