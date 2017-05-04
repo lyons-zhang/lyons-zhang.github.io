@@ -27,7 +27,7 @@ Parseval’s theorem:
 <center>$$\int_{-\infty}^{\infty} u(t)v^*(t) dt = \int_{-\infty}^{\infty} \hat u(f) \hat v^*(f) df $$</center>  
 Energy equation(replacing $$v(t)$$ by $$u(t)$$):  
 <center>$$\int_{-\infty}^{\infty}|u(t)|^2 dt = \int_{-\infty}^{\infty} |\hat u(f)|^2 df$$</center>   
-$$|\hat u(f)|^2$$ is called the spectral density of u(t).  
+$$|\hat u(f)|^2$$ is called the **spectral density** of u(t).  
 ### **Fourier transforms of $$L^1$$ functions**
 $$L^1$$ functions always have well-defined Fourier transforms, but the inverse transform does not always have very nice properties.  
 Let $$\{ u(t) : \Bbb{R} \to \Bbb{C} \}$$ be $$L^1$$. Then $$\hat u(f) = \int_{-\infty}^{\infty} u(t)e^{−2\pi ift} dt$$ both *exists and satisfies* $$|\hat u(f)| \le \int |u(t)| dt$$ for each $$f \in \Bbb{R}$$. Furthermore, $$\{ \hat u(f) : \Bbb{R} \to \Bbb{C} \}$$ is a *continuous* function of $$f$$.   
