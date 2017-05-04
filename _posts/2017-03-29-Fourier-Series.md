@@ -65,7 +65,7 @@ There is an important theorem due to Carleson, stating that if $$u(t)$$ is $$L^2
 ##### **$$L^2$$ converge**  
 A series is defined to converge in $$L^2$$ if (4) holds. The notation $$l.i.m.$$ (limit in mean-square)is used to denote $$L^2$$ convergence, so (4) is often abbreviated by  
 <center>$$u(t) = l.i.m. \sum_k \hat u_k e^{2\pi ikt/T} rect(t/T)$$</center>  
-The following example illustrate there is isolated discontinuity at $$t = −1/2$$  
+The following example illustrate there is isolated discontinuity at $$t = −1/2$$, the middle figure depicts a partial expansion with k = −1,0,1.   
 ![l2converge]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/l2converge.png){:.aligncenter}  
 
 
