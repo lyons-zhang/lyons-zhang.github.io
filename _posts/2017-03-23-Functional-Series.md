@@ -13,11 +13,11 @@ There are three main results:
 
 ### **Pointwise and uniform convergence**
 ##### **Pointwise convergence**
-Let $$(f^{(n)})_{n=1}^\infty$$ be a sequence of functions from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$, and let $$f : X \rightarrow Y$$ be another function. We say that $$(f^{(n)})_{n=1}^\infty$$ *converges pointwise* to $$f$$ on $$X$$ if we have <center> $$\lim\limits_{n\rightarrow\infty} f^{(n)}(x) = f(x)$$ </center> for all $$x\in X$$, i.e. <center> $$\lim\limits_{n\rightarrow\infty} d_Y(f^{(n)}(x),f(x)) = 0$$ </center>   
+Let $$(f^{(n)})_{n=1}^\infty$$ be a sequence of functions from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$, and let $$\{f : X \to Y \}$$ be another function. We say that $$(f^{(n)})_{n=1}^\infty$$ *converges pointwise* to $$f$$ on $$X$$ if we have <center> $$\lim\limits_{n\rightarrow\infty} f^{(n)}(x) = f(x)$$ </center> for all $$x\in X$$, i.e. <center> $$\lim\limits_{n\rightarrow\infty} d_Y(f^{(n)}(x),f(x)) = 0$$ </center>  
 We call the function $$f$$ the *pointwise limit* of the functions $$f^{(n)}$$.  
 Note that $$f^{(n)}(x)$$ and $$f(x)$$ are points in $$Y$$, rather than functions.
 ##### **Uniform convergence**
-Let $$(f^{(n)})_{n=1}^\infty$$ be a sequence of functions from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$, and let $$f : X \rightarrow Y$$ be another function. We say that $$(f^{(n)})_{n=1}^\infty$$ *converges uniformly* to $$f$$ on $$X$$ if for every $$\varepsilon \gt 0$$ there exists $$N \gt 0$$ such that $$d_Y(f^{(n)}(x),f(x)) \lt \varepsilon$$ for every $$n \gt N$$ and $$x\in X$$.  
+Let $$(f^{(n)})_{n=1}^\infty$$ be a sequence of functions from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$, and let $$\{f : X \to Y\}$$ be another function. We say that $$(f^{(n)})_{n=1}^\infty$$ *converges uniformly* to $$f$$ on $$X$$ if for every $$\varepsilon \gt 0$$ there exists $$N \gt 0$$ such that $$d_Y(f^{(n)}(x),f(x)) \lt \varepsilon$$ for every $$n \gt N$$ and $$x\in X$$.  
 We call the function $$f$$ the *uniform limit* of the functions $$f^{(n)}$$.  
 Note that in the definition of pointwise convergence, $$N$$ was allowed to depend on $$x$$; here uniform convergence it is not.  
 ##### **Uniform convergence and continuity**
@@ -35,8 +35,8 @@ If
    $$(i)$$ the functional series $$u_k(x)$$ converges uniformly on interval $$I$$;  
    $$(ii)$$ $$u_k(x)$$ is a continuous function on $$I$$ for each $$k = 0,1,2,\dotsc$$.   
 then  
-   $$S(x)$$ is continuous on $$I$$;   
-   $$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,dt = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;
+   $$S(x) = \sum\limits_{k=0}^\infty u_k(x)$$ is continuous on $$I$$;   
+   <center>$$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,dt = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;</center>
 ### **Power series**   
 A formal power series centered at $$a$$ is any series of the form <center>$$\sum\limits_{n=0}^\infty c_n(x-a)^n$$</center> where the coefficients $$c_0, c_1, c_2, \dotsc$$ are real or complex numbers.  
 ##### **Radius of convergence**

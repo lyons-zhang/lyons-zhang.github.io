@@ -27,7 +27,7 @@ More explanation about the sencond item:
 ### **Fourier Series**  
 ##### **Given in most engineering texts**
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
+<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
 <center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty \tag{1}$$</center>  
@@ -39,7 +39,7 @@ where
 <center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; ,\;\;\;and \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$</center>  
 ##### **Complex Exponentials**  
 A *complex-valued function* of the real variable $$x$$ may be written as $$u(x)+iv(x)$$(u,v real valued), its derivative and integral with respect to $$x$$ are defined to be  
-<center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i \frac {dv} {dx} \; ,\;\;\;and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
+<center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i \frac {dv} {dx} \; ,\;\;\;and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>   
 From this it follows easily that  
 <center>$$\frac d {dx} (e^{(a + ib)x}) = (a + ib)e^{(a + ib)x} \; ,\;\;\;and \; \int e^{(a + ib)x} dx = \frac 1 {a+ib}e^{(a + ib)x}$$</center>  
 The truncated complex sinusoids are orthogonal for $$k \ne m \in \Bbb Z$$  
@@ -60,12 +60,12 @@ Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for e
 exists and satisfies $$|\hat u_k| \le \frac 1 T \int |u(t)|dt < \infty$$. Furthermore,  
 <center>$$\lim\limits_{\ell \to \infty} \int_{-T/2}^{T/2} \Big| u(t) - \sum\limits_{k=-\ell}^{\ell} \hat u_k e^{2\pi ikt/T} \Big|^2 dt = 0 \tag{4}$$</center>  
 where the limit is monotonic in $$\ell$$. Also, the Fourier energy equation (3) is satisfied.  
-Conversely, if $$\{ \hat u_k; k \in \Bbb Z \}$$ is a two-sided sequence of complex numbers satisfying $$\sum_{k=-\infty}^\infty |\hat u_k|^2$$, then an $$L^2$$ function $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ exists such that (3) and (4) are satisfied.  
+Conversely, if $$\{ \hat u_k; k \in \Bbb Z \}$$ is a two-sided sequence of complex numbers satisfying $$\sum_{k=-\infty}^\infty |\hat u_k|^2 \le \infty$$, then an $$L^2$$ function $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ exists such that (3) and (4) are satisfied.  
 There is an important theorem due to Carleson, stating that if $$u(t)$$ is $$L^2$$, then $$\sum_k \hat u_k e^{2\pi ikt/T} rect(t/T)$$converges almost everywhere(convergence with probability 1) on $$[−T/2, T/2]$$.
 ##### **$$L^2$$ converge**  
 A series is defined to converge in $$L^2$$ if (4) holds. The notation $$l.i.m.$$ (limit in mean-square)is used to denote $$L^2$$ convergence, so (4) is often abbreviated by  
 <center>$$u(t) = l.i.m. \sum_k \hat u_k e^{2\pi ikt/T} rect(t/T)$$</center>  
-The following example illustrate there is isolated discontinuity at $$t = −1/2$$  
+The following example illustrate there is isolated discontinuity at $$t = −1/2, 0, 1/2$$, the middle figure depicts a partial expansion with k = −1,0,1.   
 ![l2converge]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/l2converge.png){:.aligncenter}  
 
 
