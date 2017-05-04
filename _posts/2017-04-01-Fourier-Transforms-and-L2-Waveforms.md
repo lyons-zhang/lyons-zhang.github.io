@@ -21,8 +21,8 @@ Furthermore, the eigenvalue associated with $$e^{st}$$ is $$H(s)$$.
 
 ### **A Few Standard Fourier Transform Pair**
 ![Fourierpair]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201705/Fourierpair.png){:.aligncenter}
-Two useful special cases of any Fourier transform pair are:
-$$u(0)=\int_{-\infty}^{\infty} \hat u(f)df \;\;\;\; \hat u(0)=\int_{-\infty}^{\infty} u(t)dt$$   
+Two useful special cases of any Fourier transform pair are:  
+<center>$$u(0)=\int_{-\infty}^{\infty} \hat u(f)df \;\;\;\; \hat u(0)=\int_{-\infty}^{\infty} u(t)dt$$</center>   
 Parseval’s theorem:   
 <center>$$\int_{-\infty}^{\infty} u(t)v^*(t) dt = \int_{-\infty}^{\infty} \hat u(f) \hat v^*(f) df $$</center>  
 Energy equation(replacing $$v(t)$$ by $$u(t)$$):  
