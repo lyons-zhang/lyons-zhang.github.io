@@ -49,7 +49,7 @@ For any $$L^2$$ function $$\{ \hat u(f) : \Bbb{R} \to \Bbb{C} \}$$ and any posit
 For any $$L^2$$ function $$\{ u(t) : \Bbb{R} \to \Bbb{C} \}$$, let $$\{ \hat u(f) : \Bbb{R} \to \Bbb{C} \}$$ be the Fourier transform of Plancherel part 1. Then 
 <center>$$ \lim\limits_{B \to \infty} \int_{-\infty}^{\infty} |u(t) - u_B(t)|^2 dt = 0$$</center>   
 All $$L^2$$ functions have Fourier transforms in the sense of limit in mean-square equivalent ($$L^2$$ equivalent).  
-<center>$$\hat u(f) = \underset{\rm A \to \infty}{\rm l.i.m.} \int_{-A}^A u(t)e^{-2\pi ift} dt; u(t) = \underset{\rm B \to \infty} {\rm l.i.m.}\int_{-B}^B \hat u(f)e^{-2\pi ift} df$$</center>  
+<center>$$\hat u(f) = \underset{\rm A \to \infty}{\rm l.i.m.} \int_{-A}^A u(t)e^{-2\pi ift} dt; u(t) = \underset{\rm B \to \infty} {\rm l.i.m.}\int_{-B}^B \hat u(f)e^{2\pi ift} df$$</center>  
 All the Fourier transform relations in the above picture except differentiation hold for all $$L^2$$ functions.   
 
 Reference:  
