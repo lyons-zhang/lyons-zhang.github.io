@@ -11,7 +11,7 @@ The Fourier transform and its inverse are defined by
 <center>$$\hat u(f) = \int_{-\infty}^{\infty} u(t) e^{-2\pi ift} dt \;\;\;\; u(t) = \int_{-\infty}^{\infty} \hat u(f) e^{2\pi ift} df$$</center>  
 The first integral exists for all $$f$$, second exists for all $$t$$.   
 If we use $$\omega = 2\pi f$$, these integral become  
-$$\hat u(\omega) = \int_{-\infty}^{\infty} u(t) e^{-i\omega t} dt \;\;\;\; u(t) = \frac 1 {2\pi} \int_{-\infty}^{\infty} \hat u(\omega) e^{i\omega t} d\omega$$  
+<center>$$\hat u(\omega) = \int_{-\infty}^{\infty} u(t) e^{-i\omega t} dt \;\;\;\; u(t) = \frac 1 {2\pi} \int_{-\infty}^{\infty} \hat u(\omega) e^{i\omega t} d\omega$$</center>   
 Some book denote as $$\hat u(j\omega)$$, that's in the view of systems, for set $$s=j\omega$$ then Laplace transform becomes Fourier transform; also frequency response lives on the $$j\omega$$ axis of the Laplace transform.  
 ##### **Eigenfunctions**  
 If the output signal $$O\{ x(t)\}$$ is a scalar $$\lambda$$ multiple of the input signal $$x(t)$$, we refer to the signal as an eigenfunction and the multiplier as the eigenvalue.  
