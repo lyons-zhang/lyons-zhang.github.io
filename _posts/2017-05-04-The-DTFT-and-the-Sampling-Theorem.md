@@ -17,7 +17,7 @@ where the DTFT coefficients $$\{u_k; k \in \Bbb Z\}$$ are given by
 <center>$$u_k = {1 \over 2W} \int_{-W}^{W} \hat u(f)e^{2\pi i kf/(2W)} df \tag {1}$$</center>  
 We also write this as   
 <center>$$\hat u(f) = l.i.m. \sum\limits_k u_k \hat {\phi}_k(f) \tag{(2)}$$</center>
-where, <center>$$\hat {\phi}_k(f) = e^{-2 \pi ikf/(2W) rect(f/2W)}$$</center>  
+where, <center>$$\hat {\phi}_k(f) = e^{-2 \pi ikf/(2W)} rect(f/2W)$$</center>  
 ##### **DTFT theorem**  
 Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be an $$L^2$$. Then for each $$k \in \Bbb Z$$, the Lebesgue integral (1) exists and satisfies $$|u_k| \le {1 \over {2W}}\int |\hat u(f)|df \lt \infty}$$. Furthermore,  
 <center>$$\lim_{\ell \to \infty}\int_{-W}^{W}|\hat u(f) - \sum\limits_{k=-\ell}^{\ell} u_k e^{-2 \pi ikf/(2W)}|^2 df = 0 \tag{3}$$</center>   
