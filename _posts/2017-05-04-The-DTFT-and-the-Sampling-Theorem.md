@@ -8,8 +8,8 @@ categories: Digital Communication
 
 ### **The discrete-time Fourier Transform**  
 ##### **Familiar DTFT expression**  
-<center>$$x[n] = {1 \over \pi} \int_{2\pi} X(\Omega) e^{j\Omega n} d\Omega = {1 \over \pi} \int_{2\pi} X(e^{j\omega n}) e^{j\omega n} d\omega$$      synthesis</center>
-<center>$$X(\Omega) = X(e^{j\omega n) = \limits\sum_{-\infty}^{+\infty} x[n]e^{-j\omega n} = \limits\sum_{-\infty}^{+\infty} x[n]e^{-j\Omega n}$$    analysis</center>
+<center>$$x[n] = {1 \over \pi} \int_{2\pi} X(\Omega) e^{j\Omega n} d\Omega = {1 \over \pi} \int_{2\pi} X(e^{j\omega n}) e^{j\omega n} d\omega  \tag{synthesis}$$</center>
+<center>$$X(\Omega) = X(e^{j\omega n) = \limits\sum_{-\infty}^{+\infty} x[n]e^{-j\omega n} = \limits\sum_{-\infty}^{+\infty} x[n]e^{-j\Omega n} \tag{analysis}$$</center>
 ##### **DTFT**  
 Assume $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ is $$L^2$$ (and thus also $$L^1$$). The DTFT of $$\hat u(f)$$ over $$[−W,W]$$ is then defined by   
 <center>$$\hat u(f) = l.i.m. \limits\sum_k u_k e^{-2\pi ikf/(2W) rect(f/2W)}$$</center>   
