@@ -34,7 +34,7 @@ the inverse transform of $$\hat \phi_k(f)$$ is
 Then <center>$$u(t) = \sum\limits_k u_k \phi_k(t) = \sum\limits_k 2W u_k sinc(2Wt-k) = \sum\limits_{k=-\infty}^{\infty} u(k/2W) sinc(2Wt-k) \tag{(5)}$$</center>
 ##### **Sampling theorem**  
 Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be $$L^2$$ (and thus also $$L^1$$). For $$u(t)$$ in (5), let $$T = 1/(2W)$$. Then $$u(t)$$ is continuous, $$L^2$$, and bounded by $$u(t) \le \int_{-W}^W |\hat u(f)| df$$. Also, for all $$t \in \Bbb R$$,  
-<center>$$u(t) = \sum\limits_{-\infty}^{\infty}u(kT) sinc({{t-kT} \over T})$$</center>   
+<center>$$u(t) = \sum\limits_{-\infty}^{\infty} u(kT) sinc({t-kT \over T})$$</center>   
 ##### **Baseband-limited** 
 An $$L^2$$ function is *baseband-limited* to $$W$$ if it is the pointwise inverse transform of an $$L^2$$ function $$\hat u(f)$$ that is 0 for $$|f| > W$$. Equivalently, it is baseband-limited to $$W$$ if it is continuous and its Fourier transform is 0 for $$|f| > 0$$.   
 There are other bandlimited functions, limited to $$[−W, W]$$, which are not continuous. The sampliing theorem does not hold for these functions.
