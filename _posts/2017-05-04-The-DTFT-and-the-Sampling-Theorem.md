@@ -28,7 +28,7 @@ $$\hat u(f)$$ for an L2 baseband waveform is both $$L^1$$ and $$L^2$$. Thus, at 
 <center>$$u(t) = \int_{-W}^W \hat u(f) e^{2\pi ift}df$$</center>   
 and $$u(t)$$ is continuous.
 Since the transform pair   
-<center>$$rect({f \over 2W}) \leftrightarrow 2Wsinc(2Wt) \tag{scaling relation}$$</center>
+<center>$$rect({f \over {2W}}) \leftrightarrow 2Wsinc(2Wt) \tag{scaling relation}$$</center>
 the inverse transform of $$\hat \phi_k(f)$$ is   
 <center>$$\phi_k(t) = 2Wsinc(2Wt-k) \leftrightarrow \hat \phi_k(f) = e^{-2\pi ikf/(2W)}rect(f/2W) \tag{time-shift relation} $$</center>   
 Then <center>$$u(t) = \sum\limits_k u_k \phi_k(t) = \sum\limits_k 2W u_k sinc(2Wt-k) = \sum\limits_{k=-\infty}^{\infty} u(k/2W) sinc(2Wt-k) \tag{(5)}$$</center>
