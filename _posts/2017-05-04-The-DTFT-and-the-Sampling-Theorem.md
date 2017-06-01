@@ -35,15 +35,18 @@ Then <center>$$u(t) = \sum\limits_k u_k \phi_k(t) = \sum\limits_k 2W u_k sinc(2W
 ##### **Sampling theorem**  
 Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be $$L^2$$ (and thus also $$L^1$$). For $$u(t)$$ in (5), let $$T = 1/(2W)$$. Then $$u(t)$$ is continuous, $$L^2$$, and bounded by $$u(t) \le \int_{-W}^W |\hat u(f)| df$$. Also, for all $$t \in \Bbb R$$,  
 <center>$$u(t) = \sum\limits_{-\infty}^{\infty}u(kT) sinc({t-kT \over T})$$</center>   
-This says that a baseband-limited function is specified by its *samples intervals* T = 1/(2W).   
+This says that a baseband-limited function is specified by its *samples intervals* $$T = 1/(2W)$$.   
+The sinc function is nonzero over all noninteger times. Recreating the waveform at the receiver from a set of samples thus requires infinite delay(band-limited functions are not time-limited).   
+Practically sinc functions can be truncated, but the sinc waveform decays to zero as $$1/t$$, which is impractically slow.   
 ##### **Baseband-limited** 
 An $$L^2$$ function is **baseband-limited** to $$W$$ if it is the pointwise inverse transform of an $$L^2$$ function $$\hat u(f)$$ that is 0 for $$|f| > W$$. Equivalently, it is baseband-limited to $$W$$ if it is **continuous** and its Fourier transform is 0 for $$|f| > 0$$.   
-There are other bandlimited functions, limited to $$[−W, W]$$, which are not continuous. The sampliing theorem does not hold for these functions.
+There are other bandlimited functions, limited to $$[−W, W]$$, which are not continuous. The sampliing theorem does not hold for these functions.   
 ![DTFT]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201705/DTFT.png){:.aligncenter}   
 
 
 Reference:  
 1. MIT Opencourse. *6.450 Principles of Digital Communications I*.  
 2. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).  
-3. Alan V.Oppenheim. Alan S.Willsky. (1998). *Signals and systems 2nd ed*. (China: Prentice-Hall International,Inc) 
+3. Alan V.Oppenheim. Alan S.Willsky. (1998). *Signals and systems 2nd ed*. (China: Prentice-Hall International,Inc).   
+4. Shlomo Engelberg. (2008). *Digital Signal Processing An Experimental Approach*. (Springer-Verlag London Limited).  
 
