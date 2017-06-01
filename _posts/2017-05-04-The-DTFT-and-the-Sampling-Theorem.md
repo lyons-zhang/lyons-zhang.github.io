@@ -37,7 +37,7 @@ Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be $$L^2$$ (and thus also $$L^1$$). 
 <center>$$u(t) = \sum\limits_{-\infty}^{\infty}u(kT) sinc({t-kT \over T})$$</center>   
 This says that a baseband-limited function is specified by its *samples intervals* T = 1/(2W).   
 ##### **Baseband-limited** 
-An $$L^2$$ function is *baseband-limited* to $$W$$ if it is the pointwise inverse transform of an $$L^2$$ function $$\hat u(f)$$ that is 0 for $$|f| > W$$. Equivalently, it is baseband-limited to $$W$$ if it is continuous and its Fourier transform is 0 for $$|f| > 0$$.   
+An $$L^2$$ function is **baseband-limited** to $$W$$ if it is the pointwise inverse transform of an $$L^2$$ function $$\hat u(f)$$ that is 0 for $$|f| > W$$. Equivalently, it is baseband-limited to $$W$$ if it is **continuous** and its Fourier transform is 0 for $$|f| > 0$$.   
 There are other bandlimited functions, limited to $$[−W, W]$$, which are not continuous. The sampliing theorem does not hold for these functions.
 ![DTFT]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201705/DTFT.png){:.aligncenter}   
 
