@@ -4,22 +4,22 @@ description: Discrete-time Fourier transform, Sampling Theorem
 categories: Digital Communication
 ---
 
->  The discrete-time Fourier transform ($$DTFT$$) is the time/frequency dual of the Fourier series. In the sense of $$L^2$$ convergence, Fourier series uses the sequence of coefficients to represent the function, $$DTFT$$ uses the frequency function to represent the sequence. $$DTFT$$ is similar to modulation from discrete to waveform.    
+>  The discrete-time Fourier transform (**DTFT**) is the time/frequency dual of the Fourier series. In the sense of $$L^2$$ convergence, Fourier series uses the sequence of coefficients to represent the function, **DTFT** uses the frequency function to represent the sequence. **DTFT** is similar to modulation from discrete to waveform.    
 
 ### **The Discrete-time Fourier Transform**  
-##### **Familiar $$DTFT$$ expression**  
+##### **Familiar DTFT expression**  
 <center>$$x[n] = {1 \over 2\pi} \int_{2\pi} X(\Omega) e^{j\Omega n} d\Omega = {1 \over 2\pi} \int_{2\pi} X(e^{j\omega n}) e^{j\omega n} d\omega  \tag{synthesis}$$</center>
 <center>$$X(\Omega) = X(e^{j\omega n}) = \sum\limits_{-\infty}^{\infty} x[n]e^{-j\omega n} = \sum\limits_{-\infty}^{\infty} x[n]e^{-j\Omega n} \tag{analysis}$$</center>
-##### **$$DTFT$$**  
-Assume $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ is $$L^2$$ (and thus also $$L^1$$). The $$DTFT$$ of $$\hat u(f)$$ over $$[−W,W]$$ is then defined by   
+##### **DTFT**  
+Assume $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ is $$L^2$$ (and thus also $$L^1$$). The **DTFT** of $$\hat u(f)$$ over $$[−W,W]$$ is then defined by   
 <center>$$\hat u(f) = l.i.m. \sum\limits_k u_k e^{-2\pi ikf/(2W)} rect(f/2W)$$</center>   
-where the $$DTFT$$ coefficients $$\{u_k; k \in \Bbb Z\}$$ are given by
+where the **DTFT** coefficients $$\{u_k; k \in \Bbb Z\}$$ are given by
 <center>$$u_k = {1 \over 2W} \int_{-W}^{W} \hat u(f)e^{2\pi i kf/(2W)} df \tag {1}$$</center>  
 We also write this as   
 <center>$$\hat u(f) = l.i.m. \sum\limits_k u_k \hat {\phi}_k(f) \tag{2}$$</center>
 where, <center>$$\hat {\phi}_k(f) = e^{-2 \pi ikf/(2W)} rect(f/2W)$$</center>  
-##### **$$DTFT$$ theorem**  
-Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be an $$L^2$$. Then for each $$k \in \Bbb Z$$, the Lebesgue integral $$(1)$$ exists and satisfies $$|u_k| \le {1 \over 2W} \int |\hat u(f)|df \lt \infty}$$. Furthermore,  
+##### **DTFT** theorem
+Let $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ be an $$L^2$$. Then for each $$k \in \Bbb Z$$, the Lebesgue integral $$(1)$$ exists and satisfies $$|u_k| \le {1 \over 2W} \int |\hat u(f)|df \lt \infty$$. Furthermore,  
 <center>$$\lim_{\ell \to \infty}\int_{-W}^{W}|\hat u(f) - \sum\limits_{k=-\ell}^{\ell} u_k e^{-2 \pi ikf/(2W)}|^2 df = 0 \tag{3}$$</center>   
 <center>$$\int_{-W}^{W} |\hat u(f)| df = 2W \sum\limits_{-\infty}^{\infty}|u_k|^2 \tag{4}$$</center>   
 Finally, if $$\{u_k; k \in \Bbb Z\}$$ is a sequence of complex numbers satisfying $$\sum_k |u_k|^2 < \infty$$, then an $$L^2$$ function $$\{\hat u(f) : [-W, W] \to \Bbb C \}$$ exists satisfying $$(3)$$ and $$(4)$$.   
