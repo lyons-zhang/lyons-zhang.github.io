@@ -43,17 +43,14 @@ An $$L^2$$ function is **baseband-limited** to $$W$$ if it is the pointwise inve
 There are other bandlimited functions, limited to $$[−W, W]$$, which are not continuous. The sampliing theorem does not hold for these functions.   
 ![DTFT]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201705/DTFT.png){:.aligncenter}   
 ##### **The sampling theorem for $$[\Delta −W, \Delta+W]$$** 
-Consider an $$L^2$$ frequency function $${\hat v(f) : [\Delta −W, \Delta +W] \to \Bbb C}$$. The *shifted DTFT* for $$\hat v(f)$$ is then   
-<center>$$\hat v(f) = l.i.m. \sum\limits_k v_k e^{-2\pi ikf/(2W)} rect(f-\Delta \over 2W) = l.i.m. \sum\limits_k v_k \hat \theta_k(f)$$</center>    
-<center>$$v_k = {1 \over 2W} \int_{\Delta -W}^{\Delta +W} \hat v(f)e^{2\pi i kf/(2W)} df$$</center>   
+Consider an $$L^2$$ frequency function $$\{\hat v(f) : [\Delta −W, \Delta +W] \to \Bbb C\}$$. The *shifted DTFT* for $$\hat v(f)$$ is then   
+<center>$$\hat v(f) = l.i.m. \sum\limits_k v_k e^{-2\pi ikf/(2W)} rect({f-\Delta \over 2W}) = l.i.m. \sum\limits_k v_k \hat \theta_k(f)$$</center>    
+where  <center>$$v_k = {1 \over 2W} \int_{\Delta -W}^{\Delta +W} \hat v(f)e^{2\pi i kf/(2W)} df$$</center>   
 The inverse Fourier transform of $$\hat \theta_k(f)$$ can be calculated by shifting and scaling to be   
-<center>$$\theta_k(t) = 2Wsinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W}} \leftrightarrow \hat \theta_k(f) = e^{-2\pi ikf/(2W)}rect({f-\Delta} over 2W) \tag{time-shift relation} $$</center>   
+<center>$$\theta_k(t) = 2Wsinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W}) \leftrightarrow \hat \theta_k(f) = e^{-2\pi ikf/(2W)}rect({f-\Delta} \over 2W) \tag{time-shift relation} $$</center>   
 This generalizes the sampling equation to the frequency band $$[\Delta −W, \Delta +W]$$   
-Then <center>$$v(t) = \sum\limits_k v_k \theta_k(t) = \sum\limits_k v({k \over 2W}) sinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W}} = \sum\limits_k v({kT}) sinc({t \over T}-k)e^{2\pi i\Delta(t-kT}$$</center>   
-<<<<<<< HEAD
+Then <center>$$v(t) = \sum\limits_k v_k \theta_k(t) = \sum\limits_k v({k \over 2W}) sinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W})} = \sum\limits_k v({kT}) sinc({t \over T}-k)e^{2\pi i\Delta(t-kT)}$$</center>   
 
-=======
->>>>>>> b455922ffc95f33b9dd982683d3a7189af14274d
 
 Reference:  
 1. MIT Opencourse. *6.450 Principles of Digital Communications I*.  
