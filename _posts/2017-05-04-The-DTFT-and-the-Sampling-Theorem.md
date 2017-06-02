@@ -50,7 +50,10 @@ The inverse Fourier transform of $$\hat \theta_k(f)$$ can be calculated by shift
 <center>$$\theta_k(t) = 2Wsinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W}} \leftrightarrow \hat \theta_k(f) = e^{-2\pi ikf/(2W)}rect({f-\Delta} over 2W) \tag{time-shift relation} $$</center>   
 This generalizes the sampling equation to the frequency band $$[\Delta −W, \Delta +W]$$   
 Then <center>$$v(t) = \sum\limits_k v_k \theta_k(t) = \sum\limits_k v({k \over 2W}) sinc(2Wt-k)e^{2\pi i\Delta(t-{k \over 2W}} = \sum\limits_k v({kT}) sinc({t \over T}-k)e^{2\pi i\Delta(t-kT}$$</center>   
+<<<<<<< HEAD
 
+=======
+>>>>>>> b455922ffc95f33b9dd982683d3a7189af14274d
 
 Reference:  
 1. MIT Opencourse. *6.450 Principles of Digital Communications I*.  
