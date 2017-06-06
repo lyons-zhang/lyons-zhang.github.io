@@ -23,7 +23,7 @@ For a function $$\{v(t) : [\Delta −T/2, \Delta +T/2] \to \Bbb C\}$$ centered a
 <center>$$\hat v_k = {1 \over T}\int_{\Delta-T/2}^{\Delta+T/2}v(t)e^{-2\pi ikt/T}dt, -\infty<k<\infty$$</center>   
 Expanding each segment $$u_m(t)$$ by the shifted Fourier series   
 <center>$$u_m(t) = l.i.m.\sum\limits_k \hat u_{k,m}e^{2\pi ikt/T}rect({t \over T} - m)$$</center>
-<center>$$\hat u_{k,m} = {1 \over T}\int_{mT-T/2}^{mT+T/2}u_m(t)e^{-2\pi ikt/T}dt = {1 \over T}\int_{-\infty}^{\infty}u(t)e^{-2\pi ikt/T}rect({t \over T} - m)dt </center>
+<center>$$\hat u_{k,m} = {1 \over T}\int_{mT-T/2}^{mT+T/2}u_m(t)e^{-2\pi ikt/T}dt = {1 \over T}\int_{-\infty}^{\infty}u(t)e^{-2\pi ikt/T}rect({t \over T} - m)dt$$</center>
 This expands $$u(t)$$ as a weighted sum of doubly indexed functions   
 <center>$$u(t) = l.i.m.\sum\limits_{m,k} \hat u_{k,m} \theta_{m,k}(t), \;\;\;\;\; \text{where}$$</center>
 <center>$$\theta_{m,k}(t) = e^{2\pi ikt/T}rect({t \over T} - m)$$</center> 
