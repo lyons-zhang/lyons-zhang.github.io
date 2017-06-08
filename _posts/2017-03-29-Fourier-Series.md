@@ -14,7 +14,7 @@ Time-invariance :
 <center> $$O\{ x(t-\tau ) \} = O\{ y(t-\tau ) \}$$ </center>   
 ##### **Why play a fundamental role**
 * Many communication channels possess LTI property.  
-* We hope the channels can be approximated as LTI in a range of applications.  
+* We hope the channels can be approximated as LTI or extended from LTI in a range of applications.  
 
 More explanation about the sencond item:  
 * Unit-sample response $$h[n]$$ or unit-impulse response $$h(t)$$ is a complete description of an LTI system.  
