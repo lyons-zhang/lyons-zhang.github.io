@@ -56,7 +56,7 @@ Each frequency slice $$\hat v_m(f)$$ is shifted down to baseband in this equatio
 ![aliasing]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201706/aliasing.png){:.aligncenter}   
 ##### **Aliasing theorem**
 Let $$\hat u(f)$$ be $$L^2$$, and let $$\hat u(f)$$ satisfy the condition 
-<center>$$lim_{|f|\to \infty} \hat u(f)|f|^{1+\epsilon}$$</center> 
+<center>$$\lim_{|f|\to \infty} \hat u(f)|f|^{1+\epsilon}$$</center> 
 Then $$\hat u(f)$$ is $$L^1$$, and the inverse Fourier transform $$u(t) = \int \hat u(f)e^{2\pi ift}df$$ converges pointwise to a continuous bounded function. For any given $$T > 0$$, the sampling approximation $$\sum_k u(kT)sinc({t \over T} − k)$$ converges pointwise to a continuous bounded $$L^2$$ function $$s(t)$$. The Fourier transform of $$s(t)$$ satisfies   
 <center>$$\hat s(f) = l.i.m. \sum\limits_m \hat u(f+{m \over T})rect[fT]$$</center>   
 The condition that $$\lim \hat u(f)f^{1+\epsilon} = 0$$ implies that $$\hat u(f)$$ goes to 0 with increasing $$f$$ at a faster rate than $$1/f$$.   
