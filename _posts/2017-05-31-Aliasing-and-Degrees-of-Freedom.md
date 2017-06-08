@@ -29,8 +29,11 @@ This expands $$u(t)$$ as a weighted sum of doubly indexed functions
 <center>$$\theta_{m,k}(t) = e^{2\pi ikt/T}rect({t \over T} - m)$$</center> 
 ### **Degrees of freedom**
 Degrees of freedom is somewhat difficult to state precisely, since time-limited functions cannot be frequency-limited and vice-versa.   
-Applying the sampling theorem, real (complex) functions $$u(t)$$ strictly baseband-limited to $$W_0$$ are specified by its real (complex) samples at rate $$2W_0$$. If the samples are nonzero only within the interval $$[−T_0/2, T_0/2]$$, then there are about $$2T_0W_0$$ nonzero samples, and these specify $$u(t)$$ within this class. Here a precise class of functions have been specified, but *functionsz* that are zero outside of an interval have been *replaced with functions whose samples are zero* outside of the interval.   
+   
+Applying the sampling theorem, real (complex) functions $$u(t)$$ strictly baseband-limited to $$W_0$$ are specified by its real (complex) samples at rate $$2W_0$$. If the samples are nonzero only within the interval $$[−T_0/2, T_0/2]$$, then there are about $$2T_0W_0$$ nonzero samples, and these specify $$u(t)$$ within this class. Here a precise class of functions have been specified, but *functions* that are zero outside of an interval have been *replaced with functions whose samples are zero* outside of the interval.   
+   
 Consider a large time interval $$T_0$$ and a baseband limited band $$W_0$$. There are $$T0/T$$ segments of duration $$T$$ and $$W_0/2W = W_0T$$ positive frequency segments. Counting negative frequencies also, there are $$2T_0W_0$$ time/frequency blocks and $$2T_0W_0$$ coefficients.   
+   
 If one ignores coefficients outside of $$T0$$, $$W0$$, then the function is specified by $$2T_0W_0$$ complex numbers.   
 For real functions, it is $$T_0W_0$$ complex numbers.   
 ### **ALIASING**
@@ -53,10 +56,11 @@ Each frequency slice $$\hat v_m(f)$$ is shifted down to baseband in this equatio
 ![aliasing]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201706/aliasing.png){:.aligncenter}   
 ##### **Aliasing theorem**
 Let $$\hat u(f)$$ be $$L^2$$, and let $$\hat u(f)$$ satisfy the condition 
-$$lim_{|f|\to \infty} \hat u(f)|f|^{1+\epsilon}$$ 
+<center>$$lim_{|f|\to \infty} \hat u(f)|f|^{1+\epsilon}$$</center> 
 Then $$\hat u(f)$$ is $$L^1$$, and the inverse Fourier transform $$u(t) = \int \hat u(f)e^{2\pi ift}df$$ converges pointwise to a continuous bounded function. For any given $$T > 0$$, the sampling approximation $$\sum_k u(kT)sinc({t \over T} − k)$$ converges pointwise to a continuous bounded $$L^2$$ function $$s(t)$$. The Fourier transform of $$s(t)$$ satisfies   
-$$\hat s(f) = l.i.m. \sum\limits_m \hat u(f+{m \over T})rect[fT]$$   
-The condition that $$lim \hat u(f)f^{1+\epsilon} = 0$$ implies that $$\hat u(f)$$ goes to 0 with increasing $$f$$ at a faster rate than $$1/f$$.
+<center>$$\hat s(f) = l.i.m. \sum\limits_m \hat u(f+{m \over T})rect[fT]$$</center>   
+The condition that $$\lim \hat u(f)f^{1+\epsilon} = 0$$ implies that $$\hat u(f)$$ goes to 0 with increasing $$f$$ at a faster rate than $$1/f$$.   
+   
 Without the mathematical convergence details, what the aliasing theorem says is that, corresponding to a Fourier transform pair $$u(t)\leftrightarrow \hat u(f)$$, there is another Fourier transform pair $$s(t)$$ and $$\hat s(f)$$; $$s(t)$$ is a baseband sampling expansion using the T-spaced samples of $$u(t)$$ and $$\hat s(f)$$ is the result of folding the transform $$\hat u(f)$$ into the band $$[−W, W]$$ with $$W = 1/(2T)$$.
 
 
