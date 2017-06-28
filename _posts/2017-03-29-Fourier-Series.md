@@ -71,9 +71,9 @@ The following example illustrate there is isolated discontinuity at $$t = −1/2
 
 Reference:  
 1. Alan V.Oppenheim. Alan S.Willsky. (1998). *Signals and systems 2nd ed*. (China: Prentice-Hall International,Inc)  
-2. MIT Opencourse. *6.02 Introduction to EECS II: Digital Communication Systems*.  
-3. MIT Opencourse. *6.003 Signals and Systems*.  
-4. MIT Opencourse. *6.450 Principles of Digital Communications I*.  
+2. Hari Balakrishnan. George Verghese. (2012). *6.02 Introduction to EECS II: Digital Communication Systems*. MIT OpenCourseWare (http://ocw.mit.edu/)   
+3. Dennis Freeman. (2011). *6.003 Signals and Systems*. MIT OpenCourseWare (http://ocw.mit.edu/) 
+4. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)
 5. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).  
 6. Harvey Mudd College Opencourse. *E59 Administrative Information*  
 7. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)

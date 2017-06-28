@@ -65,7 +65,7 @@ Without the mathematical convergence details, what the aliasing theorem says is 
 
 
 Reference:  
-1. MIT Opencourse. *6.450 Principles of Digital Communications I*.  
+1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/) 
 2. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).  
 3. J. M. Wozencraft and I. M. Jacobs. (1965) *Principles of Communication Engineering* (John Wiley and Sons, Reprinted by Waveland Press).
 

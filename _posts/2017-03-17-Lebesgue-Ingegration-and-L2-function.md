@@ -61,4 +61,4 @@ Reference:
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
 3. Walter Rudin. (1987). *Real and complex analysis* (McGraw-Hill Book Company)
 4. Siegmund-Schultze, Reinhard (2008), *Henri Lebesgue*, in Timothy Gowers, June Barrow-Green, Imre Leader, Princeton Companion to Mathematics, Princeton University Press.
-5. MIT Opencourse 6.450. *Digital Communication*.
+5. Prof. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)

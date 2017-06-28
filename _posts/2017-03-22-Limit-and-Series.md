@@ -41,4 +41,4 @@ Let $$x$$ be a complex number, then the geometricseries $$\sum_{n=0}^{\infty} x^
 Reference:
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
-3. Prof. Dennis Freeman. MIT Opencourse 6.003. (2009). *Signals and Systems*
+3. Dennis Freeman. (2011). *6.003 Signals and Systems*. MIT OpenCourseWare (http://ocw.mit.edu/)
