@@ -34,13 +34,18 @@ The set of finite-energy complex waveforms can be viewed as a complex vector spa
 * **Basis**: A set of vectors $$\vec {v_1}, \vec {v_2}, ..., \vec {v_n} \in \mathcal V$$ is defined to be a basis for $$\mathcal V$$ if the set both spans $$\mathcal V$$ and is linearly independent. The **dimension** of a finite-dimensional vector space is defined as the number of vectors in a basis.   
 
 ### **Inner product spaces**
-Vector space definition lacks distance and angles. Inner product adds these features. The inner product of $$\vec v$$ and $$\vec u$$ is denoted $$<\vec v, \vec u>$$.   
+Vector space definition lacks distance and angles. Inner product adds these features. The inner product of $$\vec v$$ and $$\vec u$$ is denoted $$\langle\vec v, \vec u\rangle$$.   
 #### **Axioms of inner product space**   
-* Hermitian symmetry: $$<\vec v, \vec u> = <\vec u, \vec v>^*$$   
-* Hermitian bilinearity: $$<\alpha\vec v + \beta \vec u, \vec w> = \alpha <\vec v, \vec w> + \beta <\vec u, \vec w>$$
-                         $$<\vec v, \alpha \vec u + \beta \vec w> = \alpha^* <\vec v, \vec u> + \beta^*<\vec v, \vec w>$$  
-* Strict positivity:  $$<\vec v, \vec v> \ge 0$$, equality iff $$\vec v = \vec 0$$.   
+* Hermitian symmetry: $$\langle\vec v, \vec u\rangle = \langle\vec u, \vec v\rangle^*$$   
+* Hermitian bilinearity: $$\langle\alpha\vec v + \beta \vec u, \vec w\rangle = \alpha \langle\vec v, \vec w\rangle + \beta \langle\vec u, \vec w\rangle$$;   $$\langle\vec v, \alpha \vec u + \beta \vec w\rangle = \alpha^* \langle\vec v, \vec u\rangle + \beta^*\langle\vec v, \vec w\rangle$$  
+* Strict positivity:  $$\langle\vec v, \vec v\rangle \ge 0$$, equality iff $$\vec v = \vec 0$$.   
 
+For $$\Bbb C^n$$, we usually define $$\langle\vec v, \vec u\rangle = \sum_i v_i u_i^*$$.   
+If $$\vec e_1, \vec e_2, ... , \vec e_n$$are unit vectors in $$\Bbb C^n$$, then $$\langle\vec v,\vec e_i\rangle = v_i, \langle\vec e_i,\vec v\rangle = v_i^*$$.   
+$$\|\vec v\|^2 = \langle\vec v, \vec v\rangle$$ is **squared norm** of $$\vec v$$.  
+$$\|\vec v\|$$ is **length** of $$\vec v$$.  
+$$\vec v$$ and $$\vec u$$ are are orthogonal if $$\langle\vec v, \vec u\rangle = 0$$.
+More generally $$\vec u$$ can be broken into a part $$\vec u_{\bot\vec v}$$ that is orthogonal to $$\vec v$$ and another part collinear $$\vec u_{|\vec v}$$ with $$\vec v$$.   
 
 
 Reference:  
