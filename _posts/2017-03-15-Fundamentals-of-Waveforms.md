@@ -1,5 +1,5 @@
 ---
-title: Waveforms
+title: Fundamentals of Waveforms
 description: Fourier transforms stated here with considerably more precision and interpretation.
 categories: Digital Communication
 ---
