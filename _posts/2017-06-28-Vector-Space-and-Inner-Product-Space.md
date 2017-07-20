@@ -42,8 +42,7 @@ Vector space definition lacks distance and angles. Inner product adds these feat
 
 For $$\Bbb C^n$$, we usually define $$\langle\vec v, \vec u\rangle = \sum_i v_i u_i^*$$.   
 If $$\vec e_1, \vec e_2, ... , \vec e_n$$are unit vectors in $$\Bbb C^n$$, then $$\langle\vec v,\vec e_i\rangle = v_i, \langle\vec e_i,\vec v\rangle = v_i^*$$.   
-$$\|\vec v\|^2 = \langle\vec v, \vec v\rangle$$ is **squared norm** of $$\vec v$$.  
-$$\|\vec v\|$$ is **length** of $$\vec v$$.  
+$$\|\vec v\|^2 = \langle\vec v, \vec v\rangle$$ is **squared norm** of $$\vec v$$.  $$\|\vec v\|$$ is **length** of $$\vec v$$.  
 $$\vec v$$ and $$\vec u$$ are are orthogonal if $$\langle\vec v, \vec u\rangle = 0$$.
 More generally $$\vec v$$ can be broken into a part $$\vec v_{\bot\vec u}$$ that is orthogonal to $$\vec u$$ and another part collinear $$\vec v_{|\vec u}$$ with $$\vec v$$.   
 #### **One-dimensional projection theorem**  
