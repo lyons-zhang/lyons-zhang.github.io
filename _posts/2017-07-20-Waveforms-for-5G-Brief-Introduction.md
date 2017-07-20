@@ -8,7 +8,7 @@ categories: Digital Communication
   
   
 I shared this PPT to my colleagues in Tieto Company.   
-[Get the PPT]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201707/Waveforms_5G.ppt){:.aligncenter}  
+[Get the PPT]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201707/Waveforms_5G.pptx){:.aligncenter}  
 
 
 Reference:  
