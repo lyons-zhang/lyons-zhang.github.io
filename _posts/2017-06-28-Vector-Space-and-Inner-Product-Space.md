@@ -48,12 +48,13 @@ $$\vec v$$ and $$\vec u$$ are are orthogonal if $$\langle\vec v, \vec u\rangle =
 More generally $$\vec v$$ can be broken into a part $$\vec v_{\bot\vec u}$$ that is orthogonal to $$\vec u$$ and another part collinear $$\vec v_{|\vec u}$$ with $$\vec v$$.   
 #### **One-dimensional projection theorem**  
 Let $$\vec v$$ and $$\vec u$$ be arbitrary vectors with $$\vec u \ne 0$$ in a real or complex inner product space. Then there is a unique scalar $$\alpha$$ for which $$\langle\vec v - \alpha\vec u, \vec u\rangle = 0$$. That $$\alpha$$ is given by $$\alpha = \langle\vec v, \vec u\rangle /\|\vec u\|^2$$.  
-<center>$$v_{|\vec u} = {\langle\vec v, \vec u\rangle} \over {\|\vec u\|} \vec u = \langle \vec v, {\vec u} \over \|\vec u\|\rangle {\vec u} \over {\|\vec u\|}$$</center>
-<center>$$cos(\angle(\vec u, \vec v))= \langle {\vec v} \over \|vec v\|, {\vec u} \over \|\vec u\|\rangle {\vec u} \over {\|\vec u\|}$$</center>
+<center>$${\vec v}_{|\vec u} = {{\langle\vec v, \vec u\rangle} \over \|\vec u\|} \vec u = \langle \vec v, {\vec u \over \|\vec u\|} \rangle {\vec u \over \|\vec u\|}$$</center>
+<center>$$cos(\angle(\vec u, \vec v)) = \langle {\vec v \over \|vec v\|}, {\vec u \over \|\vec u\|} \rangle {\vec u \over \|\vec u\|}$$</center>
 **Pythagorean theorem**: If $$\vec v$$ and $$\vec u$$ are orthogonal, then $$\|\vec v + \vec u\|^2 = \|\vec v\|^2 + \|\vec u\|^2$$.   
    **Schwarz inequality**: Let $$\vec v$$ and $$\vec u$$ be vectors in a real or complex inner product space, then $$|\langle\vec v, \vec u\rangle| \le \|\vec v\| \|\vec u\|$$.  
-
-
+    
+   
+   
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/) 
 2. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).  
