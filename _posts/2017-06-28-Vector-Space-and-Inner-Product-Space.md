@@ -51,7 +51,7 @@ Let $$\vec v$$ and $$\vec u$$ be arbitrary vectors with $$\vec u \ne 0$$ in a re
 <center>$${\vec v}_{|\vec u} = {{\langle\vec v, \vec u\rangle} \over \|\vec u\|} \vec u = \langle \vec v, {\vec u \over \|\vec u\|} \rangle {\vec u \over \|\vec u\|}$$</center>
 <center>$$cos(\angle(\vec u, \vec v)) = \langle {\vec v \over \|vec v\|}, {\vec u \over \|\vec u\|} \rangle {\vec u \over \|\vec u\|}$$</center>
 **Pythagorean theorem**: If $$\vec v$$ and $$\vec u$$ are orthogonal, then $$\|\vec v + \vec u\|^2 = \|\vec v\|^2 + \|\vec u\|^2$$.   
-   **Schwarz inequality**: Let $$\vec v$$ and $$\vec u$$ be vectors in a real or complex inner product space, then $$|\langle\vec v, \vec u\rangle| \le \|\vec v\| \|\vec u\|$$.  
+**Schwarz inequality**: Let $$\vec v$$ and $$\vec u$$ be vectors in a real or complex inner product space, then $$|\langle\vec v, \vec u\rangle| \le \|\vec v\| \|\vec u\|$$.  
     
    
    
