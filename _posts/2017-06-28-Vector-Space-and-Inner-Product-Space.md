@@ -53,7 +53,7 @@ Let $$\vec v$$ and $$\vec u$$ be arbitrary vectors with $$\vec u \ne 0$$ in a re
 **Schwarz inequality**: Let $$\vec v$$ and $$\vec u$$ be vectors in a real or complex inner product space, then $$|\langle\vec v, \vec u\rangle| \le \|\vec v\| \|\vec u\|$$.  
 #### **The inner product space of $$L^2$$ functions**  
 $$L^2$$ becomes an inner product space if we define the inner product of $$L^2$$ as  
-<center>$$\langle \vec v, \vec u \rangle$$ = \int_{-\infty}^{\infty} v(t) u^*(t) dt</center>   
+<center>$$\langle \vec v, \vec u \rangle = \int_{-\infty}^{\infty} v(t) u^*(t) dt$$</center>   
 Strict positivity axiom (*) does not hold for finite-energy waveforms, so we must define equality as $$L^2$$ equivalence.   
 The vectors in this space are equivalence classes. Alternatively, view a vector as a set of coefficients in an orthogonal expansion.  
 #### **Vector subspaces**  
