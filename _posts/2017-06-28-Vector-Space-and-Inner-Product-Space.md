@@ -38,7 +38,7 @@ Vector space definition lacks distance and angles. Inner product adds these feat
 #### **Axioms of inner product space**   
 * Hermitian symmetry: $$\langle\vec v, \vec u\rangle = \langle\vec u, \vec v\rangle^*$$   
 * Hermitian bilinearity: $$\langle\alpha\vec v + \beta \vec u, \vec w\rangle = \alpha \langle\vec v, \vec w\rangle + \beta \langle\vec u, \vec w\rangle$$;   $$\langle\vec v, \alpha \vec u + \beta \vec w\rangle = \alpha^* \langle\vec v, \vec u\rangle + \beta^*\langle\vec v, \vec w\rangle$$  
-* Strict positivity:  $$\langle\vec v, \vec v\rangle \ge 0$$, equality iff $$\vec v = \vec 0 \tag{*}$$.   
+* Strict positivity:  $$\langle\vec v, \vec v\rangle \ge 0, \text{equality iff } \vec v = \vec 0 \tag{*}$$.   
 
 For $$\Bbb C^n$$, we usually define $$\langle\vec v, \vec u\rangle = \sum_i v_i u_i^*$$.   
 If $$\vec e_1, \vec e_2, ... , \vec e_n$$are unit vectors in $$\Bbb C^n$$, then $$\langle\vec v,\vec e_i\rangle = v_i, \langle\vec e_i,\vec v\rangle = v_i^*$$.   
