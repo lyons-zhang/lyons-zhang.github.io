@@ -38,7 +38,7 @@ Vector space definition lacks distance and angles. Inner product adds these feat
 #### **Axioms of inner product space**   
 * Hermitian symmetry: $$\langle\vec v, \vec u\rangle = \langle\vec u, \vec v\rangle^*$$   
 * Hermitian bilinearity: $$\langle\alpha\vec v + \beta \vec u, \vec w\rangle = \alpha \langle\vec v, \vec w\rangle + \beta \langle\vec u, \vec w\rangle$$;   $$\langle\vec v, \alpha \vec u + \beta \vec w\rangle = \alpha^* \langle\vec v, \vec u\rangle + \beta^*\langle\vec v, \vec w\rangle$$  
-* Strict positivity:  $$\langle\vec v, \vec v\rangle \ge 0$$, equality iff $$\vec v = \vec 0$$.   
+* Strict positivity:  $$\langle\vec v, \vec v\rangle \ge 0$$, equality iff $$\vec v = \vec 0 \tag{*}$$.   
 
 For $$\Bbb C^n$$, we usually define $$\langle\vec v, \vec u\rangle = \sum_i v_i u_i^*$$.   
 If $$\vec e_1, \vec e_2, ... , \vec e_n$$are unit vectors in $$\Bbb C^n$$, then $$\langle\vec v,\vec e_i\rangle = v_i, \langle\vec e_i,\vec v\rangle = v_i^*$$.   
@@ -51,9 +51,18 @@ Let $$\vec v$$ and $$\vec u$$ be arbitrary vectors with $$\vec u \ne 0$$ in a re
 <center>$$cos(\angle(\vec u, \vec v)) = \langle {\vec v \over \|\vec v\|}, {\vec u \over \|\vec u\|} \rangle {\vec u \over \|\vec u\|}$$</center>
 **Pythagorean theorem**: If $$\vec v$$ and $$\vec u$$ are orthogonal, then $$\|\vec v + \vec u\|^2 = \|\vec v\|^2 + \|\vec u\|^2$$.   
 **Schwarz inequality**: Let $$\vec v$$ and $$\vec u$$ be vectors in a real or complex inner product space, then $$|\langle\vec v, \vec u\rangle| \le \|\vec v\| \|\vec u\|$$.  
-    
+#### **The inner product space of $$L^2$$ functions**  
+$$L^2$$ becomes an inner product space if we define the inner product of $$L^2$$ as  
+<center>$$\langle \vec v, \vec u \rangle$$ = \int_{-\infty}^{\infty} v(t) u^*(t) dt</center>   
+Strict positivity axiom (*) does not hold for finite-energy waveforms, so we must define equality as $$L^2$$ equivalence.   
+The vectors in this space are equivalence classes. Alternatively, view a vector as a set of coefficients in an orthogonal expansion.  
+#### **Vector subspaces**  
+A subspace of a vector space $$\mathcal V$$ is a subset $$\mathcal S$$ of $$\mathcal V$$ that forms a vector space in its own right.  
+Equivalent: For all $$\vec u, \vec v \in \mathcal V, \alpha \vec u + \beta \vec v \in \mathcal S$$.   
+The notion of linear combination (which is at the heart of both the use and theory of vector spaces) depends on what the scalars are. So $$\Bbb R^n$$ is not a subspace of $$\Bbb C^n$$; real $$L^2$$ is not a subspace of complex $$L^2$$.   
+A subspace of an inner product space (using the same inner product) is an inner product space.   
    
-   
+
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/) 
 2. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).  
