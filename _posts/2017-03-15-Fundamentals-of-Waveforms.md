@@ -20,6 +20,7 @@ The energy in a real or complex waveform $$u(t)$$ is defined to be $$\int_{-\inf
 * The energy used over any finite interval $$T$$ is limited both by regulatory agencies and by physical constraints on transmitters and antennas.
 * Finite-energy waveforms have *measurability* properties, These finite-energy measurable functions are called $$L^2$$ functions. When time-constrained, they always have Fourier series, and without a time constraint, they always have Fourier transforms.
 * Perhaps the most important property, however, is that $$L^2$$ functions can be treated essentially as conventional vectors.
+* A major reason for restricting attention to finite-energy waveforms is that as their energy gets used up in different degrees of freedom (i.e., expansion coefficients), there is less energy available for other degrees of freedom, so that some sort of convergence must result. 
 * Unit impulses and constant functions are not physical waveforms, they are useful models of physical waveforms where energy is not important. However, that such waveforms can safely be limited to the finite-energy class.  
 
 ### **Waveform Representation by Vectors**

@@ -4,7 +4,7 @@ description: Vector space, Inner product space, Gram-Schmidt orthonormalization
 categories: Digital Communication
 ---
 
->  Linear algebra is the study of linear maps on finite-dimensional vector spaces. Use of vectors to represent a countably infinite sequence is a small conceptual extension. Viewing waveforms as vectors is a larger conceptual extension. We have to view vectors as abstract objects rather than as n-tuples. Orthogonal expansions are best viewed in vector space terms.  
+>  Linear algebra is the study of linear maps on finite-dimensional vector spaces. Use of vectors to represent a countably infinite sequence is a small conceptual extension. Viewing waveforms as vectors is a larger conceptual extension. We have to view vectors as abstract objects rather than as n-tuples. Orthogonal expansions are best viewed in vector space terms. L2 waveforms can be viewed as vectors in the inner product space, such inner product space known as **signal space**.
 
 ### **Vector space**  
 A *vector space* $$\mathcal V$$ is a set of elements, $$\vec v \in \mathcal V$$, called vectors, along with a set of rules for operating on both these vectors and a set of ancillary elements called scalars.   
