@@ -1,5 +1,5 @@
 ---
-title: Lebesgue Ingegration and L2 functions
+title: Lebesgue Integration and L2 functions
 
 description: Lebesgue measure, Lebesgue ingegration, L1 functions, L2 functions 
 categories: Digital Communication
