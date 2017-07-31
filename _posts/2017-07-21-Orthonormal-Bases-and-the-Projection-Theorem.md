@@ -16,7 +16,7 @@ Assume that $$\{\phi_1, . . . , \phi_n\}$$ is an orthonormal basis for an n-dime
 Proof outline:  Let $$v_{|S} = \sum_i \alpha_i\phi_i$$. Find the conditions on $$\alpha_1, . . . , \alpha_n$$ such that $$v − v_{|S}$$ is orthogonal to each $$\phi_i$$.  
 <center>$$0 = \langle v - \sum_i \alpha_i\phi_i, \phi_j \rangle = \langle v, \phi_j \rangle - \alpha_j$$</center>
 For $$v \in \mathcal S, v = \sum_j \alpha_j \phi_j, {\phi_j}$$ orthonormal basis of $$\mathcal S$$,  
-<center>$$\|v\|^2 = \langle v, \sum_j \alpha_j\phi_j\rangle = \sum \alpah_j^* \langle v, \phi_j \rangle = \sum_j |\alpha_j|^2$$</center>
+<center>$$\|v\|^2 = \langle v, \sum_j \alpha_j\phi_j\rangle = \sum \alpha_j^* \langle v, \phi_j \rangle = \sum_j |\alpha_j|^2$$</center>
 ##### **Bessel's inequality**  
 Let $$\mathcal S \subseteq \mathcal V$$ be the subspace spanned by the set of orthonormal vectors $${\phi_1, . . . , \phi_n}$$. For any $$v \in V$$
 <center>$$0 \le \sum_{j=1}^n |\langle v, \phi_j \rangle|^2 \le \|v\|^2$$</center>
