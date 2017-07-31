@@ -38,3 +38,4 @@ Reference:
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
 3. John M. Cioffi. (2007). *EE 379A Digital Communication: Signal Processing*. (https://www.stanford.edu/).
+4. John G. Proakis. (2008). *Digital Communications, Fifth Edition*. (New York: McGraw-Hill).
