@@ -19,7 +19,7 @@ For $$v \in \mathcal S, v = \sum_j \alpha_j \phi_j, {\phi_j}$$ orthonormal basis
 <center>$$\|v\|^2 = \langle v, \sum_j \alpha_j\phi_j\rangle = \sum_\alpah^*_j\langle v, \phi_j \rangle = \sum_j|\alpha_j|^2$$</center>
 ##### **Bessel's inequality**  
 Let $$\mathcal S \subseteq \mathcal V$$ be the subspace spanned by the set of orthonormal vectors $${\phi_1, . . . , \phi_n}$$. For any $$v \in V$$
-<centre>$$0 \le \sum_{j=1}^n |\langle v, \phi_j \rangle|^2 \le \|v\|^2</center>
+<centre>$$0 \le \sum_{j=1}^n |\langle v, \phi_j \rangle|^2 \le \|v\|^2$$</center>
 is the key to understanding the convergence of orthonormal expansions.
 ##### **LS error property**  
 $$v_{|s}$$ is the choice for s that yields the Least Square Error(LS) or Minimum Square Error(MSE).   
