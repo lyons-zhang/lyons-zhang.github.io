@@ -7,12 +7,13 @@ categories: Digital Communication
 > The use of orthonormal bases simplifies almost everything concerning inner product spaces, and for infinite-dimensional expansions, orthonormal bases are even more useful. Gram-Schmidt procedure starting from an arbitrary basis $${s_1, . . . , s_n}$$ for an n-dimensional inner product subspace $$\mathcal S$$, generates an orthonormal basis for $$\mathcal S$$. The infinite dimensional projection theorem can provide simple and intuitive proofs and interpretations of limiting arguments and the approximations suggested by those limits.
   
 ### **Finite-dimensional Projections**  
-Assume $$\mathcal V$$ is an inner product space, A vector $$\phi \in \mathcal V$$ is normalized if $$\|\phi\| = 1$$.
-The projection $$\hat v_{|\phi} = \langle v, \phi \rangle \phi \text{for} \|\phi\| = 1$$.   
+Assume $$\mathcal V$$ is an inner product space, A vector $$\phi \in \mathcal V$$ is normalized if $$\|\phi\| = 1$$.   
+The projection $$v_{|\phi} = \langle v, \phi \rangle \phi$$ for $$\|\phi\| = 1$$.   
 An orthonormal set $$\{\phi_j\}$$ is a set such that $$\langle \phi_j, \phi_k \rangle = \delta_{jk}$$.   
 If $$\{v_j\}$$ is orthogonal set, then $$\{\phi_j\}$$ is an orthonormal set where $$\phi_j = v_j/\|v_j\|$$.  
 ##### **Projection theorem**  
-Assume that $$\{\phi_1, . . . , \phi_n\}$$ is an orthonormal basis for an n-dimensional subspace $$\mathcal S \subset \mathcal V$$. For each $$v \in V$$, there is a unique $$v_{| \mathcal S} \in \mathcal S$$ such that $$\langle v - v_{| \mathcal S}, s \rangle = 0$$ for all $$s \in \mathcal S$$. Furthermore, $$v_{|s} = \sum_j \langle v, \phi_j \rangle \phi_j$$.   
+Assume that $$\{\phi_1, . . . , \phi_n\}$$ is an orthonormal basis for an n-dimensional subspace $$\mathcal S \subset \mathcal V$$. For each $$v \in V$$, there is a unique $$v_{| \mathcal S} \in \mathcal S$$ such that $$\langle v - v_{| \mathcal S}, s \rangle = 0$$ for all $$s \in \mathcal S$$. Furthermore, 
+<center>$$v_{|s} = \sum_j \langle v, \phi_j \rangle \phi_j$$</center>.   
 Proof outline:  Let $$v_{|S} = \sum_i \alpha_i\phi_i$$. Find the conditions on $$\alpha_1, . . . , \alpha_n$$ such that $$v − v_{|S}$$ is orthogonal to each $$\phi_i$$.  
 <center>$$0 = \langle v - \sum_i \alpha_i\phi_i, \phi_j \rangle = \langle v, \phi_j \rangle - \alpha_j$$</center>
 For $$v \in \mathcal S, v = \sum_j \alpha_j \phi_j, {\phi_j}$$ orthonormal basis of $$\mathcal S$$,  
@@ -34,7 +35,7 @@ The Gram-Schmidt algorithm gives a simple construction of the q's from the a's i
 ### **Orthonormal expansions in $$L^2$$**  
 For $$L^2$$, the projection theorem can be extended to a countably infinite dimension.
 ##### **Infinite-dimensional projection**  
-Let $$\{\phi_m, 1 \le m \lt \infty}$$ be a set of orthonormal functions, and let $$v$$ be any $$L^2$$ vector. Then there is a unique $$L^2$$ vector $$u$$ such that $$v − u$$ is orthogonal to each $$\phi_m$$ and
+Let $$\{\phi_m, 1 \le m \lt \infty\}$$ be a set of orthonormal functions, and let $$v$$ be any $$L^2$$ vector. Then there is a unique $$L^2$$ vector $$u$$ such that $$v − u$$ is orthogonal to each $$\phi_m$$ and
 <center>$$\lim\limits_{n \to \infty}\|u - \sum\limits_{m=1}^n\langle v, \phi_m \rangle \phi_m\| = 0$$</center>
 Outline of proof: Let $$\mathcal S_n$$ be subspace spanned by $$\phi_1, . . . , \phi_n$$.  
 <center>$$v_{|\mathcal S_n} = \sum\limits_{k=1}^n \alpha_k \phi_k = \sum\limits_{k=1}^n \langle v, \phi_k \rangle \phi_k$$</center>
