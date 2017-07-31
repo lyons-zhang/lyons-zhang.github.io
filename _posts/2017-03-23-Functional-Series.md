@@ -48,5 +48,5 @@ Let $$E$$ be a subset of $$\mathbb{R}$$, and let $$\{ f : E \rightarrow\mathbb{R
 Reference:
 
 1. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
-2. TATA57 Transform Theory. *Linköping University* (Sweden)
+2. TATA57 Transform Theory. *Linköping University* (Sweden: http://courses.mai.liu.se/GU/TATA57/)
 

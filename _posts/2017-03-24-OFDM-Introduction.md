@@ -17,6 +17,10 @@ categories: Digital Communication
 #### **Less-than-perfect**
 * OFDM is based on the use of rectangular pulses in the time domain, which leads to a slowly decaying behavior in the frequency domain, this makes OFDM unsuited for use in fragmented spectrum scenarios, where strict constraints on the out-of-band(OOB) levels are to be fulfilled.  
 
+
+to be continued
+
+
 Reference:
 
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
