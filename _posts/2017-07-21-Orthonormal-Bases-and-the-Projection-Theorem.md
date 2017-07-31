@@ -8,7 +8,7 @@ categories: Digital Communication
   
 ### **Finite-dimensional Projections**  
 Assume $$\mathcal V$$ is an inner product space, A vector $$\phi \in \mathcal V$$ is normalized if $$\|\phi\| = 1$$.
-The projection $$\hat v_{|\phi} = $$\langle v, \phi \rangle \phi$$ for $$\|\phi\| = 1$$.   
+The projection $$\hat v_{|\phi} = \langle v, \phi \rangle \phi \text{for} \|\phi\| = 1$$.   
 An orthonormal set $$\{\phi_j\}$$ is a set such that $$\langle \phi_j, \phi_k \rangle = \delta_{jk}$$.   
 If $$\{v_j\}$$ is orthogonal set, then $$\{\phi_j\}$$ is an orthonormal set where $$\phi_j = v_j/\|v_j\|$$.  
 ##### **Projection theorem**  
