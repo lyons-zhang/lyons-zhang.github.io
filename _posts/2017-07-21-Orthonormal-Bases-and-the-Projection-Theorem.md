@@ -40,7 +40,7 @@ Let $$\{\phi_m, 1 \le m \lt \infty\}$$ be a set of orthonormal functions, and le
 Outline of proof: Let $$\mathcal S_n$$ be subspace spanned by $$\phi_1, . . . , \phi_n$$.  
 <center>$$v_{|\mathcal S_n} = \sum\limits_{k=1}^n \alpha_k \phi_k = \sum\limits_{k=1}^n \langle v, \phi_k \rangle \phi_k$$</center>
 <center>$$\|v_{|\mathcal S_m} - v_{|\mathcal S_n}\|^2 = \sum\limits_{k=n}^m |\alpha_k|^2 \to 0$$</center> 
-$$v_{|\mathcal S_n}$$ forms a *Cauchy sequence*. By the *Riesz-Fischer theorem*($$L^2$$ waveforms has an $$L^2$$ limit), $$l.i.m. v_{\mathcal S_n} = u$$ exists.   
+$$v_{|\mathcal S_n}$$ forms a *Cauchy sequence*. By the *Riesz-Fischer theorem*($$L^2$$ waveforms has an $$L^2$$ limit), $$l.i.m. v_{\mathcal |S_n} = u$$ exists.   
 This shows that the fourier series converges in $$L^2$$.
 
 Reference:  
