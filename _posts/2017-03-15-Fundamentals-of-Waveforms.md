@@ -24,7 +24,14 @@ The energy in a real or complex waveform $$u(t)$$ is defined to be $$\int_{-\inf
 * Unit impulses and constant functions are not physical waveforms, they are useful models of physical waveforms where energy is not important. However, that such waveforms can safely be limited to the finite-energy class.  
 
 ### **Waveform Representation by Vectors**
-
+Considers the set of real-valued functions $$\{f(t)\}$$ such that $$\int_0^t f^2(t)dt < \infty$$ (technically known as the Hilbert space of continuous time functions and abbreviated as $$L^2[0, T]$$).   
+This infinite dimensional vector space has an inner product, which permits the measure of distances and angles between two different functions $$f(t)$$ and $$g(t)$$,
+<center>\langle f(t), g(t) \rangle = \int_0^T f(t) g^*(t) dt</center>
+Any "well-behaved" continuous time function $$x(t)$$ defined on the interval $$[0, T]$$ decomposes according to some set of $$N$$ orthonormal basis functions $$\{\phi_i(t)\}$$ as 
+<center>x(t) = \sum\limits_{n=1}^N x_n\cdot\phi_n(t)</center>
+Thus the function $$x(t)$$ maps to a set of $$N$$ numbers {xi}$$\bf{x} = [x_1, \cdots, x_n]$$.   
+The figure demonstrates the process of obtaining the vector equivalent from a signal (signal-to-vector mapping) and vice versa (vector-to-signal mapping).  
+![waveform]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201707/signal_vector.png){:.aligncenter} 
 
 Reference:
 
