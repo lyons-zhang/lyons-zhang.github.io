@@ -7,14 +7,14 @@ categories: Digital Communication
 >  I made the presentation to briefly introduce the digital communication to my colleagues. It's mainly from the reference doc.   
   
   
-I shared this PPT to my colleagues in Tieto Company.  
-
+I shared this PPT to my colleagues in Tieto Company.   
  
 [1. Source Coding Brief Introduction]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201708/SourceCoding.pdf){:.alignleft}   
- 
+   
+   
 [2. Fundamentals of Waveforms]({{ https://github.com/lyons-zhang/lyons-zhang.github.io}}/update/201708/Waveforms.pdf){:.alignleft}   
 
-    
+       
 
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)
