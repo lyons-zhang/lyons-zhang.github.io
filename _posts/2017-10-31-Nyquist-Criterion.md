@@ -33,13 +33,13 @@ Because of noise, we choose $$| \hat p(f)| = |\hat q(f)|$$. Since $$\hat g(f) = 
 <center>$$g(t) = \int p(\tau)q(t - \tau) d\tau = \int p(\tau)p^*(\tau - t) d\tau$$</center>
 For $$g(t)$$ ideal Nyquist, 
 <center>$$g(kT) = \int p(\tau) p^*(\tau - kT) d\tau = \left\{\eqalign{ &= 1 for k = 0 \\
-&= 0 for k \neq 0}</center>
+&= 0 for k \neq 0}$$</center>
 This means that $$\{p(t − kT); k \in \Bbb Z\}$$ is an orthogonal set of functions.   
-Since $$|\hat p(f)|^2 = \hat g(f)$$, $$p(t)$$ is often called square root of Nyquist.   
+Since $$|\hat p(f)|^2 = \hat g(f)$$, $$p(t)$$ is often called **square root of Nyquist**.   
 In vector terms, $$u(\tau)q(kT − \tau)d\tau$$ is the projection of $$u$$ on $$p(t−kT)$$. $$q(t)$$ is called the **matched filter** to p(t).
 
-
-   
+    
+       
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)
 2. Robert G.Gallager. (2009). *Principles of Digital Communication*. (New York: Cambridge University Press).  
