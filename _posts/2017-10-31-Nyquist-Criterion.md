@@ -28,7 +28,8 @@ The choice of $$\hat g(f)$$ involves a tradeoff between making $$\hat g(f)$$ smo
 The most widely used set of functions that satisfy the Nyquist Criterion are the **raised-cosine shapes**, which simply rounds off the step discontinuity in $$rect({f \over 2W_b})$$ in such a way as to maintain the Nyquist criterion while making $$\hat g(f)$$ continuous with a continuous derivitive, thus guaranteeing that $$g(t)$$ decays asympototically with $$1/t^3$$.
 ![BandEdgeSymmetry]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201708/BandEdgeSymmetry.png){:.aligncenter}    
 #### **Orthonormal shifts**
-Let $$p(t)$$ be an $$L^2$$ function such that $$\hat g(f) = |\hat p(f)|^2$$ satisfies the Nyquist criterion for $$T$$. Then $${p(t−kT); k \in \Bbb Z}$$ is a set of orthonormal functions. Conversely, if $${p(t−kT); k \in \Bbb Z}$$ is a set of orthonormal functions, then $$|\hat p(f)|^2$$ satisfies the Nyquist criterion.   
+**Orthonormal shifts** theorem : Let $$p(t)$$ be an $$L^2$$ function such that $$\hat g(f) = |\hat p(f)|^2$$ satisfies the Nyquist criterion for $$T$$. Then $${p(t−kT); k \in \Bbb Z}$$ is a set of orthonormal functions. Conversely, if $${p(t−kT); k \in \Bbb Z}$$ is a set of orthonormal functions, then $$|\hat p(f)|^2$$ satisfies the Nyquist criterion.   
+     
     
 Because of noise, we choose $$| \hat p(f)| = |\hat q(f)|$$. Since $$\hat g(f) = \hat p(f) \hat q(f)$$, this requires $$\hat q(f) = \hat pˆ∗(f)$$ and thus $$q(t) = p^*(−t)$$. This means that
 <center>$$g(t) = \int p(\tau)q(t - \tau) d\tau = \int p(\tau)p^*(\tau - t) d\tau$$</center>
