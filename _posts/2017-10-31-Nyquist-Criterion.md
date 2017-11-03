@@ -28,6 +28,17 @@ The choice of $$\hat g(f)$$ involves a tradeoff between making $$\hat g(f)$$ smo
 The most widely used set of functions that satisfy the Nyquist Criterion are the **raised-cosine shapes**, which simply rounds off the step discontinuity in $$rect({f \over 2W_b})$$ in such a way as to maintain the Nyquist criterion while making $$\hat g(f)$$ continuous with a continuous derivitive, thus guaranteeing that $$g(t)$$ decays asympototically with $$1/t^3$$.
 ![BandEdgeSymmetry]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201708/BandEdgeSymmetry.png){:.aligncenter}    
 #### **Orthonormal shifts**
+Let $$p(t)$$ be an $$L^2$$ function such that $$\hat g(f) = |\hat p(f)|^2$$ satisfies the Nyquist criterion for $$T$$. Then $${p(t−kT); k \in \mathcal Z}$$ is a set of orthonormal functions. Conversely, if $${p(t−kT); k \in \mathcal Z} is a set of orthonormal functions, then $$|\hat p(f)|^2$$ satisfies the Nyquist criterion.   
+Because of noise, we choose $$| \hat p(f)| = |\hat q(f)|$$. Since $$\hat g(f) = \hat p(f) \hat q(f)$$, this requires $$\hat q(f) = \hat pˆ∗(f)$$ and thus $$q(t) = p^*(−t)$$. This means that
+<center>$$g(t) = \int p(\tau)q(t - \tau) d\tau = \int p(\tau)p(\tau - t) d\tau$$</center>
+For $$g(t)$$ ideal Nyquist, 
+<center>$$g(kT) = \int p(\tau) p^*(\tau - kT) d\tau = \left\{\eqalign{ &= 1 for k = 0 \\
+&= 0 for k \neq 0}</center>
+This means that $$\{p(t − kT); k \in \mathcal Z\}$$ is an orthogonal set of functions.   
+Since $$|\hat p(f)|^2 = \hat g(f)$$, $$p(t)$$ is often called square root of Nyquist.   
+In vector terms, $$u(\tau)q(kT − \tau)d\tau$$ is the projection of $$u$$ on $$p(t−kT)$$. $$q(t)$$ is called the **matched filter** to p(t).
+
+
    
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)
