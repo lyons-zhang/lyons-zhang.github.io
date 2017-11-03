@@ -9,7 +9,7 @@ categories: Digital Communication
 ### **Ideal Nyquist waveform**    
 The demodulator first filters the received modulated waveform $$u(t) = \sum_k u_k p(t-kT)$$ using a filter with impulse response $$q(t)$$. It then samples the output at $$T$$-spaced sample times. That is, the received filtered waveform is   
 <center>$$r(t) = \int_{-\infty}^{\infty} u(\tau) q(t - \tau) d\tau = \int_{-\infty}^{\infty} \sum_k u_k p(\tau - kT) q(t - \tau) d\tau =  \sum_k u_k g(t - kT) \tag{*}$$</center>
-and the received samples are $$r(T), r(2T), . . . ,$$.
+where $$g(t) = p(t) * q(t)$$, and the received samples are $$r(T), r(2T), . . . ,$$.   
 There is **no intersymbol interference** if $$r(kT) = u_k$$ for each integer $$k$$, and from (*) this is satisfied if $$g(0) = 1$$ and $$g(kT) = 0$$ for each nonzero integer $$k$$.   
 A waveform $$g(t)$$ is **ideal Nyquist** with period $$T$$ if $$g(kT) = \delta(k)$$.  
 If $$g(t)$$ is ideal Nyquist, then $$r(kT) = u_k$$ for all $$k \in \Bbb Z$$. If $$g(t)$$ is not ideal Nyquist, then $$r(kT) \neq u_k$$ for some $$k$$ and choice of $${u_k}$$.   
