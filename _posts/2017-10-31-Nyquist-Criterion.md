@@ -1,5 +1,5 @@
 ---
-title: PAM and Its Carrier Transmission
+title: Nyquist Criterion
 description: PAM, The Nyquist criterion, FSK, PSK
 categories: Digital Communication
 ---
