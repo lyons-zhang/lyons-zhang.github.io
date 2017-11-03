@@ -33,8 +33,8 @@ Let $$p(t)$$ be an $$L^2$$ function such that $$\hat g(f) = |\hat p(f)|^2$$ sati
 Because of noise, we choose $$| \hat p(f)| = |\hat q(f)|$$. Since $$\hat g(f) = \hat p(f) \hat q(f)$$, this requires $$\hat q(f) = \hat pˆ∗(f)$$ and thus $$q(t) = p^*(−t)$$. This means that
 <center>$$g(t) = \int p(\tau)q(t - \tau) d\tau = \int p(\tau)p^*(\tau - t) d\tau$$</center>
 For $$g(t)$$ ideal Nyquist, 
-<center>$$g(kT) = \int p(\tau) p^*(\tau - kT) d\tau = \begin{cases} 1 & \text {for} k = 0 \\
-0 \text {for} k \neq 0 \end{cases}$$</center>
+<center>$$g(kT) = \int p(\tau) p^*(\tau - kT) d\tau = \begin{cases} 1 & \text { for } k = 0 \\
+0 & \text { for } k \neq 0 \end{cases}$$</center>
 This means that $$\{p(t − kT); k \in \Bbb Z\}$$ is an orthogonal set of functions.   
 Since $$|\hat p(f)|^2 = \hat g(f)$$, $$p(t)$$ is often called **square root of Nyquist**.   
 In vector terms, $$u(\tau)q(kT − \tau)d\tau$$ is the projection of $$u$$ on $$p(t−kT)$$. $$q(t)$$ is called the **matched filter** to p(t).
