@@ -39,6 +39,7 @@ The basis function can be any unit-energy function, but often is
 ![PAMSystem]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201708/PAMSystem.png){:.aligncenter}   
 Why choose a linear filter followed by sampling seems artificial:   
 when noise is added, that this all makes sense as a layered solution.   
+Later, when channel noise is added, the individual choice of $$p(t)$$ and $$q(t)$$ will become important, $$q(t) = p^*(-t)$$.   
 One PAM example is the 56 kbps voiceband modem.   
 
 
