@@ -35,7 +35,7 @@ The demodulator first filters the received waveform using a filter with impulse 
 <center>$$r(t) = \int_{-\infty}^{\infty} u(\tau) q(t - \tau) d\tau = \int_{-\infty}^{\infty} \sum_k u_k p(\tau - kT) q(t - \tau) d\tau =  \sum_k u_k g(t - kT)$$</center>
 where $$g(t) = p(t)*q(t)$$ and the received samples are $$r(T), r(2T), ...,$$.   
 The basis function can be any unit-energy function, but often is 
-<center>$$p(t) = q(t) = {1 /over \sqrt{T}} sinc ({t /over T})$$<\center>
+<center>$$p(t) = q(t) = {1 /over \sqrt{T}} sinc ({t /over T})$$</center>
 ![PAMSystem]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201708/PAMSystem.png){:.aligncenter}   
 Why choose a linear filter followed by sampling seems artificial:   
 when noise is added, that this all makes sense as a layered solution.   
