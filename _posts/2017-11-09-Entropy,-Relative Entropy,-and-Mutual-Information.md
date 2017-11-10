@@ -10,14 +10,13 @@ categories: Information Theorem
 The textbook is Chapter 2 of "Elements of Information Theory"[ref 1].
 [Entropy, Relative Entropy, and Mutual Information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Entropy, Relative Entropy, and Mutual Information.pdf){:.aligncenter}  
 ### **Supplementary**  
-<center>$$\eqalign { H(X, Y|Z) &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(x,y|z) \cr 
+##### **Chain rule**  
+$$\eqalign { H(X, Y|Z) &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(x,y|z) \cr 
 &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(x|z) - \sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(y|x,z) \cr 
 &= - \sum_{x \in \mathcal{X}}\sum_{z \in \mathcal{Z}} p(x,z) \log p(x|z) - \sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(y|x,z) \cr 
-&= H(X|Z) + H(Y|X,Z) }$$</center>
-$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)}$$
-$$P(Y|X,Z) = \frac{P(X,Y,Z)}{P(X,Z)}$$
-$$P(X|Z) = \frac{P(X,Z)}{P(Z)}$$
-$$P(Y|X,Z) P(X|Z)=\frac{P(X,Y,Z)}{P(X,Z)}\frac{P(X,Z)}{P(Z)}=\frac{P(X,Y,Z)}{P(Z)}=P(X,Y|Z)$$
+&= H(X|Z) + H(Y|X,Z) }$$   
+$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} \;\;\; P(Y|X,Z) = \frac{P(X,Y,Z)}{P(X,Z)} \;\;\; P(X|Z) = \frac{P(X,Z)}{P(Z)}$$   
+$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} = \frac{P(X,Y,Z)}{P(X,Z)}\frac{P(X,Z)}{P(Z)} = P(Y|X,Z) P(X|Z)$$   
     
        
 Reference:  
