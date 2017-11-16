@@ -15,11 +15,8 @@ $$\eqalign { H(X, Y|Z) &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_
 &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(x|z) - \sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(y|x,z) \cr 
 &= - \sum_{x \in \mathcal{X}}\sum_{z \in \mathcal{Z}} p(x,z) \log p(x|z) - \sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(y|x,z) \cr 
 &= H(X|Z) + H(Y|X,Z) }$$   
-   
-$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} \;\;\; P(Y|X,Z) = \frac{P(X,Y,Z)}{P(X,Z)} \;\;\; P(X|Z) = \frac{P(X,Z)}{P(Z)}$$   
-   
-$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} = \frac{P(X,Y,Z)}{P(X,Z)}\frac{P(X,Z)}{P(Z)} = P(Y|X,Z) P(X|Z)$$   
-   
+$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} \cr P(Y|X,Z) = \frac{P(X,Y,Z)}{P(X,Z)} \cr P(X|Z) = \frac{P(X,Z)}{P(Z)} \cr$$   
+$$P(X,Y|Z) = \frac{P(X,Y,Z)}{P(Z)} = \frac{P(X,Y,Z)}{P(X,Z)}\frac{P(X,Z)}{P(Z)} = P(Y|X,Z) P(X|Z) \cr$$   
 $$H(X_1, X_2, ... , Xn) = H(X_1) + \sum\limits_{i=2}^n H(X_i | X_{i-1}, ... , X_1)$$   
    
 ##### **Chain Rule for Conditional Entropy**  
