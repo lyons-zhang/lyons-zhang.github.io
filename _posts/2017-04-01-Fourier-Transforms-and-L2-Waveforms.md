@@ -16,7 +16,7 @@ Some book denote as $$\hat u(j\omega)$$, that's in the view of systems, for set 
 ##### **Eigenfunctions**  
 If the output signal $$O\{ x(t)\}$$ is a scalar $$\lambda$$ multiple of the input signal $$x(t)$$, we refer to the signal as an eigenfunction and the multiplier as the eigenvalue.  
 <center>$$O\{ x(t)\} =\lambda x(t)$$</center>  
-If $$x(t) = e^{st}$$ and $$h(t)$$ is the impulse response of LTI then $$O\{ e^{st}\} = (h*x)(t) = e^{st} \int_{-\infty}^{\infty} h(\tau)e^{-st} d\tau = H(s)e^{st}$$.  
+If $$x(t) = e^{st}$$ and $$h(t)$$ is the impulse response of LTI then $$O\{ e^{st}\} = (h*x)(t) = e^{st} \int_{-\infty}^{\infty} h(\tau)e^{-s\tau} d\tau = H(s)e^{st}$$.  
 Furthermore, the eigenvalue associated with $$e^{st}$$ is $$H(s)$$.  
 
 ### **A Few Standard Fourier Transform Pair**
