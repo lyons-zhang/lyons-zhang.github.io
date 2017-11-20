@@ -8,9 +8,11 @@ categories: Information Theory
   
 ### **Reading**    
 The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
-[Entropy, Relative Entropy, and Mutual Information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Channel Capacity.pdf){:.aligncenter}
+[Channel Capacity]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Channel Capacity.pdf){:.aligncenter}
 
 ### **Supplementary**  
+##### **Binary Erasure Channel**
+$$\eqalign { H(Y|X) = −\sum\limits_x P(X=x) \sum\limits_y P(Y|X=x)logP(Y|X=x) \cr &= −\sum\limits_x P(X=x)[\alpha log\alpha+(1−\alpha)log(1−\alpha)+0] \cr &= H(\alpha)$$   
 
     
     
