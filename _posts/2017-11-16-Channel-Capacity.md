@@ -12,6 +12,7 @@ The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
 
 ### **Supplementary**  
 ##### **Capacity of Binary Erasure Channel**  
+$$\eqalign{ H(Y|X) = -\sum\limits_x P(X=x) \sum\limits_y P(Y|X=x)logP(Y|X=x) \cr &= -\sum\limits_x P(X=x)[\alpha log\alpha+(1−\alpha)log(1−\alpha)+0] \cr &= H(\alpha)}$$   
 $$P(Y=0) = \pi(1−\alpha)$$   
 $$P(Y=1) = (1−\pi)(1−\alpha)$$   
 $$P(Y=lost) = \pi \alpha + (1 - \pi)\alpha = \alpha$$   
