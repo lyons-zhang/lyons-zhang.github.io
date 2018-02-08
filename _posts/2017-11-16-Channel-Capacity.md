@@ -22,7 +22,7 @@ Since $$P(Y = lost)$$ is independent of $$\pi$$, $$H(Y)$$ is maximum for $$\pi =
 ##### **Empirical Entropy**  
 Let $$\hat p$$ denote the empirical probability mass function corresponding to $$X_1, X_2, \ldots , X_n i.i.d. \~ p(x), x \in \mathcal{X}$$. Specifically,    
 $$\hat p(x) = \frac{1}{n}|\{ i \mid x_i = x\}| = \frac{1}{n} \sum_{i=1}^n \delta_x(x_i)$$    
-$$H(\hat{p}) = - \sum_{x \in \mathcal{X}} \hat{p}(x) \log \hat{p}(x) = - \sum_{x \in \mathcal{X}} \frac{1}{n} \sum_{i=1}^n \delta_x(x_i) \log \hat{p}(x) = -\frac{1}{n} \sum_{i=1}^n \log\hat{p}(x_i)$$.    
+$$\eqalign { H(\hat{p}) &= - \sum_{x \in \mathcal{X}} \hat{p}(x) \log \hat{p}(x) &= - \sum_{x \in \mathcal{X}} \frac{1}{n} \sum_{i=1}^n \delta_x(x_i) \log \hat{p}(x) &= -\frac{1}{n} \sum_{i=1}^n \log\hat{p}(x_i) }$$    
 From this we see that,   
 $$H(\hat{p}) = - \frac{1}{n} \log \hat{p}(x^n) ~~~~~ \( \hat{p}(x^n) = \prod_{i=1}^n \hat{p}(x_i) \)$$   
 
