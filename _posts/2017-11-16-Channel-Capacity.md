@@ -8,8 +8,8 @@ categories: Information Theory
   
 ### **Reading**    
 The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
-[Channel Capacity]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Channel Capacity.pdf){:.aligncenter}
-
+[Channel Capacity]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Channel Capacity.pdf){:.aligncenter}   
+[Channel Capacity]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/信道容量.pdf){:.aligncenter}   
 ### **Supplementary**  
 ##### **symmetric channel **
 A **permutation** (rearrangement) of a list is a list that contains each of the number exactly once, e.g., $$(2,4,3,5,1) \in perm 5$$.   
