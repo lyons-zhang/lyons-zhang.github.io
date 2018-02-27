@@ -7,7 +7,8 @@ categories: Information Theory
 >  For any probability distribution, we define a quantity called the **entropy**, which has many properties that agree with the intuitive notion of what a measure of information should be. **Mutual information** is a measure of the amount of information one random variable contains about another. Entropy then becomes the **self-information** of a random variable. Mutual information is a special case of a more general quantity called **relative entropy**, which is a measure of the distance between two probability distributions.  
   
 ### **Reading**    
-The textbook is Chapter 2 of "Elements of Information Theory"[ref 1].
+The textbook is Chapter 2 of "Elements of Information Theory"[ref 1].   
+
 [Entropy, Relative Entropy, and Mutual Information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Entropy, Relative Entropy, and Mutual Information.pdf){:.aligncenter}    
 [熵, 相对熵和互信息]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/熵、相对熵与互信息.pdf){:.aligncenter}  
 ### **Supplementary**  
