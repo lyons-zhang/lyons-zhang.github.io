@@ -11,6 +11,9 @@ The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
 [Channel Capacity]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Channel Capacity.pdf){:.aligncenter}
 
 ### **Supplementary**  
+##### **symmetric channel **
+A **permutation** (rearrangement) of a list is a list that contains each of the number exactly once, e.g., $$(2,4,3,5,1) \in perm 5$$.   
+All the rows and columns of symmetric channel transition matrix subject to the constraint $$\sum p_{i,j} = 1$$.   
 ##### **Capacity of Binary Erasure Channel**  
 $$\eqalign{ H(Y|X) &= -\sum\limits_x P(X=x) \sum\limits_y P(Y|X=x)logP(Y|X=x) \cr &= -\sum\limits_x P(X=x)[\alpha log\alpha+(1−\alpha)log(1−\alpha)+0] \cr &= H(\alpha)}$$   
 $$P(Y=0) = \pi(1−\alpha)$$   

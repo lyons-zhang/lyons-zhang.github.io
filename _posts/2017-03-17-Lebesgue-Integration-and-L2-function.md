@@ -11,7 +11,7 @@ The passage from Riemann's theory of integration to that of Lebesque is a proces
 
     I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.  
         
-        ————Lebesgue summarized his approach to integration in a letter to Paul Montel
+                  ————Lebesgue summarized his approach to integration in a letter to Paul Montel
 
 ![Lebesgue]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/Lebesgue.png){:.aligncenter}  
 Whenever the Riemann integral exists (i.e.,the limit exists), the Lebesgue integral also exists and has the same value.  

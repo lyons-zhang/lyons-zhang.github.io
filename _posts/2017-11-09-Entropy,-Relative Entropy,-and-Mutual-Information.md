@@ -8,7 +8,8 @@ categories: Information Theory
   
 ### **Reading**    
 The textbook is Chapter 2 of "Elements of Information Theory"[ref 1].
-[Entropy, Relative Entropy, and Mutual Information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Entropy, Relative Entropy, and Mutual Information.pdf){:.aligncenter}  
+[Entropy, Relative Entropy, and Mutual Information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/Entropy, Relative Entropy, and Mutual Information.pdf){:.aligncenter}    
+[熵, 相对熵和互信息]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/熵、相对熵与互信息.pdf){:.aligncenter}  
 ### **Supplementary**  
 ##### **Chain rule**  
 $$\eqalign { H(X, Y|Z) &= -\sum_{x \in \mathcal{X}}\sum_{y \in \mathcal{Y}}\sum_{z \in \mathcal{Z}} p(x,y,z) \log p(x,y|z) \cr 
