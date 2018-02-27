@@ -13,7 +13,7 @@ The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
 [信道容量]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/信道容量.pdf){:.aligncenter}   
 [A Note on Symmetric Discrete Memoryless Channels]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/A Note on Symmetric Discrete Memoryless Channels.pdf){:.aligncenter}   
 ### **Supplementary**   
-##### **symmetric channel**  
+##### **Symmetric Channel**  
 A **permutation** (rearrangement) $$\pi$$ is one-to-one and onto function   
 <center>$$\pi : \{1, \ldots , n\} → \{1, \ldots , n\}$$</center>
 It can be specified by the new values, e.g. $$(2,4,3,5,1)$$ specifies a permutation where $$\pi(1) = 2, \pi(2) = 4, \pi(3) = 3, \pi(4) = 5$$ and$$\pi(5) = 1$$.   
