@@ -36,16 +36,15 @@ $$\eqalign { H(\hat{p}) &= - \sum_{x \in \mathcal{X}} \hat{p}(x) \log \hat{p}(x)
 From this we see that,   
 $$H(\hat{p}) = - \frac{1}{n} \log \hat{p}(x^n) ~~~~~ \hat{p}(x^n) = \prod_{i=1}^n \hat{p}(x_i)$$   
 ##### **Jointly Typical**  
-**Theorem 7.6.1**: set $${\epsilon \over 3} \le {\sigma^2 \over {n \epsilon^2}$$ for $$n \to \infty$$.  
+**Theorem 7.6.1**: set $${\epsilon \over 3} \le {\sigma^2 \over {n \epsilon^2}}$$ for $$n \to \infty$$.  
 **7.49** is from the **7.37** directly.   
-$$
-\begin{align} 
+$$\begin{align} 
 Pr((\widetilde{X}^n, \widetilde{Y}^n) \in A_{\epsilon}^{(n)}(X,Y)) &= \sum\limits_{(\widetilde{x}^n, \widetilde{x}^n) \in A_{\epsilon}^{(n)}} p(\widetilde{x}^n)p(\widetilde{y}^n) \\ 
 &\le \sum\limits_{(\widetilde{x}^n, \widetilde{x}^n) \in A_{\epsilon}^{(n)}} 2^(-nH(X)-\epsilon)2^(-nH(Y)-\epsilon)  \\
 &= |A_{\epsilon}^{(n)}| 2^(-nH(X)-\epsilon)2^(-nH(Y)-\epsilon)  \\
 &\le 2^{n(H(X,Y)+\epsilon)}2^(-nH(X)-\epsilon)2^(-nH(Y)-\epsilon) \\
 &= 2^{-n(I(X;Y)-3\epsilon}
-\end{align}
+\end{align}$$
 
     
 Reference:  
