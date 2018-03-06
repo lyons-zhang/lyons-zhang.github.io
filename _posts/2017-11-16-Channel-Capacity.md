@@ -51,7 +51,7 @@ Pr((\tilde{X}^n, \tilde{Y}^n) \in A_{\epsilon}^{(n)}(X,Y))  \\
 \end{align}$$
    
 ##### **The Noisy-channel Coding Theorem**  
-The *code rate* R of a channel code is the proportion of the data-stream that is useful. That is, if the code rate is $$R = \log M/n$$, for every $$\log M$$ bits of useful information, the coder generates totally $$n$$ bits of data, of which $$n- \log M$$ are redundant.  
+The *code rate* R of a channel code is the proportion of the data-stream that is useful. That is, if the code rate is $$R = \log M/n$$, for every $$\log M$$ bits of useful information, the coder generates totally $$n$$ bits of data, of which $$n-\log M$$ are redundant.  
 A decoding function in 7.5: $$g : \mathcal{Y}_n \to \{1, 2, . . . , M\} \cup {fail}$$.
     
 Reference:  
