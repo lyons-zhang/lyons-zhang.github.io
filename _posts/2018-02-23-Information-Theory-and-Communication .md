@@ -15,7 +15,7 @@ The heart of the communication problem is **discrete** in nature: the transmitte
 In general, a channel is described not only by the input and output alphabets but also the probabilistic description of the outputs conditional on the inputs (the probabilistic description of the inputs is selected by the channel user).   
 However, it will be possible to simplify the model of uncertainty in the input data. As we have seen, the bit sequences produced by an optimal compressor have a uniform distribution (otherwise we could apply more compression to reduce the redundancy of the bits even further).   
 We receive a sequence of bits $$(B_1, B_2, ... , B_k)$$ from the compressor that is uniformly distributed on $$\{0,1\}^k$$. We enumerate over all possible messages and assign each sequence a number $$W$$:   
-<center>$$(B_1, B_2, ... , B_k) \to W, ~~~~\text{where} ~~W \in \{1, ... , 2^k\}$$</center>.   
+<center>$$(B_1, B_2, ... , B_k) \to W, ~~~~\text{where} ~~W \in \{1, ... , 2^k\}$$</center>  
 Probability of error $$p_e = P(\hat W \neq W)$$, rate $$R = k/n$$.   
 ![discrete_channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201803/discrete_channel.png){:.aligncenter}   
 
