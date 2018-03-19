@@ -6,7 +6,7 @@ categories: Information Theory
 
     The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point.  
         
-      <div align="right">————C. E. SHANNON</div>   
+      ————C. E. SHANNON{:.aligncenter}   
       
 >  The characterization of the channel capacity (the logarithm of the number of distinguishable signals) as the maximum mutual information is the central and most famous success of information theory.   
   
