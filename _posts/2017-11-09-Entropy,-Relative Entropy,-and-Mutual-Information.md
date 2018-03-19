@@ -37,15 +37,15 @@ The entropy of a random variable(rv) can be interpreted as the "information cont
 It can be easily shown that a discrete uniform distribution has the largest entropy. For instance, a uniform distribution on 4 discrete values has entropy $$H(X) = 2$$ *bits/symbol*, this is the same as $$b$$ for 4-level PAM.   
 The **differential entropy** of an analog rv can be negative and depends on the scaling of the outcomes.   
 The distribution with maximum differential entropy for a fixed variance $$\sigma^2$$ is *Gaussian*.   
-### **Conditional Entropy**   
+#### **Conditional Entropy**   
 The definition of **conditional entropy** $$H(Y|X)$$ is valid because conditioning $$Y$$ on $$X$$ moves us into a different probability space.   
 Remember that for any arbitrary function, $$E[f(X,Y)] = \sum_{x,y}p(x,y)f(x,y)$$, so probability distributions of conditional entropy is $$p(x,y)$$.   
 $$H(Y|X)$$ is a measure of, on average, how much extra information you get by observing a second variable $$Y$$, given that you have already observed the first variable $$X$$.   
 $$H(X|Y)$$ can be interpreted as the average amount of uncertainty left in $$X$$ after observing $$Y$$.   
-### **The Chain Rule for Entropy**   
+#### **The Chain Rule for Entropy**   
 Chain rules are important because we often encounter long chains of random variables, not just one or two.   
 The intuitive sense is, we observe a series of events, and each of them tells us a little bit more information.   
-### **Mutual Information**  
+#### **Mutual Information**  
 **Mutual information** define a measure of the information that $$Y$$ provides about $$X$$ when $$Y$$ is observed, but $$X$$ is not.   
 It can be intuitively understood as the information that $$Y$$ provides about $$X$$.   
 $$I(X; X) = H(X)$$ meaning that $$X$$ tells us everything about itself.   
