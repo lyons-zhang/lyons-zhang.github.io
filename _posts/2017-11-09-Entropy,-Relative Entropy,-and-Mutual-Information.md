@@ -56,6 +56,9 @@ It can be intuitively understood as the information that $$Y$$ provides about $$
 $$I(X; X) = H(X)$$ meaning that $$X$$ tells us everything about itself.   
 ![mutual_information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/mutual_information.png){:.aligncenter}   
 Mutual information is a non-negative quantity. Relative entropy is non-negative but not a metric.   
-    
+#### **Chain Rule for Mutual Information**  
+$$I(X; Y_1,Y_2) = I (X; Y_1) + I(X; Y_2|Y_1)$$, where $$I(X; Y_1,Y_2)$$ represents the amount of information $$Y_1$$ and $$Y_2$$ together give us about $$X$$, and $$I(X; Y_2|Y_1)$$ represents how much *more information* $$Y_2$$ gives us about $$X$$ given that we already know $$Y_1$$.   
+
+
 Reference:  
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
