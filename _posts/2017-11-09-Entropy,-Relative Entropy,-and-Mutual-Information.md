@@ -25,12 +25,17 @@ $$H(X_1, X_2, ... , Xn) = H(X_1) + \sum\limits_{i=2}^n H(X_i | X_{i-1}, ... , X_
    
 ##### **Chain Rule for Conditional Entropy**  
 $$\eqalign { H(X_1, X_2, ... , X_n | Y) &= H(X_1, X_2, ... , X_n, Y) − H(Y) \cr &= H((X_1, Y), X_2, ... , X_n) − H(Y) \cr &= H(X_1, Y) +\sum\limits_{i=2}^n H(X_i|X_1, ... ,X_{i−1}, Y) − H(Y) \cr &= H(X_1|Y) + \sum\limits_{i=2}^n H(X_i|X_1, ... ,X_{i−1}, Y) \cr &= \sum\limits_{i=1}^n H(X_i|X_1, ... ,X_{i−1}, Y) }$$   
-    
+   
+##### **Chain Rule for Mutual Information**  
+$$I(X; Y|Z) = H(X|Z) − H(X|Y,Z)$$   
+$$I(X; Y,Z) - I(X; Z) = ( H(X) − H(X|Y,Z) ) - ( H(X) − H(X|Z) ) = I(X; Y|Z)$$   
+$$I(X; Y,Z) = I(X; Z) + I(X; Y|Z) = I(X; Y) + I(X; Z|Y)$$   
+   
 ##### **Fano's inequality**   
 Binary entropy function: $$H(p) = −plog_2p − (1−p)log_2(1−p)$$   
 $$H(P_e)$$ in the 2.10 of [ref 1] is usually written as   
 $$H(P_e) = H_b(P_e) = -P_e log(P_e) - (1-P_e) log(1-P_e)$$
-    
+   
 ### **Information Measures: Entropy**  
 A concept generalizing the smallest expected number of input bits per symbol to an encoder, $$b$$, is the entropy.   
 The entropy of a random variable(rv) can be interpreted as the "information content", a measure of its "randomness" or "uncertainty".   
