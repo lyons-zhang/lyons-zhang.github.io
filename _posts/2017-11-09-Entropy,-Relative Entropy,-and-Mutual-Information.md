@@ -22,9 +22,6 @@ You have no idea, how much poetry there is in the calculation of a table of loga
 ### **Information Measures: Entropy**  
 Since messages are composed of sequences of symbols, it's important to be able to talk concretely about the average flow of information, this is called **entropy**.   
 <center>$$H(x) = \sum_{i=1}^N p(x_i)I(x_i) = -\sum_{i=1}^N p(x_i)\log p(x_i)$$</center>
-**Prime number theorem**:
-Let $$\pi(x)$$ be the prime-counting function that gives the number of primes less than or equal to $$x$$, for any real number $$x$$.   
-![prime_number]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/prime_number.png){:.aligncenter}   
 A concept generalizing the smallest expected number of input bits per symbol to an encoder, $$b$$, is the entropy.   
 The entropy of a random variable(rv) can be interpreted as the "information content", a measure of its "randomness" or "uncertainty".   
 It can be easily shown that a discrete uniform distribution has the largest entropy. For instance, a uniform distribution on 4 discrete values has entropy $$H(X) = 2$$ *bits/symbol*, this is the same as $$b$$ for 4-level PAM.   
