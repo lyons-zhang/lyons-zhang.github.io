@@ -16,9 +16,9 @@ The textbook is Chapter 7 of "Elements of Information Theory"[ref 1].
 ##### **Symmetric Channel**  
 A **permutation** (rearrangement) $$\pi$$ is one-to-one and onto function   
 <center>$$\pi : \{1, \ldots , n\} → \{1, \ldots , n\}$$</center>
-It can be specified by the new values, e.g. $$(2,4,3,5,1)$$ specifies a permutation where $$\pi(1) = 2, \pi(2) = 4, \pi(3) = 3, \pi(4) = 5$$ and$$\pi(5) = 1$$.   
+It can be specified by the new values, e.g. $$(2,4,3,5,1)$$ specifies a permutation where $$\pi(1) = 2, \pi(2) = 4, \pi(3) = 3, \pi(4) = 5$$ and $$\pi(5) = 1$$.   
 **Inverse permutation** $$\pi^{-1}$$: $$\pi \circ \pi^{-1} = id, id(i) = i, \forall i \in \{1, \ldots , n\}$$.   
-There are $$n!$$ permutations of n elements. That’s too many to generate them by numbering them all and choosing one at random. Random permutations are quite useful in randomized algorithms.   
+There are $$n!$$ permutations of $$n$$ elements. That’s too many to generate them by numbering them all and choosing one at random. Random permutations are quite useful in randomized algorithms.   
 For a symmetric channel, we have that $$H(Y|X = x) = H(r)$$ is constant for all $$x \in \mathcal{X}$$.
 $$I(X;Y) = H(Y) - H(Y|X) = H(Y) − \sum_x H(Y|X = x)p(x) = H(Y)- H(r) \sum_x p(x) = H(Y) - H(r)$$.    
      
