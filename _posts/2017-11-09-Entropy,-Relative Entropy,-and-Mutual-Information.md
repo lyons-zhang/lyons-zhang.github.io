@@ -8,11 +8,7 @@ categories: Information Theory
    
 ### **What Is Information**  
 Secrets are worth far more than silver or sapphires.  ----*Game of Thrones*  
-Transform this into a mathematical statement, consider $$N$$ possible events $$x_i, i = 1, 2, ... , N$$, the goal is find a function $$I(x_i)$$ that represents the amount of information.   periments are conducted, assume that the two trials are i
-$$(4) I(x_i \cap x_j) = I(x_i) + I(x_j)$$   
-Combining $$(1)~(4)$$, there is one and only one probability for $$I(x_i)$$:   
-<center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>  
-You have no idea, how much poetry there is in the calculation of a table of logarithms!  -- Gauss   
+Transform this into a mathematical statement, consider $$N$$ possible events $$x_i, i = 1, 2, ... , N$$, the goal is find a function $$I(x_i)$$ that represents the amount of information.   
 $$(1) p(x_i) = p(x_j) \Rightarrow I(x_i) = I(x_j)$$   
 $$(2) p(x_i) < p(x_j) \Rightarrow I(x_i) > I(x_j)$$   
 $$(3) p(x_i) = 1 \Rightarrow I(x_i) = 0$$   
