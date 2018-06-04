@@ -8,7 +8,11 @@ categories: Information Theory
    
 ### **What Is Information**  
 Secrets are worth far more than silver or sapphires.  ----*Game of Thrones*  
-Transform this into a mathematical statement, consider $$N$$ possible events $$x_i, i = 1, 2, ... , N$$, the goal is find a function $$I(x_i)$$ that represents the amount of information.   
+Transform this into a mathematical statement, consider $$N$$ possible events $$x_i, i = 1, 2, ... , N$$, the goal is find a function $$I(x_i)$$ that represents the amount of information.   periments are conducted, assume that the two trials are i
+$$(4) I(x_i \cap x_j) = I(x_i) + I(x_j)$$   
+Combining $$(1)~(4)$$, there is one and only one probability for $$I(x_i)$$:   
+<center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>  
+You have no idea, how much poetry there is in the calculation of a table of logarithms!  -- Gauss
 $$(1) p(x_i) = p(x_j) \Rightarrow I(x_i) = I(x_j)$$   
 $$(2) p(x_i) < p(x_j) \Rightarrow I(x_i) > I(x_j)$$   
 $$(3) p(x_i) = 1 \Rightarrow I(x_i) = 0$$   
@@ -17,8 +21,11 @@ Two events are defined to be independent if $$p(x_i \cap x_j) = p(x_i)p(x_j)$$.
 Consider a series of experiments are conducted, assume that the two trials are independent of each other. Intuitively, it seems reasonable that if $$x_i$$ occurs at one trial and $$x_j$$ occurs at the next, then the total information in the two trials should be the sum of the information conveyed by receipt of $$x_i$$ and $$x_j$$. That is,   
 $$(4) I(x_i \cap x_j) = I(x_i) + I(x_j)$$   
 Combining $$(1)~(4)$$, there is one and only one probability for $$I(x_i)$$:   
-<center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>  
-You have no idea, how much poetry there is in the calculation of a table of logarithms!  -- Gauss
+<center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>
+You have no idea, how much poetry there is in the calculation of a table of logarithms!  ---- *Gauss*
+**Prime number theorem**:
+Let $$\pi(x)$$ be the prime-counting function that gives the number of primes less than or equal to $$x$$, for any real number $$x$$.   
+![prime_number]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/prime_number.png){:.aligncenter}  
 ### **Information Measures: Entropy**  
 Since messages are composed of sequences of symbols, it's important to be able to talk concretely about the average flow of information, this is called **entropy**.   
 <center>$$H(x) = \sum_{i=1}^N p(x_i)I(x_i) = -\sum_{i=1}^N p(x_i)\log p(x_i)$$</center>
