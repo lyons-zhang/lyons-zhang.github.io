@@ -18,7 +18,7 @@ Consider a series of experiments are conducted, assume that the two trials are i
 $$(4) I(x_i \cap x_j) = I(x_i) + I(x_j)$$   
 Combining $$(1)\~(4)$$, there is one and only one probability for $$I(x_i)$$:   
 <center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>
-You have no idea, how much poetry there is in the calculation of a table of logarithms!  ---- *Gauss*
+You have no idea, how much poetry there is in the calculation of a table of logarithms!  ---- *Gauss*   
 **Prime number theorem**:
 Let $$\pi(x)$$ be the prime-counting function that gives the number of primes less than or equal to $$x$$, for any real number $$x$$.   
 ![prime_number]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/prime_number.png){:.aligncenter}  
