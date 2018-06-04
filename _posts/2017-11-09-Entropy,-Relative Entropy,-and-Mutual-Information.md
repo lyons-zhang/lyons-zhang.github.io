@@ -17,7 +17,7 @@ Two events are defined to be independent if $$p(x_i \cap x_j) = p(x_i)p(x_j)$$.
 Consider a series of experiments are conducted, assume that the two trials are independent of each other. Intuitively, it seems reasonable that if $$x_i$$ occurs at one trial and $$x_j$$ occurs at the next, then the total information in the two trials should be the sum of the information conveyed by receipt of $$x_i$$ and $$x_j$$. That is,   
 $$(4) I(x_i \cap x_j) = I(x_i) + I(x_j)$$   
 Combining $$(1)-(4)$$, there is one and only one probability for $$I(x_i)$$:   
-<center>$$I(x_i) = \log ({1 \over p(x_i)} = -\log p(x_i)$$</center>  
+<center>$$I(x_i) = \log ({1 \over p(x_i)}) = -\log p(x_i)$$</center>  
 You have no idea, how much poetry there is in the calculation of a table of logarithms!  -- Gauss
 ### **Information Measures: Entropy**  
 Since messages are composed of sequences of symbols, it's important to be able to talk concretely about the average flow of information, this is called **entropy**.   
