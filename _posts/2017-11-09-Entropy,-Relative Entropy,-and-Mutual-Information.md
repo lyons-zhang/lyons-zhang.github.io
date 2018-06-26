@@ -33,6 +33,7 @@ The distribution with maximum differential entropy for a fixed variance $$\sigma
 #### **Conditional Entropy**   
 The definition of **conditional entropy** $$H(Y|X)$$ is valid because conditioning $$Y$$ on $$X$$ moves us into a different probability space.   
 Remember that for any arbitrary function, $$E[f(X,Y)] = \sum_{x,y}p(x,y)f(x,y)$$, so probability distributions of conditional entropy is $$p(x,y)$$.   
+<center>$$\begin{align} H(Y|X) &= \sum_{x \in \mathcal{X}} p(x)H(Y|X=x) &= -\sum_{x \in \mathcal{X}} p(x) \sum_{y \in \mathcal{Y}} p(y|x)log p(y|x) &= --\sum_{x \in \mathcal{X}} p(x,y)log p(y|x) &= -E \log p(Y|X) \end{align}$$</center>
 $$H(X|Y)$$ can be interpreted as the average amount of uncertainty left in $$X$$ after observing $$Y$$.   
 #### **The Chain Rule for Entropy**   
 Chain rules are important because we often encounter long chains of random variables, not just one or two.   
