@@ -83,4 +83,4 @@ $$H(P_e) = H_b(P_e) = -P_e log(P_e) - (1-P_e) log(1-P_e)$$
 
 Reference:  
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
-2. Natasha Devroye. *ECE 534: Elements of Information Theory*. University of Illinois at Chicago ECE 534, Fall 2009, Natasha Devroye
+2. Natasha Devroye. *ECE 534: Elements of Information Theory*. University of Illinois at Chicago. https://www.ece.uic.edu/ECE534 .
