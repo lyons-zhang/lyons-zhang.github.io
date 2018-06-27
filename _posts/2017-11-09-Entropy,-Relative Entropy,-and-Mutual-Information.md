@@ -38,13 +38,12 @@ $$H(X|Y)$$ can be interpreted as the average amount of uncertainty left in $$X$$
 #### **The Chain Rule for Entropy**   
 Chain rules are important because we often encounter long chains of random variables, not just one or two.   
 The intuitive sense is, we observe a series of events, and each of them tells us a little bit more information.   
-From the product rule for probabilities, we obtain: $$\log {1 \over p(x,y)} = \log {1 \over p(x)} + \log {1 \over {p(y|x)}}$$, So   
-$$h(x,y) = h(x) + h(y|x)$$   
+From the product rule for probabilities, we obtain: $$\log {1 \over p(x,y)} = \log {1 \over p(x)} + \log {1 \over {p(y|x)}}$$, so $$h(x,y) = h(x) + h(y|x)$$.   
 ![prime_number]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/chain_rule.png){:.aligncenter}  
 ### **Mutual Information**  
 **Mutual information** define a measure of the information that $$Y$$ provides about $$X$$ when $$Y$$ is observed, but $$X$$ is not.   
 It can be intuitively understood as the information that $$Y$$ provides about $$X$$.    
-<center>$$\begin{align} I(X;Y) &= \sum_{x \in \mathcal{X}} \sum_{y \in \mathcal{Y}} p(x,y) \log {p(x,y) \over {p(x)p(y)}} &= E_{p(x,y)} \log {p(X,Y) \over p(X)p(Y)} \end{align}$$</center>
+<center>$$I(X;Y) = \sum_{x \in \mathcal{X}} \sum_{y \in \mathcal{Y}} p(x,y) \log {p(x,y) \over {p(x)p(y)}} = E_{p(x,y)} \log {p(X,Y) \over p(X)p(Y)}$$</center>
 <center>$$I(X;Y) = H(X) + H(Y) − H(X,Y) = H(X) − H(X|Y)= H(Y) − H(Y|X)$$</center>   
 $$I(X; X) = H(X)$$ meaning that $$X$$ tells us everything about itself.   
 ![mutual_information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/mutual_information.png){:.aligncenter}   
