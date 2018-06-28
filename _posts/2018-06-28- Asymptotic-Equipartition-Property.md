@@ -6,7 +6,7 @@ categories: Information Theory
 
 >  The asymptotic equiparitition property (AEP) is central in information theory and is the consequence of the law of large numbers.   
   
-#### **Types of Convergence**    
+### **Types of Convergence**    
 A random variable is: a mapping from its set of sample values $$\Omega$$ onto $$\cal R$$.   
 <center>$$X : \Omega \to \cal R$$</center>
 <center>$$~~~~~ \xi \to X(\xi)$$</center>    
