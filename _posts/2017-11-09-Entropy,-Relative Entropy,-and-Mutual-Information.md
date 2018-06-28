@@ -39,7 +39,7 @@ $$H(X|Y)$$ can be interpreted as the average amount of uncertainty left in $$X$$
 Chain rules are important because we often encounter long chains of random variables, not just one or two.   
 The intuitive sense is, we observe a series of events, and each of them tells us a little bit more information.   
 From the product rule for probabilities, we obtain: $$\log {1 \over p(x,y)} = \log {1 \over p(x)} + \log {1 \over {p(y|x)}}$$, so $$h(x,y) = h(x) + h(y|x)$$.   
-![prime_number]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/chain_rule.png){:.aligncenter}  
+![chain_rule]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/chain_rule.png){:.aligncenter}  
 ### **Mutual Information**  
 **Mutual information** define a measure of the information that $$Y$$ provides about $$X$$ when $$Y$$ is observed, but $$X$$ is not.   
 It can be intuitively understood as the information that $$Y$$ provides about $$X$$.    
@@ -50,9 +50,9 @@ $$I(X; X) = H(X)$$ meaning that $$X$$ tells us everything about itself.
 Mutual information is a non-negative quantity. Relative entropy is non-negative but not a metric.   
 #### **Chain Rule for Mutual Information**  
 ##### **Conditional Mutual Information**  
-![mutual_information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/conditional_mutual_inf.png){:.aligncenter}   
+![conditional_mutual_inf]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/conditional_mutual_inf.png){:.aligncenter}   
 ##### **Chain Rule for Mutual Information** 
-![mutual_information]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/chain_mutual_inf.png){:.aligncenter}   
+![chain_mutual_inf]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201711/chain_mutual_inf.png){:.aligncenter}   
 $$I(X; Y_1,Y_2) = I (X; Y_1) + I(X; Y_2|Y_1)$$, where $$I(X; Y_1,Y_2)$$ represents the amount of information $$Y_1$$ and $$Y_2$$ together give us about $$X$$, and $$I(X; Y_2|Y_1)$$ represents how much *more information* $$Y_2$$ gives us about $$X$$ given that we already know $$Y_1$$.   
 ### **Supplementary of the Reading**    
 The textbook is Chapter 2 of "Elements of Information Theory"[ref 1].    
