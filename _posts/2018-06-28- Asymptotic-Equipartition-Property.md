@@ -19,11 +19,12 @@ Also called *convergence with probability 1*, the random sequence converges a.s.
 The sequence converges in probability to $$X$$ if $$\forall \epsilon > 0, \lim_{n \to \infty} P_r (|X_n - X| > \epsilon) \to 0$$.
 ##### **Convergence in Distribution**  
 The sequence converges in distribution if the cumulative *distribution function* $$F_n(x) = P_r(X_n \le x)$$ satisfies $$\lim_{n \to \infty} F_n(x) \to F_X(x)$$ at all $$x$$ for which $$F$$ is continuous.   
+   
 Venn diagram of relations among types of convergence:   
 ![type_convergence]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201806/type_convergence.png){:.aligncenter} 
 #### **Weak Law of Large Numbers**    
-$$X_1, X_2, . . . $$ are i.i.d, finite mean $$\mu$$ and variance $$\sigma^2$$, then $$A_X^n \to \mu$$ **in probability**.   
-<center>$$A_X^n = {X_1 + ... + X_n \over n}, Pr(|A_X^n − \mu| \ge \epsilon) \le {\sigma^2 \over {n\epsilon^2}}$$</center>
+$$X_1, X_2, . . . $$ are i.i.d, finite mean $$\mu$$ and variance $$\sigma^2$$, then $$A_X^n \to \mu$$ **in probability**, where $$A_X^n = {X_1 + ... + X_n \over n}$$   
+<center>$$Pr(|A_X^n − \mu| \ge \epsilon) \le {\sigma^2 \over {n\epsilon^2}}$$</center>
 #### **Strong Law of Large Numbers**    
 If $$X_i$$ are i.i.d, and $$E_X (|X|) < \infty$$, then
 <center>$$P_r(\lim_{n \to \infty} A_X^n = \mu) = 1$$</center>  
