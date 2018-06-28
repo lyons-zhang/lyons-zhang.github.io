@@ -25,18 +25,21 @@ Venn diagram of relations among types of convergence:
 $$X_1, X_2, . . . $$ are i.i.d, finite mean $$\mu$$ and variance $$\sigma^2$$, then $$A_X^n \to \mu$$ **in probability**.   
 <center>$$A_X^n = {X_1 + ... + X_n \over n}, Pr(|A_X^n − \mu| \ge \epsilon) \le {\sigma^2 \over {n\epsilon^2}}$$</center>
 #### **Strong Law of Large Numbers**    
-If $$X_i$$ are i.i.d, and $$E_X (|X|]) < \infty$$, then
+If $$X_i$$ are i.i.d, and $$E_X (|X|) < \infty$$, then
 <center>$$P_r(\lim_{n \to \infty} A_X^n = \mu) = 1$$</center>  
 The difference between Strong and Weak lies in the limiting behavior of an infinite sequence of rv’s, but this difference is **not relevant** here.   
 ### **Strong versus Weak Typicality Intuition**    
 $$\cal X = \{\clubsuit, \diamondsuit, \heartsuit, \spadesuit\}$$ with pmf $$p_X = (0.5, 0.25, 0.125, 0.125) \Rightarrow H(x) = H(0.5,0.25,0.125,0.125) = 1.75$$ bit.   
 E.g. Sample sequence consisting of eight i.i.d samples:    
 * Strongly typical: all sequence with correct proportions   
-  $$\clubsuit\clubsuit\clubsuit\clubsuit\diamondsuit\diamondsuit\heartsuit\spadesuit \Rightarrow -\log p(x) = 14 = 8H(x)$$.
+  $$\clubsuit\clubsuit\clubsuit\clubsuit\diamondsuit\diamondsuit\heartsuit\spadesuit \Rightarrow -\log p(x) = 14 = 8H(x)$$.   
+  
 * Not typical at all: $$-\log p(x) \neq nH(x)$$   
-  $$\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit \Rightarrow -\log p(x) = 24 \neq 8H(x)$$.
+  $$\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit\spadesuit \Rightarrow -\log p(x) = 24 \neq 8H(x)$$.   
+  
 * Weekly typical: $$-\log p(x) = nH(x)$$   
   $$\clubsuit\clubsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit \Rightarrow -\log p(x) = 14 = 8H(x)$$.   
+  
 ### **Strong versus Weak Typicality Intuition**    
 
   
