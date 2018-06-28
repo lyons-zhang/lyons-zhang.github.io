@@ -22,7 +22,7 @@ The sequence converges in distribution if the cumulative *distribution function*
 Venn diagram of relations among types of convergence:   
 ![type_convergence]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201806/type_convergence.png){:.aligncenter} 
 #### **Weak Law of Large Numbers**    
-$$X1, X2, . . . $$i.i.d. finite mean $$\mu$$ and variance $$\sigma^2$$, then $$A_X^n \to \mu$$ **in probability**.   
+$$X_1, X_2, . . . $$ are i.i.d, finite mean $$\mu$$ and variance $$\sigma^2$$, then $$A_X^n \to \mu$$ **in probability**.   
 <center>$$A_X^n = {X_1 + ... + X_n \over n}, Pr(|A_X^n − \mu| \ge \epsilon) \le {\sigma^2 \over {n\epsilon^2}}$$</center>
 #### **Strong Law of Large Numbers**    
 If $$X_i$$ are i.i.d, and $$E_X (|X|]) < \infty$$, then
