@@ -20,10 +20,10 @@ I shared this PPT to my colleagues in Tieto Company.
    
 Reference:  
 1. Robert Gallager. (2006). *6.450 Digital Communication*. MIT OpenCourseWare (http://ocw.mit.edu/)
-2. Robert G.Gallager. (2009). *Principles of Digital Communication*. (New York: Cambridge University Press).  
+2. Robert G.Gallager. (2009). *Principles of Digital Communication*. (Cambridge University Press).  
 3. Gilbert Strang. (2007 ). *Computational Science and Engineering*. (Wellesley-Cambridge Press).
 4. John M. Cioffi. (2007). *EE 379A Digital Communication: Signal Processing*. (https://www.stanford.edu/).
-5. John G. Proakis. (2008). *Digital Communications, Fifth Edition*. (New York: McGraw-Hill).
-6. Bernard Sklar. (2017). *Digital Communications: Fundamentals and Applications, Second Edition*. (New Jersey: Prentice Hall P T R).
+5. John G. Proakis. (2008). *Digital Communications, Fifth Edition*. (McGraw-Hill).
+6. Bernard Sklar. (2017). *Digital Communications: Fundamentals and Applications, Second Edition*. (Prentice Hall).
 7. Ha H. Nguyen and Ed Shwedyk. (2009). *A First Course in Digital Communications*. (Cambridge University Press).
 8. M. Rice. (2009). *Digital Communications - A Discrete-Time Approach*. (Prentice-Hall).
