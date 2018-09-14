@@ -4,14 +4,13 @@ description:
 categories: Digital Comunication
 ---
 
->  There is no fundamental difference between coding and modulation. Channel coding can be partitioned into waveform coding(modulate) and structured sequence. In a narrow sense, the generation of sequences is usually called **channel coding** or just **coding**.
+>  With the development of polar codes in 2008 by Erdal Arıkan, the search of computationally efficient capacity achieving codes came to an end, as these codes achieve capacity while having encoding and decoding complexities of $$O(n \log n)$$, where $$n$$ is the block length.
   
 
-### **Types of Convergence**    
-A random variable is: a mapping from its set of sample values $$\Omega$$ onto $$\cal R$$.   
-<center>$$X : \Omega \to \cal R$$</center>
-<center>$$~~~~~ \xi \to X(\xi)$$</center>    
-In the cases we have been discussing, $$\Omega = \cal X$$ and we map onto $$[0,1]$$.
+#### **The channel**    
+Let $$W : X \to Y$$ be a binary-input discrete memoryless channel
+![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.alignleft} 
+
 ##### **Sure Convergence**  
 A random sequence $$X_1, . . .$$ converges surely to r.v. $$X$$ if $$\forall \xi \in \Omega$$ the sequence $$X_n(\xi)$$ converges to $$X(\xi)$$ as $$n \to \infty$$.   
 ##### **Almost Sure convergence**  
