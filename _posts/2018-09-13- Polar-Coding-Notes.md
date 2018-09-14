@@ -9,8 +9,8 @@ categories: Digital Comunication
 
 #### **The channel**    
 Let $$W : X \to Y$$ be a binary-input discrete memoryless channel
-![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.alignleft} 
-
+![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.alignleft}   
+   
 ##### **Sure Convergence**  
 A random sequence $$X_1, . . .$$ converges surely to r.v. $$X$$ if $$\forall \xi \in \Omega$$ the sequence $$X_n(\xi)$$ converges to $$X(\xi)$$ as $$n \to \infty$$.   
 ##### **Almost Sure convergence**  
