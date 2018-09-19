@@ -12,9 +12,9 @@ Let $$W : X \to Y$$ be a binary-input discrete memoryless channel,
   
 ![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.aligncenter}  
   
-- Input alphabet: $$\cal X = \{0, 1\}$$  
-- Output alphabet: $$\cal Y$$  
-- Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$    
+Input alphabet: $$\cal X = \{0, 1\}$$,  
+Output alphabet: $$\cal Y$$,  
+Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$.  
   
 #### **Bhattacharyya parameter**  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
