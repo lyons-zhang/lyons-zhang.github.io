@@ -10,7 +10,7 @@ categories: Digital Comunication
 #### **The channel**    
 Let $$W : X \to Y$$ be a binary-input discrete memoryless channel  
   
-![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.alignleft}  
+![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg)  
    
 - Input alphabet: $$\cal X = \{0, 1\}$$  
 - Output alphabet: $$\cal Y$$  
@@ -32,7 +32,7 @@ where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
 For this reason, a sequence of codes of increasing blocklength $$N$$ and constant distance $$d$$ (i.e., ‘very bad’ distance) cannot have a block error probability that tends to zero, on any binary symmetric channel.   
    
-![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg){:.alignleft}  
+![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg)  
   
 Distance isn’t everything!   
 
