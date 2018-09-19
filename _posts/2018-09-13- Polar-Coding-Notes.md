@@ -8,15 +8,16 @@ categories: Digital Comunication
   
 
 #### **The channel**    
-Let $$W : X \to Y$$ be a binary-input discrete memoryless channel  
+Let $$W : X \to Y$$ be a binary-input discrete memoryless channel,  
   
 <center>![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg)</center>  
   
 - Input alphabet: $$\cal X = \{0, 1\}$$  
 - Output alphabet: $$\cal Y$$  
-- Transition probabilities: $$W(y\,|\,x) , {x \in \mathcal{X}} , {y \in \mathcal{Y}}$$  
+- Transition probabilities: $$W(y\|x), x \in \mathcal X, y \in \mathcal Y$$  
   
 #### **Bhattacharyya parameter**  
+$$W(y|x) , x \in \cal X , y \in \cal Y$$  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
 Bit flips matter only in places where the two codewords differ. The error probability is dominated by the probability that $$d/2$$ of these bits are flipped. What happens to the other bits is irrelevant, since the optimal decoder ignores them.   
