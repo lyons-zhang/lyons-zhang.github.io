@@ -10,7 +10,7 @@ categories: Digital Comunication
 #### **The channel**    
 Let $$W : X \to Y$$ be a binary-input discrete memoryless channel  
   
-![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg)  
+<center>![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg)</center>  
   
 - Input alphabet: $$\cal X = \{0, 1\}$$  
 - Output alphabet: $$\cal Y$$  
@@ -26,8 +26,8 @@ From **Stirling’s approximation**,
 So,   
 <center>$$P(\text{block error}) \approx {[f^{1/2}(1-f)^{1/2}]}^d \equiv {[\beta(f)]}^d$$</center>  
 where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel.   
-   
-![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg)  
+  
+<center>![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg)</center>  
   
 Distance isn’t everything!   
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
