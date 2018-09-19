@@ -13,19 +13,19 @@ Let $$W : X \to Y$$ be a binary-input discrete memoryless channel
    
  - Input alphabet: $$\cal X = \{0, 1\}$$  
  - Output alphabet: $$\cal Y$$  
- - Transition probabilities: $$W(y|x), x \in \cal X, y \in \cal Y$$   
+ - Transition probabilities: $$W(y|x), x \in {\cal X}, y \in {\cal Y}$$   
   
 ##### **Bhattacharyya parameter**  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
 Bit flips matter only in places where the two codewords differ. The error probability is dominated by the probability that $$d/2$$ of these bits are flipped. What happens to the other bits is irrelevant, since the optimal decoder ignores them.   
-<center>$$P(block error) \approx \Big{(} d \up {d/2} \Big{)} f^{d/2}(1-f)^{d/2]$$</center>   
+<center>$$P(block error) \approx \dbinom{d}{d/2} f^{d/2}(1-f)^{d/2} \;\;\; (*binomial distribution*)$$</center>   
 From **Stirling’s approximation**,   
-<center>$$\Big{(} N \up r \Big{)} \approx 2^{Nh_b(r/N)}$$</center>   
+<center>$$x! \approx x^x e^{-x}, \dbinom{N}{r} \approx 2^{NH_b(r/N)}$$</center>   
 So,   
-<center>$$P(block error) \approx [f^{1/2}(1-f)^{1/2]^d \equiv [\beta(f)]^d$$</center>  
+<center>$$P(block error) \approx [f^{1/2}(1-f)^{1/2}^d] \equiv [\beta(f)]^d$$</center>  
 where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2} is called the *Bhattacharyya parameter* of the channel.   
-The Bhattacharyya measure (Bhattacharyya, 1943) (or coefficient) is a divergence-type measure between distributions, defined as,   
+The *Bhattacharyya measure* (Bhattacharyya, 1943) (or coefficient) is a divergence-type measure between distributions, defined as,   
 <center>$$\beta(p,p') = \sum_{i=1}^N \sqrt {p(i)p'(i)}$$</center>   
 where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N p(i) = \sum_{i=1}^N p'(i) = 1$$.   
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$P(block error)$$, independent of the blocklength $$N$$ of the code.   
