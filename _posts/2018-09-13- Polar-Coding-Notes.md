@@ -14,8 +14,8 @@ Let $$W : X \to Y$$ be a binary-input discrete memoryless channel
    
 - Input alphabet: $$\cal X = \{0, 1\}$$  
 - Output alphabet: $$\cal Y$$  
-- Transition probabilities: $$W(y|x), x \in {\cal X}, y \in {\cal Y}$$  
-  
+- Transition probabilities: $$W(y|x)$$, $$x \in {\cal X}, y \in {\cal Y}$$  
+    
 #### **Bhattacharyya parameter**  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
@@ -38,4 +38,5 @@ where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N
 
 Reference:  
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
-2. David J.C. MacKay. (2003). *Information Theory, Inference, and Learning Algorithms*. Cambridge University Press.
+2. David J.C. MacKay. (2003). *Information Theory, Inference, and Learning Algorithms*. Cambridge University Press.  
+3. Erdal Arıkan. (2011.8.1). *Polar Coding Status and Prospects*. The IEEE International Symposium on Information Theory. ISIT’2011 Saint Petersburg, Russia.  
