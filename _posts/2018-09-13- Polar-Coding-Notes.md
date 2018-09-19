@@ -29,7 +29,7 @@ where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2} is called the *Bhattacharyya paramete
 The *Bhattacharyya measure* (Bhattacharyya, 1943) (or coefficient) is a divergence-type measure between distributions, defined as,   
 <center>$$\beta(p,p') = \sum_{i=1}^N \sqrt {p(i)p'(i)}$$</center>   
 where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N p(i) = \sum_{i=1}^N p'(i) = 1$$.   
-Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$P(block error)$$, independent of the blocklength $$N$$ of the code.   
+Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
 For this reason, a sequence of codes of increasing blocklength $$N$$ and constant distance $$d$$ (i.e., ‘very bad’ distance) cannot have a block error probability that tends to zero, on any binary symmetric channel.   
 
 
