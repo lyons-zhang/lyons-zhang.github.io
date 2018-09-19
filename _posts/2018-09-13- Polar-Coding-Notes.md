@@ -10,14 +10,13 @@ categories: Digital Comunication
 #### **The channel**    
 Let $$W : X \to Y$$ be a binary-input discrete memoryless channel,  
   
-<center>![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg)</center>  
+![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.aligncenter}  
   
 - Input alphabet: $$\cal X = \{0, 1\}$$  
 - Output alphabet: $$\cal Y$$  
-- Transition probabilities: $$W(y\|x), x \in \mathcal X, y \in \mathcal Y$$  
+- Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$    
   
 #### **Bhattacharyya parameter**  
-$$W(y|x) , x \in \cal X , y \in \cal Y$$  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
 Bit flips matter only in places where the two codewords differ. The error probability is dominated by the probability that $$d/2$$ of these bits are flipped. What happens to the other bits is irrelevant, since the optimal decoder ignores them.   
@@ -28,7 +27,7 @@ So,
 <center>$$P(\text{block error}) \approx {[f^{1/2}(1-f)^{1/2}]}^d \equiv {[\beta(f)]}^d$$</center>  
 where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel.   
   
-<center>![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg)</center>  
+![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg){:.aligncenter}  
   
 Distance isn’t everything!   
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
