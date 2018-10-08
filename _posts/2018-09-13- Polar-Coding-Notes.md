@@ -8,14 +8,19 @@ categories: Digital Comunication
   
 
 #### **The channel**    
-Let $$W : X \to Y$$ be a binary-input discrete memoryless channel,  
+Let $$W : X \to Y$$ be a binary-input DMC (Discrete Memoryless Channel),  
   
 ![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.aligncenter}  
   
 Input alphabet: $$\cal X = \{0, 1\}$$,  
 Output alphabet: $$\cal Y$$,  
 Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$.  
-  
+The channel capacity of a DMC (and also of other channels) is deflned as the maximal mutual information between the channel input $$X$$ and the channel output $$Y$$, maximized
+with respect to the input distribution $$p_X (x)$$:  
+<center>$$\eqalign{ \max_{\rm p_X(x) I(X;Y)} &= \max_{\rm p_X(x) \sum_{x \in \cal X}\sum_{y \in \cal Y} p_{X,Y}(x,y) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} &= \max_{\rm p_X(x) \sum_{x \in \cal X}\sum_{y \in \cal Y} p_X(x)p_{Y|X}(y|x) \log_2 {p_{Y|X}(y|x) \over p_Y(y)}}$$</center>  
+###### **Symmetric B-DMC** 
+A *symmetric binary discrete memoryless channel* (B-DMC) is a B-DMC $$W : {0,1} \to \cal Y$$ with the additional property that there exists a *permutation* over the outputs of the channel $$\pi : \cal Y \to \cal Y$$ such that $$\pi = \pi^{-1}$$ and $$W(y|0) = W(\pi(y)|1)$$.
+
 #### **Bhattacharyya parameter**  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
