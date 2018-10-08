@@ -20,7 +20,7 @@ with respect to the input distribution $$p_X (x)$$:
 <center>$$\eqalign{ C &= \max_{p_X(x)} I(X;Y) \\ &= \max_{p_X(x)} \sum_{x \in \cal X}\sum_{y \in \cal Y} p_{X,Y}(x,y) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} \\ &= \max_{p_X(x)} \sum_{x \in \cal X}\sum_{y \in \cal Y} p_X(x)p_{Y|X}(y|x) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} }$$</center>  
 A *symmetric binary discrete memoryless channel* (B-DMC) is a B-DMC $$W : {0,1} \to \cal Y$$ with the additional property that there exists a *permutation* over the outputs of the channel $$\pi : \cal Y \to \cal Y$$ such that $$\pi = \pi^{-1}$$ and $$W(y|0) = W(\pi(y)|1)$$.  
 In the symmetric B-DMC, the two inputs have the same probability **$$p(x) = 1/2$$**, the **symmetric capacity** can be calculated as:  
-<center>$$\eqalign{ I(W) &= I(X;Y) \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{X,Y}(x,y) \over p_X(x)}p_X(x) \log_2 {p_{X,Y}(x,y) \over p_X(x)} {1 \over p_Y(y)} \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{Y|X}(y|x)p_X(x)} \log_2 {p_{Y|X}(y|x) \over p_Y(y)} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}p_{Y|X}(y|x) \log_2 { p_{Y|X}(y|x) \over {\sum_{x' \in \cal X} p_X(x') p_{Y|X}(y|x')}} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}p(y|x) \log { p(y|x) \over { {1 \over 2}p(y|0) + {1 \over 2}p(y|1)} } }$$</center>  
+<center>$$\eqalign{ I(W) &= I(X;Y) \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{X,Y}(x,y) \over p_X(x)}p_X(x) \log_2 {p_{X,Y}(x,y) \over p_X(x)} {1 \over p_Y(y)} \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{Y|X}(y|x)p_X(x)} \log_2 {p_{Y|X}(y|x) \over p_Y(y)} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}p_{Y|X}(y|x) \log_2 { p_{Y|X}(y|x) \over {\sum_{x' \in \cal X} p_X(x') p_{Y|X}(y|x')}} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}W(y|x) \log { W(y|x) \over { {1 \over 2}W(y|0) + {1 \over 2}W(y|1)} } }$$</center>  
 Where $$x'$$ is a **dummy(bound) variable**, we can ignore the difference here. Here we use two important formula:  
 <center>$$p_{X,Y}(x,y) = p_X(x)p_{Y|X}(y|x) = p_Y(y)p_{X|Y}(x|y)$$</center>
 <center>$$p_X(x) = \sum_y p_{X,Y}(x,y) = \sum_y p_Y(y) p_{X|Y}(x|y)$$</center>
@@ -34,6 +34,7 @@ From **Stirling’s approximation**,
 So,   
 <center>$$P(\text{block error}) \approx {[f^{1/2}(1-f)^{1/2}]}^d \equiv {[\beta(f)]}^d$$</center>  
 where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel.   
+Any symmetric B-DMC can be represented as a collection of binary symmetric channels (BSC’s). 
   
 ![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg){:.aligncenter}  
   
@@ -49,3 +50,4 @@ Reference:
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
 2. David J.C. MacKay. (2003). *Information Theory, Inference, and Learning Algorithms*. Cambridge University Press.  
 3. Erdal Arıkan. (2011.8.1). *Polar Coding Status and Prospects*. The IEEE International Symposium on Information Theory. ISIT’2011 Saint Petersburg, Russia.  
+4. R. Pedarsani, S. H. Hassani, I. Tal, and E. Telatar. *On the Construction of Polar Codes*. Proceedings of IEEE International Symposium on Information Theory, Saint Petersburg, Jul. 2011.
