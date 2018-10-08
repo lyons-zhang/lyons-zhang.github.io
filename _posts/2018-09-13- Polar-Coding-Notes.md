@@ -21,9 +21,9 @@ with respect to the input distribution $$p_X (x)$$:
 A *symmetric binary discrete memoryless channel* (B-DMC) is a B-DMC $$W : {0,1} \to \cal Y$$ with the additional property that there exists a *permutation* over the outputs of the channel $$\pi : \cal Y \to \cal Y$$ such that $$\pi = \pi^{-1}$$ and $$W(y|0) = W(\pi(y)|1)$$.  
 In the symmetric B-DMC, the two inputs have the same probability **$$p(x) = 1/2$$**, the **symmetric capacity** can be calculated as:  
 <center>$$\eqalign{ I(W) &= I(X;Y) \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{X,Y}(x,y) \over p_X(x)}p_X(x) \log_2 {p_{X,Y}(x,y) \over p_X(x)} {1 \over p_Y(y)} \\ &= \sum_{y \in \cal Y}\sum_{x \in \cal X} {p_{Y|X}(y|x)p_X(x)} \log_2 {p_{Y|X}(y|x) \over p_Y(y)} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}p_{Y|X}(y|x) \log_2 { p_{Y|X}(y|x) \over {\sum_{x' \in \cal X} p_X(x') p_{Y|X}(y|x')}} \\&= \sum_{y \in \cal Y}\sum_{x \in \cal X} {1 \over 2}p(y|x) \log { p(y|x) \over { {1 \over 2}p(y|0) + {1 \over 2}p(y|1)} } }$$</center>  
-
-Where $$x'$$ is a **dummy(bound) variable**, but we can ignore the difference.
-
+Where $$x'$$ is a **dummy(bound) variable**, we can ignore the difference here. Here we use two important formula:  
+<center>$$p_{X,Y}(x,y) = p_X(x)p_{Y|X}(y|x) = p_Y(y)p_{X|Y}(x|y)$$</center>
+<center>$$p_X(x) = \sum_y p_{X,Y}(x,y) = \sum_y p_Y(y) p_{X|Y}(x|y)$$</center>
 #### **Bhattacharyya parameter**  
 Let a binary code have blocklength $$N$$ and just two codewords, which differ in $$d$$ places. For simplicity, let’s assume $$d$$ is even.   
 What is the error probability if this code is used on a binary symmetric channel with probability of error $$f$$.   
