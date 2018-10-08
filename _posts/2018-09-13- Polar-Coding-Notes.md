@@ -17,7 +17,7 @@ Output alphabet: $$\cal Y$$,
 Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$.  
 The channel capacity of a DMC (and also of other channels) is deflned as the maximal mutual information between the channel input $$X$$ and the channel output $$Y$$, maximized
 with respect to the input distribution $$p_X (x)$$:  
-<center>$$\eqalign{ \max_{\rm p_X(x) I(X;Y)} &= \max_{\rm p_X(x) \sum_{x \in \cal X}\sum_{y \in \cal Y} p_{X,Y}(x,y) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} &= \max_{\rm p_X(x) \sum_{x \in \cal X}\sum_{y \in \cal Y} p_X(x)p_{Y|X}(y|x) \log_2 {p_{Y|X}(y|x) \over p_Y(y)}}$$</center>  
+<center>$$\eqalign{ \max_{\rm p_X(x) I(X;Y)} &= \max_{\rm p_X(x)} \sum_{x \in \cal X}\sum_{y \in \cal Y} p_{X,Y}(x,y) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} &= \max_{\rm p_X(x)} \sum_{x \in \cal X}\sum_{y \in \cal Y} p_X(x)p_{Y|X}(y|x) \log_2 {p_{Y|X}(y|x) \over p_Y(y)} }$$</center>  
 ###### **Symmetric B-DMC** 
 A *symmetric binary discrete memoryless channel* (B-DMC) is a B-DMC $$W : {0,1} \to \cal Y$$ with the additional property that there exists a *permutation* over the outputs of the channel $$\pi : \cal Y \to \cal Y$$ such that $$\pi = \pi^{-1}$$ and $$W(y|0) = W(\pi(y)|1)$$.
 
