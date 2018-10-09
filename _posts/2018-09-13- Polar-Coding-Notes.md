@@ -31,17 +31,17 @@ From **Stirling’s approximation**,
 So,   
 <center>$$P(\text{block error}) \approx {[f^{1/2}(1-f)^{1/2}]}^d \equiv {[\beta(f)]}^d$$</center>  
 where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel. Arıkan calls $$Z(W)$$ the *Bhattacharyya parameter*$$^{[5]}$$  
-<center>$$Z(w) = \sum_{y \in \cal Y} \root {W(y|0)W(y|1)}$$</center>  
+<center>$$Z(w) = \sum_{y \in \cal Y} \sqrt{W(y|0)W(y|1)}$$</center>  
 For a BSC with probability of error f,  
-<center>$$Z_{BSC}(w) = \root {W(y=0|0)W(y=0|1)} + \root {W(y=1|0)W(y=1|1)} = 2\root{f(1-f)}$$</center>  
+<center>$$Z_{BSC}(w) = \sqrt{W(y=0|0)W(y=0|1)} + \sqrt{W(y=1|0)W(y=1|1)} = 2\sqrt{f(1-f)}$$</center>  
 For a BEC with probability of error f,  
-<center>$$Z_{BEC}(w) = \root {W(y=0|0)W(y=0|1)} + \root {W(y=1|0)W(y=1|1) + \root {W(y=e|0)W(y=e|1)= f$$</center>  
+<center>$$Z_{BEC}(w) = \sqrt{W(y=0|0)W(y=0|1)} + \sqrt{W(y=1|0)W(y=1|1) + \sqrt{W(y=e|0)W(y=e|1)= f$$</center>  
 ![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg){:.aligncenter}  
 **Distance isn’t everything!**  
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
 For this reason, a sequence of codes of increasing blocklength $$N$$ and constant distance $$d$$ (i.e., ‘very bad’ distance) cannot have a block error probability that tends to zero, on any binary symmetric channel.  
 The *Bhattacharyya measure* (Bhattacharyya, 1943) (or coefficient) is a divergence-type measure between distributions, defined as,   
-<center>$$\beta(p,p') = \sum_{i=1}^N \sqrt {p(i)p'(i)}$$</center>   
+<center>$$\beta(p,p') = \sum_{i=1}^N \sqrt{p(i)p'(i)}$$</center>   
 where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N p(i) = \sum_{i=1}^N p'(i) = 1$$.  
 Any symmetric B-DMC can be represented as a collection of binary symmetric channels (BSC’s)$$^{[4]}$$. The binary input is given to one of these BSC’s at random such that the $$i$$-th BSC is chosen with probability $$p_i$$. The output of this BSC together with its cross over probability $$x_i$$ is considered as the output of the channel. Therefore, a discrete BMS channel $$W$$ can be completely described by a random variable $$\cal X \in [0, {1 \over 2}]$$. The *pdf* of $$\cal X$$ will be of the form:  
 <center>$$P_{\cal X}(x) = \sum_{i=1}^m p_i \delta(x - x_i)$$</center>
@@ -53,4 +53,5 @@ Reference:
 2. David J.C. MacKay. (2003). *Information Theory, Inference, and Learning Algorithms*. Cambridge University Press.  
 3. Erdal Arıkan. (2011.8.1). *Polar Coding Status and Prospects*. The IEEE International Symposium on Information Theory. ISIT’2011 Saint Petersburg, Russia.  
 4. R. Pedarsani, S. H. Hassani, I. Tal, and E. Telatar. *On the Construction of Polar Codes*. Proceedings of IEEE International Symposium on Information Theory, Saint Petersburg, Jul. 2011.  
-5. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.
+5. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
+6. Eren Sasoglu
