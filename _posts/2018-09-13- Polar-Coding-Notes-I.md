@@ -32,7 +32,7 @@ From **Stirling’s approximation**,
 <center>$$x! \approx x^x e^{-x} \;\;\; \Rightarrow \;\;\; \dbinom{N}{r} \approx 2^{NH_b(r/N)}$$</center>   
 So,   
 <center>$$P(\text{block error}) \approx {[\epsilon^{1/2}(1-\epsilon)^{1/2}]}^d \equiv {[\beta(\epsilon)]}^d$$</center>  
-where $$\beta(\epsilon) = 2f^{1/2}(1 − \epsilon)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel. Arıkan calls $$Z(W)$$ the *Bhattacharyya parameter*$$^{[5]}$$  
+where $$\beta(\epsilon) = 2\epsilon^{1/2}(1 − \epsilon)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel. Arıkan calls $$Z(W)$$ the *Bhattacharyya parameter*$$^{[5]}$$  
 <center>$$Z(W) = \sum_{y \in \cal Y} \sqrt{W(y|0)W(y|1)}$$</center>  
 For a BSC with probability of error $$\epsilon$$,  
 <center>$$Z_{BSC}(W) = \sqrt{W(0|0)W(0|1)} + \sqrt{W(1|0)W(1|1)} = 2\sqrt{\epsilon(1-\epsilon)}$$</center>  
@@ -48,7 +48,7 @@ where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N
 Any symmetric B-DMC can be represented as a collection of binary symmetric channels (BSC’s)$$^{[4]}$$. The binary input is given to one of these BSC’s at random such that the $$i$$-th BSC is chosen with probability $$p_i$$. The output of this BSC together with its cross over probability $$x_i$$ is considered as the output of the channel. Therefore, a discrete BMS channel $$W$$ can be completely described by a random variable $$\cal X \in [0, {1 \over 2}]$$. The *pdf* of $$\cal X$$ will be of the form:  
 <center>$$P_{\cal X}(x) = \sum_{i=1}^m p_i \delta(x - x_i)$$</center>
 Such that $$\sum_{i=1}^m p_i = 1$$ and $$0 \le x_i \le 1/2$$. Note that $$Z(W)$$ and $$1 − I(W)$$ are expectations of the functions $$f(x) = 2\sqrt{x(1 − x)}$$ and $$g(x) = −x \log(x) − (1 − x)\log(1 − x)$$ over the distribution $$P_{\cal X}$$, respectively.  
-
+It is well-known that the Bhattacharyya parameter **upper bounds the error probability of the optimal decision rule**, and therefore may be used as **a measure of reliability**.  
 
 Reference:  
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
