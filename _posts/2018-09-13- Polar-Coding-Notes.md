@@ -9,9 +9,7 @@ categories: Digital Comunication
 
 #### **The channel**    
 Let $$W : X \to Y$$ be a binary-input DMC (Discrete Memoryless Channel),  
-  
 ![channel]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/channel.svg){:.aligncenter}  
-  
 Input alphabet: $$\cal X = \{0, 1\}$$,  
 Output alphabet: $$\cal Y$$,  
 Transition probabilities: $$W(y|x) , x \in \cal X , y \in \cal Y$$.  
@@ -33,18 +31,18 @@ From **Stirling’s approximation**,
 <center>$$x! \approx x^x e^{-x} \;\;\; \Rightarrow \;\;\; \dbinom{N}{r} \approx 2^{NH_b(r/N)}$$</center>   
 So,   
 <center>$$P(\text{block error}) \approx {[f^{1/2}(1-f)^{1/2}]}^d \equiv {[\beta(f)]}^d$$</center>  
-where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel.   
-Any symmetric B-DMC can be represented as a collection of binary symmetric channels (BSC’s). 
-  
+where $$\beta(f) = 2f^{1/2}(1 − f)^{1/2}$$ is called the **Bhattacharyya parameter** of the channel.     
 ![Bhattacharyya]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/Bhattacharyya.svg){:.aligncenter}  
-  
 Distance isn’t everything!   
 Now, consider a general linear code with distance $$d$$. Its block error probability must at least than $$\dbinom{d}{d/2} f^{d/2}(1-f)^{d/2}$$, independent of the blocklength $$N$$ of the code.   
 For this reason, a sequence of codes of increasing blocklength $$N$$ and constant distance $$d$$ (i.e., ‘very bad’ distance) cannot have a block error probability that tends to zero, on any binary symmetric channel.  
-  
 The *Bhattacharyya measure* (Bhattacharyya, 1943) (or coefficient) is a divergence-type measure between distributions, defined as,   
 <center>$$\beta(p,p') = \sum_{i=1}^N \sqrt {p(i)p'(i)}$$</center>   
-where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N p(i) = \sum_{i=1}^N p'(i) = 1$$. 
+where $$p(i)$$ and $$p'(i)$$ represent probability distributions, $$\sum_{i=1}^N p(i) = \sum_{i=1}^N p'(i) = 1$$.  
+Any symmetric B-DMC can be represented as a collection of binary symmetric channels (BSC’s)$$^{[4]}$$. The binary input is given to one of these BSC’s at random such that the $$i$$-th BSC is chosen with probability $$p_i$$. The output of this BSC together with its cross over probability $$x_i$$ is considered as the output of the channel. Therefore, a discrete BMS channel $$W$$ can be completely described by a random variable $$\cal X \in [0, 1/2]$$. The $$pdf$$ of $$\cal X$$ will be of the form:  
+<center>$$P_{\cal X}(x) = \sum_{i=1}^m p_i \delta(x - x_i)$$</center>
+Such that $$\sum_{i=1}^m p_i = 1$$ and $$0 \le x_i \le 1/2$$. Note that $$Z(W)$$ and $$1 − I(W)$$ are expectations of the functions $$f(x) = 2\sqrt{x(1 − x)}$$ and $$g(x) = −x \log(x) − (1 − x)\log(1 − x)$$ over the distribution $$P_{\cal X}$$, respectively.  
+
 
 Reference:  
 1. Thomas M. Cover, Joy A. Thomas. (2006). *Elements of Information Theory*. John Wiley & Sons. 
