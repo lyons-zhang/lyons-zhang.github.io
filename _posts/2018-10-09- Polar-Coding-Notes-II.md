@@ -12,9 +12,8 @@ The notation $$u_1^N$$ as shorthand for denoting a row vector $$(u_1, \dots , u_
 The vector channel **$$W_N$$** is the virtual channel between the input sequence $$u_1^N$$ to a linear encoder and the output sequence $$y^N_1$$ of $$N$$ copies of the original channel $$W$$. $$W_1 = W$$ is one copy of $$W$$.  
 We use $$W^N : {\cal X}^N \to {\cal Y}^N$$ to denote the vector channel between the input sequence $$x_1^N$$ and the output sequence $$y_1^N$$ of $$N$$ copies of the original channel $$W$$.  
 <center>$$W_N(y_1^N|u_1^N) = W^N(y_1^N|u_1^N) = \sum_{i=1}^N W(y_i|x_i)$$</center>  
-![w2]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/w2.png){:.alignleft}  
-  
-  The coding scheme for $$U_1,U_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$.  
+![w2]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/w2.png)    
+The coding scheme for $$U_1,U_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$.  
 It is easy to see that $$U_1, U_2$$ and $$X_1, X_2$$ have a bijection, and further coupling this with the fact $$X_1,X_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$. We have  
 <center>$$I(U_1,U_2;Y_1,Y_2) = I(X_1,X_2;Y_1,Y_2) = 2C = 2I(W)$$</center>
 
