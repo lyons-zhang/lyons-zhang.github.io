@@ -21,7 +21,13 @@ The *bit-reversal* is shown as below from$$^{[8]}$$
 Sort a data sequence in nomal order by successive examination of the MSB as the left in the picture.  
 Sort the sequence $$x[n]$$ as the permutation matrix(sequence A030109 in the OEIS) order, such a separation of odd and even can be carried out by examining the LSB.  
 The recursive construction of $$W_N$$ from two copies of $$W_{N/2}$$ is useful for software and hardware$$^{[9]}$$. But for hardware implementation, the "rewire" structure is more attractive:  
-![rewire]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/rewire.png){:.aligncenter}   
+![rewire]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/rewire.png){:.aligncenter}  
+The coding scheme for $$U_1,U_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$.  
+It is easy to see that $$U_1, U_2$$ and $$X_1, X_2$$ have a bijection, and further coupling this with the fact $$X_1,X_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$. We have  
+<center>$$I(U_1,U_2;Y_1,Y_2) = I(X_1,X_2;Y_1,Y_2) = 2C = 2I(W)$$</center>  
+and for $$U_1, \dots, U_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$, then $$X_1, \dots, X_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$   
+<center>$$I(U^N;Y^N) = I(X^N;Y^N) = NI(W)$$</center>  
+<center>$$\eqalign{I(X^N;Y^N) &= H(Y^N) - H(Y^N|X^N) &= H(Y^N) - \sum_{i=1}^N H(Y_i|Y_1, ... , Y_{i-1}, X^N) &= \sum_{i=1}^N H(Y_i) - \sum_{i=1}^N H(Y_i|X_i) &= \sum_{i=1}^N I(X_i;Y_i)}$$</center>  
 #### **Channel Splitting**  
 
 Reference:  

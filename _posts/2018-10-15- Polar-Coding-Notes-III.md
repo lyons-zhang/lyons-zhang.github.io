@@ -1,5 +1,5 @@
 ---
-title:   Polar Coding Notes II
+title:   Polar Coding Notes III
 description: 
 categories: Digital Comunication
 ---
@@ -25,7 +25,10 @@ The recursive construction of $$W_N$$ from two copies of $$W_{N/2}$$ is useful f
 
 The coding scheme for $$U_1,U_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$.  
 It is easy to see that $$U_1, U_2$$ and $$X_1, X_2$$ have a bijection, and further coupling this with the fact $$X_1,X_2 \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$. We have  
-<center>$$I(U_1,U_2;Y_1,Y_2) = I(X_1,X_2;Y_1,Y_2) = 2C = 2I(W)$$</center>
+<center>$$I(U_1,U_2;Y_1,Y_2) = I(X_1,X_2;Y_1,Y_2) = 2C = 2I(W)$$</center>  
+and for $$U_1, \dots, U_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$, then $$X_1, \dots, X_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$   
+<center>$$I(U^N;Y^N) = I(X^N;Y^N) = NI(W)$$</center>  
+<center>$$\eqalign{I(X^N;Y^N) &= H(Y^N) - H(Y^N|X^N) &= H(Y^N) - \sum_{i=1}^N H(Y_i|Y_1, ... , Y_{i-1}, X^N) &= \sum_{i=1}^N H(Y_i) - \sum_{i=1}^N H(Y_i|X_i) &= \sum_{i=1}^N I(X_i;Y_i)}$$</center>
 
 
 
