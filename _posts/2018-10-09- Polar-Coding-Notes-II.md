@@ -31,8 +31,10 @@ and for $$U_1, \dots, U_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$, then $$X_1
 Channel Splitting is to split $$W_N$$ back into a set of $$N$$ binary-input coordinate channels $$W^{(i)}_N : X \to {\cal Y}^N \times {\cal X}^{i−1}, 1 \le i le N$$.  
 The transition probability of the $$W_N^{(i)}$$ is defined as$$^{[1]}$$  
 <center>$$W(u_1^N;y_1^N) = \sum_{i=1}^N W_N^{i}(u_i;y_1^Nu_1^{i-1})$$</center>  
-For the $$u_i$$ is $$i.i.d.$$, I(u_i;u_1^{i-1}) = 0$$,  
+For the $$u_i$$ is $$i.i.d. , I(u_i;u_1^{i-1}) = 0$$,  
 <center>$$\eqalign{I(u_1^N;y_1^N) &= \sum_{i=1}^N I(u_i;y_1^N|u_1^{i-1}) \tag\text{Chain rule for information} \\&= \sum_{i=1}^N \{I(u_i;y_1^N,u_1^{i-1}) - I(u_i;u_1^{i-1})\} \tag\text{Chain rule for mutual information} \\&= \sum_{i=1}^N I(u_i;y_1^Nu_1^{i-1})}$$</center>  
+<center>$$\eqalign{I(u_1^N;y_1^N) &= \sum_{i=1}^N I(u_i;y_1^N|u_1^{i-1}) \\&= \sum_{i=1}^N \{I(u_i;y_1^N,u_1^{i-1}) - I(u_i;u_1^{i-1})\} \tag{Chain rule for mutual information} \\&= \sum_{i=1}^N I(u_i;y_1^Nu_1^{i-1})}$$</center>  
+<center>$$\eqalign{I(u_1^N;y_1^N) &= \sum_{i=1}^N I(u_i;y_1^N|u_1^{i-1}) \\&= \sum_{i=1}^N \{I(u_i;y_1^N,u_1^{i-1}) - I(u_i;u_1^{i-1})\} \\&= \sum_{i=1}^N I(u_i;y_1^Nu_1^{i-1})}$$</center>  
 ![splitting]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/splitting.png){:.aligncenter}  
   
 Reference:  
