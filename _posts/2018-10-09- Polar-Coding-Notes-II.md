@@ -28,12 +28,14 @@ It is easy to see that $$U_1, U_2$$ and $$X_1, X_2$$ have a **bijection**, and f
 and for $$U_1, \dots, U_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$, then $$X_1, \dots, X_N \, \overset{i.i.d.}{\sim} \, Unif\{0,1\}$$   
 <center>$$\eqalign{I(U^N;Y^N) &= I(X^N;Y^N) \\&= H(Y^N) - H(Y^N|X^N) \\&= H(Y^N) - \sum_{i=1}^N H(Y_i|Y_1, ... , Y_{i-1}, X^N) \\&= \sum_{i=1}^N H(Y_i) - \sum_{i=1}^N H(Y_i|X_i) \\&= \sum_{i=1}^N I(X_i;Y_i) \\&= = NI(W)}$$</center>  
 #### **Channel Splitting**  
-Channel Splitting is to split $$W_N$$ back into a set of $$N$$ binary-input coordinate channels $$W^{(i)}_N : X \to {\cal Y}^N \times {\cal X}^{i−1}, 1 \le i le N$$.  
+Channel Splitting is to split $$W_N$$ back into a set of $$N$$ binary-input coordinate channels $$W^{(i)}_N : X \to {\cal Y}^N \times {\cal X}^{i−1}, 1 \le i \le N$$.  
 The transition probability of the $$W_N^{(i)}$$ is defined as$$^{[1]}$$  
-<center>$$W(u_1^N;y_1^N) = \sum_{i=1}^N W_N^{i}(u_i;y_1^Nu_1^{i-1})$$</center>  
+<center>$$W_N(u_1^N;y_1^N) = \sum_{i=1}^N W_N^{(i)}(u_i;y_1^Nu_1^{i-1})$$</center>  
 For the $$u_i$$ is $$i.i.d. , I(u_i;u_1^{i-1}) = 0$$,  
 <center>$$\begin{align} I(u_1^N;y_1^N) &= \sum_{i=1}^N I(u_i;y_1^N|u_1^{i-1}) \tag{Chain rule for information} \\ &= \sum_{i=1}^N \{I(u_i;y_1^N,u_1^{i-1}) - I(u_i;u_1^{i-1})\} \tag{Chain rule for mutual information} \\ &= \sum_{i=1}^N I(u_i;y_1^Nu_1^{i-1}) \end{align}$$</center>  
 ![splitting]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/splitting.png){:.aligncenter}  
+The transition probabilities are given by  
+  
   
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
@@ -45,4 +47,5 @@ Reference:
 7. David Tse. *EE376A/Stats376A: Information Theory*. Winter 2016-2017. https://www.stanford.edu/  
 8. Alan V. Oppenheim. Ronald W. Schafer. *Discrete-Time Signal Processing, 2nd*. Prentice Hall. 1999.  
 9. E. Arikan. *Polar codes: A pipelined implementation*. 4th International Symposium on Broadband Communication (ISBC 2010) July 11-14, 2010, Melaka, Malaysia  
+10. Vincent Y. F. Tan. *EE5139R: Information Theory for Communication Systems:2016/7, Semester 1*. https://www.ece.nus.edu.sg/  
 
