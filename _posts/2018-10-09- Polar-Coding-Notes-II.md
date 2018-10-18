@@ -35,7 +35,11 @@ For the $$u_i$$ is $$i.i.d. , I(u_i;u_1^{i-1}) = 0$$,
 <center>$$\begin{align} I(u_1^N;y_1^N) &= \sum_{i=1}^N I(u_i;y_1^N|u_1^{i-1}) \tag{Chain rule for information} \\ &= \sum_{i=1}^N \{I(u_i;y_1^N,u_1^{i-1}) - I(u_i;u_1^{i-1})\} \tag{Chain rule for mutual information} \\ &= \sum_{i=1}^N I(u_i;y_1^Nu_1^{i-1}) \end{align}$$</center>  
 ![splitting]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201810/splitting.png){:.aligncenter}  
 The transition probabilities are given by  
-<center>$$\begin{align} W_N^{(i)} (y_1^N,u_1^{i-1}|u_i) &= {P(y_1^N,u_1^{i-1}) \over P(u_i)} \\&= {P(y_1^N,u_1^i) \over P(u_i)} \tag{i.i.d.} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {P(y_1^N,u_1^i,u_{i+1}^N) \over P(u_i)} \tag{$p_X(x) = \sum_y P_{X,Y}(x,y)$} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {P(y_1^N|u_1^N)P(u_1^N) \over P(u_i)} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {P(y_1^N|u_1^N)P(u_1^N) \over P(u_i)} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} P(y_1^N|u_1^N) {2^{-N} \over 2^{-1}} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W_N(y_1^N|u_1^N) \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W^N(y_1^N|x_1^N) \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W(y_1|x_1)W(y_2|x_2) \dots W(y_N|x_N) \end{align}$$</center> 
+<center>$$\begin{align} W_N^{(i)} (y_1^N,u_1^{i-1}|u_i) &= {P(y_1^N,u_1^{i-1}) \over P(u_i)} \\&= {P(y_1^N,u_1^i) \over P(u_i)} \tag{i.i.d.} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {P(y_1^N,u_1^i,u_{i+1}^N) \over P(u_i)} \tag{$p_X(x) = \sum_y P_{X,Y}(x,y)$} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {P(y_1^N|u_1^N)P(u_1^N) \over P(u_i)} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} P(y_1^N|u_1^N) {2^{-N} \over 2^{-1}} \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W_N(y_1^N|u_1^N) \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W^N(y_1^N|x_1^N) \\&= \sum_{u_{i+1}^N \in {\cal X}^{N-i}} {1 \over 2^{N-1}} W(y_1|x_1)W(y_2|x_2) \dots W(y_N|x_N) \end{align}$$</center>  
+For $$N=2$$,  
+<center>$$\begin{align} W_2^{(1)}(y_1^2|u1) &= \sum_{u_2^2 \in {\cal X}^1} {1 \over {2^{2-1}}}W(y1|x1)W(y2|x2) \tag{$i=1$, get rid of $u_1^0$} \\&= \sum_{u2} {1\over 2}W(y1|u1\bigoplus u2)W(y2|u2) \end{align}$$</center>  
+<center>$$\begin{align} W_2^{(2)}(y_1^2,u1|u2) &=  {1 \over 2}W(y1|x1)W(y2|x2) \tag{$i=2$, get rid of ${\cal X}^0$} \\&= {1\over 2}W(y1|u1\bigoplus u2)W(y2|u2) \end{align}$$</center>  
+
   
   
 Reference:  
