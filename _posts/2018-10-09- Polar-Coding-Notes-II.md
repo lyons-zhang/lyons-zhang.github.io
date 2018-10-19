@@ -42,7 +42,10 @@ For $$N=2$$,
 Below is from$$^{[1]}$$  
 <center>$$\begin{align} W_{2N}^{(2i-1)}(y_1^{2N},u_1^{2i-2}|u_{2i-1}) &=  \sum_{u_{2i}^{2N}} {1\over 2^{2N-1}}W_{2N}(y_1^{2N}|u_1^{2N}) \\&= \sum_{u_{2i,o}^{2N},u_{2i,e}^{2N}} {1\over 2^{2N-1}}W_N(y_1^N|u_{1,o}^{2N}\oplus u_{1,e}^{2N})W_N(y_{N+1}^{2N}|u_{1,e}^{2N}) \\&= \sum_{u_{2i}} {1\over 2} \sum_{u_{2i+1,e}^{2N}} {1\over 2^{N-1}} W_N(y_{N+1}^{2N}|u_{1,e}^{2N})\sum_{u_{2i+1,o}^{2N}} {1\over 2^{N-1}} W_N(y_1^N|u_{1,o}^{2N} \oplus u_{1,e}^{2N}) \end{align}$$</center>  
 because, as both $$u_{2i+1,o}^{2N}$$ and $$u_{2i+1,o}^{2N} \oplus u_{2i+1,e}^{2N}$$ range over $${\cal X}^{N−i}$$. and from ($$\ast$$), the sum over $$u_{2i+1,o}^{2N}$$ for any fixed $$u_{1,e}^{2N}$$ is  
-<center>$$\sum_{u_{2i+1,o}^{2N}} {1\over 2^{N-1}} W_N(y_1^N|u_{1,o}^{2N} \oplus u_{1,e}^{2N}) = W_N^{(i)}(y_1^N,u_{1,o}^{2i-2} \oplus u_{1,e}^{2i-2}|u_{2i-1}\oplus u_{2i})$$</center>
+<center>$$\sum_{u_{2i+1,o}^{2N}} {1\over 2^{N-1}} W_N(y_1^N|u_{1,o}^{2N} \oplus u_{1,e}^{2N}) = W_N^{(i)}(y_1^N,u_{1,o}^{2i-2} \oplus u_{1,e}^{2i-2}|u_{2i-1}\oplus u_{2i})$$</center>  
+So we abtain  
+<center>$$\begin{align} W_{2N}^{(2i-1)}(y_1^{2N},u_1^{2i-2}|u_{2i-1}) &=  \sum_{u_{2i}} {1\over 2}W_N^{(i)}(y_1^N,u_{1,o}^{2i-2} \oplus u_{1,e}^{2i-2}|u_{2i-1} \oplus u_{2i}) W_N^{(i)}(y_{N+1}^{2N},u_{1,e}^{2i-2}|u_{2i} \end{align}$$</center>  
+<center>$$\begin{align} W_{2N}^{(2i)}(y_1^{2N},u_1^{2i-1}|u_{2i}) &=  {1\over 2}W_N^{(i)}(y_1^N,u_{1,o}^{2i-2} \oplus u_{1,e}^{2i-2}|u_{2i-1} \oplus u_{2i}) W_N^{(i)}(y_{N+1}^{2N},u_{1,e}^{2i-2}|u_{2i} \end{align}$$</center>  
   
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
