@@ -41,7 +41,7 @@ For $$N=2$$,
 <center>$$\begin{align} W_2^{(2)}(y_1^2,u_1|u_2) &=  {1 \over 2}W(y_1|x_1)W(y_2|x_2) \tag{$i=2$, get rid of ${\cal X}^0$} \\&= {1\over 2}W(y_1|u_1\oplus u_2)W(y_2|u_2) \end{align}$$</center>  
 Below is from$$^{[1]}$$  
 <center>$$\begin{align} W_{2N}^{(2i-1)}(y_1^{2N},u_1^{2i-2}|u_{2i-1}) &=  \sum_{u_{2i}^{2N}} {1\over 2^{2N-1}}W_{2N}(y_1^{2N}|u_1^{2N}) \\&= \sum_{u_{2i,o}^{2N},u_{2i,e}^{2N}} {1\over 2^{2N-1}}W_N(y_1^N|u_{1,o}^{2N}\oplus u_{1,e}^{2N})W_N(y_{N+1}^{2N}|u_{1,e}^{2N}) \\&= \sum_{u_{2i}} {1\over 2} \sum_{u_{2i+1,e}^{2N}} {1\over 2^{N-1}} W_N(y_{N+1}^{2N}|u_{1,e}^{2N})\sum_{u_{2i+1,o}^{2N}} {1\over 2^{N-1}} W_N(y_1^N|u_{1,o}^{2N} \oplus u_{1,e}^{2N}) \end{align}$$</center>  
-because, as both $$u_{2i+1,o}^{2N}$$ and $$u_{2i+1,o}^{2N} \oplus u_{2i+1,e}^{2N}$$ range over $$\cal X^{N−i}$$. and from (*),  
+because, as both $$u_{2i+1,o}^{2N}$$ and $$u_{2i+1,o}^{2N} \oplus u_{2i+1,e}^{2N}$$ range over $$\cal X^{N−i}$$. and from (*), the sum over $$u_{2i+1,o}^{2N}$$ for any fixed $$u_{1,e}^{2N}$$ is  
 <center>$$\sum_{u_{2i+1,o}^{2N}} {1\over 2^{N-1}} W_N(y_1^N|u_{1,o}^{2N} = W_N^{i}(y_1^N,u_{1,o}^{2i-2} \oplus u_{1,e}^{2i-2}|u_{2i-1}\oplus u_{2i})$$</center>
   
 Reference:  
