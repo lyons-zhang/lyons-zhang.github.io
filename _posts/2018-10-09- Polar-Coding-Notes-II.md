@@ -58,4 +58,4 @@ Reference:
 8. Alan V. Oppenheim. Ronald W. Schafer. *Discrete-Time Signal Processing, 2nd*. Prentice Hall. 1999.  
 9. E. Arikan. *Polar codes: A pipelined implementation*. 4th International Symposium on Broadband Communication (ISBC 2010) July 11-14, 2010, Melaka, Malaysia  
 10. Vincent Y. F. Tan. *EE5139R: Information Theory for Communication Systems:2016/7, Semester 1*. https://www.ece.nus.edu.sg/  
-
+11. Nikolaos Tsagkarakis. *Design and Decoding of Polar Codes*. Submitted on July 26th, 2011 in partial fulfillment of the requirements for the Electronic and Computer. Engineering diploma degree.  

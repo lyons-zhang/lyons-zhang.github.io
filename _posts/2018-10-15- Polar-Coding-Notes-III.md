@@ -4,7 +4,7 @@ description:
 categories: Digital Comunication
 ---
 
->  For any B-DMC $$W$$, the channels $${\W_N^{(i)}\}$$ polarize in the sense that, for any fixed $$\delta \in (0, 1)$$, as $$N$$ goes to infinity through powers of two, the fraction of indices $$i \in \{1, \dots, N\}$$ for which $$I(W_N^{(i)}) \in (1 − \delta, 1]$$ goes to $$I(W)$$ and the fraction for which $$I(W_N^{(i)}) \in [0, \delta)$$ goes to $$1−I(W)^{[1]}$$.
+>  For any B-DMC $$W$$, the channels $$\{W_N^{(i)}\}$$ polarize in the sense that, for any fixed $$\delta \in (0, 1)$$, as $$N$$ goes to infinity through powers of two, the fraction of indices $$i \in \{1, \dots, N\}$$ for which $$I(W_N^{(i)}) \in (1 − \delta, 1]$$ goes to $$I(W)$$ and the fraction for which $$I(W_N^{(i)}) \in [0, \delta)$$ goes to $$1−I(W)^{[1]}$$.
   
 #### **Channel Combining**  
 Channel combining is a step that combines copies of a given B-DMC $$W$$ in a recursive manner to produce a vector channel $$W_N : {\cal X}^N \to {\cal Y}^N$$, where $$N$$ can be any power of two, $$N=2^n, n\le0^{[1]}$$.  
