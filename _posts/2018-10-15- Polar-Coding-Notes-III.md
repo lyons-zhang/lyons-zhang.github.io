@@ -8,16 +8,16 @@ categories: Digital Comunication
   
 #### **Mrs. Gerber’s Lemma**  
 Mrs. Gerber’s Lemma provides a lower bound on the entropy of the modulo-2 sum of two binary random vectors$$^{[3]}$$.  
-Let $$H^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function.  
+Let $$h^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function.  
 Scalar MGL: Let $$X$$ be a binary random variable and let $$U$$ be an arbitrary random variable. If $$Z \sim Bern(p)$$ is independent of $$(X, U)$$ and $$Y = X \oplus Z$$, then
-<center>$$H(Y|U) \le H(H^{−1}(h(X|U)) \ast p)$$</center> 
+<center>$$h(Y|U) \le h(h^{−1}(h(X|U)) \ast p)$$</center> 
 Vector MGL: Let $$X^n$$ be a binary random vector and $$U$$ be an arbitrary random variable. If $$Z^n$$ is a vector of independent and identically distributed $$Bern(p)$$ random variables independent of $$(X^n, U)$$ and $$Y^n = X^n \oplus Z^n$$, then  
-<center>$${H(Y^n|U) \over n} \le H(H^{−1}({H(X^n|U) \over n})) \ast p)$$</center>  
+<center>$${h(Y^n|U) \over n} \le h(h^{−1}({h(X^n|U) \over n})) \ast p)$$</center>  
 The convolution of $$p$$ and $$x$$ is denoted by  
 <center>$$p \ast x := p(1 − x) + (1 − p)x$$</center>  
+#### **Polarization for Binary-Input Channels**  
 
 
-#### **Channel Splitting**  
 
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
