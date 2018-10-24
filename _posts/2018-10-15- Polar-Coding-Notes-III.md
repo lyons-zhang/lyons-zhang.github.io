@@ -8,14 +8,24 @@ categories: Digital Comunication
   
 #### **Mrs. Gerber’s Lemma**  
 Mrs. Gerber’s Lemma provides a lower bound on the entropy of the modulo-$$2$$ sum of two binary random vectors$$^{[2][3]}$$.  
-Let $$h^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function.  
-$$h(h^{-1}(v)\ast p)$$ is convex in $$v$$ for every $$p \in [0,1]$$.  
+Let $$h^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function $$h(p) = -p\log p - (1-p)log(1-p)$$.  
+The function $$f(u) = h(h^{-1}(u)\ast p), u \in [0,1]$$ is convex in $$u$$ for every $$p \in (0,1/2]$$.  
 The convolution of $$p$$ and $$x$$ is denoted by  
-<center>$$p \ast x := p(1 − x) + (1 − p)x$$</center>  
+<center>$$a \ast b := a(1 − b) + (1 − a)b$$</center>  
 **Scalar MGL**: Let $$X$$ be a binary random variable and let $$U$$ be an arbitrary random variable. If $$Z \sim Bern(p)$$ is independent of $$(X, U)$$ and $$Y = X \oplus Z$$, then
 <center>$$h(Y|U) \ge h(h^{−1}(h(X|U)) \ast p)$$</center> 
 **Vector MGL**: Let $$X^n$$ be a binary random vector and $$U$$ be an arbitrary random variable. If $$Z^n$$ is a vector of independent and identically distributed $$Bern(p)$$ random variables independent of $$(X^n, U)$$ and $$Y^n = X^n \oplus Z^n$$, then  
 <center>$${h(Y^n|U) \over n} \ge h(h^{−1}({h(X^n|U) \over n}) \ast p)$$</center>  
+Let $$X,Y$$ are two binary random variable, from$$^{[2]}$$  
+<center>$$H(X|Y) = \sum_Y P(Y=y)H(X|Y=y)$$</center>  
+Let  
+<center>$$\beta(y) = P(X=1|Y=y)$$</center>  
+Then  
+<center>$$P(X=0|Y=y) = 1 - \beta(y)$$</center>  
+so that  
+<center>$$H(X|Y=y) = \sum_{x\in\{0,1\}} p(x|y)log(x|y) = h(\beta(y)) = $$</center>  
+ 
+
 #### **Polarization for Binary-Input Channels**  
 
 
