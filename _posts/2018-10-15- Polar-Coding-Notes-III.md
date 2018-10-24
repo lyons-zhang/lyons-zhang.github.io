@@ -17,7 +17,7 @@ The convolution of $$p$$ and $$x$$ is denoted by
 **Vector MGL**: Let $$X^n$$ be a binary random vector and $$U$$ be an arbitrary random variable. If $$Z^n$$ is a vector of independent and identically distributed $$Bern(p)$$ random variables independent of $$(X^n, U)$$ and $$Y^n = X^n \oplus Z^n$$, then  
 <center>$${h(Y^n|U) \over n} \ge h(h^{−1}({h(X^n|U) \over n}) \ast p)$$</center>  
 Let $$X,Y$$ are two binary random variable, from$$^{[2]}$$  
-<center>$$H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y)$$</center>  
+<center>$$H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \tag{conditional entropy definition}$$</center>  
 Let  
 <center>$$\beta(y) = p(X=1|Y=y)$$</center>  
 Then  
