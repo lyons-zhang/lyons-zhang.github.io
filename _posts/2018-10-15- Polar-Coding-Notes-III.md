@@ -24,6 +24,8 @@ Then
 <center>$$P(X=0|Y=y) = 1 - \beta(y)$$</center>  
 so that  
 <center>$$H(X|Y=y) = \sum_{x\in\{0,1\}} p(x|y)log(x|y) = h(\beta(y)) = $$</center>  
+and  
+<center>$$H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) = \sum_{y\in\{0,1\}} p(Y=y)h(\beta(y)) = Eh(\beta(y)) = $$</center>  
  
 
 #### **Polarization for Binary-Input Channels**  
