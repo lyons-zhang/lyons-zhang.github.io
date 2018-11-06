@@ -19,14 +19,17 @@ The convolution of $$a$$ and $$b$$ is denoted by
 Let $$X,Y$$ are two binary random variable, from$$^{[2]}$$  
 <center>$$H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \tag{conditional entropy definition}$$</center>  
 Let  
-<center>$$\beta(y) = p(X=1|Y=y)$$</center>  
+<center>$$\beta_0(y) = p(X=1|Y=y)$$</center>  
 Then  
-<center>$$p(X=0|Y=y) = 1 - \beta(y)$$</center>  
+<center>$$p(X=0|Y=y) = 1 - \beta_0(y)$$</center>  
 so that  
-<center>$$\begin{align} H(X|Y=y) &= \sum_{x\in\{0,1\}} p(x|y)\log p(x|y) \tag{conditional entropy definition} \\&= h(\beta(y)) \end{align}$$</center>  
+<center>$$\begin{align} H(X|Y=y) &= \sum_{x\in\{0,1\}} p(x|y)\log p(x|y) \tag{conditional entropy definition} \\&= h(\beta_0(y)) \end{align}$$</center>  
 and  
-<center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) &= \sum_{y\in\{0,1\}} p(Y=y)h(\beta(y)) = Eh(\beta(y)) \tag{$\beta(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
- 
+<center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) &= \sum_{y\in\{0,1\}} p(Y=y)h(\beta_0(y)) = Eh(\beta_k) \tag{$\beta_0(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
+Let us consider first  
+<center>$$\begin{align} H(X_1,X_2, ... ,X_n) &= \sum_{i=1}^n H(X_i|X_{i-1}, ... , X_1) &= \sum_{i=1}^n Eh() \end{align}$$</center>  
+where the random variable  
+<center>$$\beta_k &= p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n \end{align}$$</center>  
 
 #### **Polarization for Binary-Input Channels**  
 
