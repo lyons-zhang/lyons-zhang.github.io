@@ -28,7 +28,7 @@ so that
 and  
 <center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \\&= \sum_{y\in\{0,1\}} p(Y=y)h(\beta_0(y)) \\&= Eh(\beta_k) \tag{$\beta_0(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
 Let us consider first  
-<center>$$\begin{align} H(X_1,X_2, ... ,X_n) &= \sum_{i=1}^n H(X_i|X_{i-1}, ... , X_1) &= \sum_{i=1}^n Eh(\beta_k) \end{align}$$</center>  
+<center>$$\begin{align} H(X_1,X_2, ... ,X_n) &= \sum_{i=1}^n H(X_i|X_{i-1}, ... , X_1) \\&= \sum_{i=1}^n Eh(\beta_k) \end{align}$$</center>  
 where the random variable  
 <center>$$\beta_k = p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n$$</center>  
 Now we have  
@@ -36,15 +36,22 @@ Now we have
 and  
 <center>$$H(Y_k=1 | X_1, ... , X_{k-1}) = Eh(p_0 \ast \beta_k)$$</center>  
 #### **Strict Polarization for Binary-Input Channels**  
+First notice that  
+<center>$$I(W^-) &= I(U_1; Y_1,Y_2) \\&=  I(X_1+X_2; Y_1,Y_2) \\&= H(X_1+X_2) - H(X_1+X_2|Y_1,Y_2)$$</center>  
+and  
+<center>$$I(W) = I(X_1; Y_1) = 1- H(X_1|Y_1)$$</center>  
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y1})$$. Observe by applying Jensen’s inequality twice that  
 
-#### **Strict Polarization for Binary-Input Channels**  
+#### **Proof of Channel Polarization**  
+  
 
+  
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
 2. A. D. Wyner and J. Ziv. *A theorem on the entropy of certain binary sequences and applications (Part I)*. IEEE Trans.Inform.Theory, vol.19, no.6, pp.769-772, Nov.1973.  
 3. Abbas El Gamal and Young-Han Kim. *Network Information Theory*. Cambridge University Press. 2011.  
 4. M.Alsan and E.Telatar. *A simple proof of polarization and polarization for non-stationary memoryless channels*. IEEE Trans.Info.Theory, vol.62, no.9,pp.4873-4878. 2016.  
-5. Vincent Y. F. Tan. *Polar Codes*. October 3, 2016. https://www.ece.nus.edu.sg 
+5. Vincent Y. F. Tan. *Polar Codes*. October 3, 2016. https://www.ece.nus.edu.sg  
+6. Eren Sasoglu. *Polarization and Polar Codes*. Foundations and Trends in Communications and Information Theory Vol. 8, No. 4 (2011) 259–381  
 
 
