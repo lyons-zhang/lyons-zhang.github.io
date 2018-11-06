@@ -25,7 +25,7 @@ Then
 so that  
 <center>$$\begin{align} H(X|Y=y) &= \sum_{x\in\{0,1\}} p(x|y)\log p(x|y) \tag{conditional entropy definition} \\&= h(\beta(y)) \end{align}$$</center>  
 and  
-<center>$$\begin{align}H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) = \sum_{y\in\{0,1\}} p(Y=y)h(\beta(y)) = Eh(\beta(y)) \tag{\beta(y)=p(X=1|Y)as a RV} \end{align}$$</center>  
+<center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) &= \sum_{y\in\{0,1\}} p(Y=y)h(\beta(y)) = Eh(\beta(y)) \tag{$\beta(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
  
 
 #### **Polarization for Binary-Input Channels**  
