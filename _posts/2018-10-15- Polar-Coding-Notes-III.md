@@ -32,9 +32,9 @@ Let us consider first
 where the random variable  
 <center>$$\beta_k = p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n$$</center>  
 Now we have  
-<center>$$\begin{align} p(Y_k=1 | X_1, ... , X_{k-1}) &= \sum_{X_k \in \{0,1}} p(Y_k | X_k) p(X_k | X_1, ... , X_{k-1}) \\&= p_0 \ast \beta_k \end{align}$$</center>  
+<center>$$\begin{align} p(Y_k=1 | X_1, ... , X_{k-1}) &= \sum_{X_k \in \{0,1\}} p(Y_k | X_k) p(X_k | X_1, ... , X_{k-1}) \\&= p_0 \ast \beta_k \end{align}$$</center>  
 #### **Strict Polarization for Binary-Input Channels**  
-Since $$H(X1jY1) 2 (0; 1)$$, there exists an $$α 2 (0; 1=2)$$ such that $$H(X1jY1) = h(α)$$.  
+Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y1})$$. Observe by applying Jensen’s inequality twice that  
 
 
 
