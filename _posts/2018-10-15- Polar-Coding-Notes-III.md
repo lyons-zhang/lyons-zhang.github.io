@@ -33,15 +33,18 @@ where the random variable
 <center>$$\beta_k = p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n$$</center>  
 Now we have  
 <center>$$\begin{align} p(Y_k=1 | X_1, ... , X_{k-1}) &= \sum_{X_k \in \{0,1\}} p(Y_k | X_k) p(X_k | X_1, ... , X_{k-1}) \\&= p_0 \ast \beta_k \end{align}$$</center>  
+and  
+<center>$$H(Y_k=1 | X_1, ... , X_{k-1}) = Eh(p_0 \ast \beta_k)$$</center>  
 #### **Strict Polarization for Binary-Input Channels**  
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y1})$$. Observe by applying Jensen’s inequality twice that  
 
-
+#### **Strict Polarization for Binary-Input Channels**  
 
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
 2. A. D. Wyner and J. Ziv. *A theorem on the entropy of certain binary sequences and applications (Part I)*. IEEE Trans.Inform.Theory, vol.19, no.6, pp.769-772, Nov.1973.  
 3. Abbas El Gamal and Young-Han Kim. *Network Information Theory*. Cambridge University Press. 2011.  
-4. M.Alsan and E.Telatar. *A simple proof of polarization and polarization for non-stationary memoryless channels*. IEEE Trans.Info.Theory, vol.62, no.9,pp.4873-4878. 2016.
+4. M.Alsan and E.Telatar. *A simple proof of polarization and polarization for non-stationary memoryless channels*. IEEE Trans.Info.Theory, vol.62, no.9,pp.4873-4878. 2016.  
+5. Vincent Y. F. Tan. *Polar Codes*. October 3, 2016. https://www.ece.nus.edu.sg 
 
 
