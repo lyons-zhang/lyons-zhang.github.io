@@ -38,7 +38,7 @@ and
 <center>$$H(Y_k=1 | X_1, ... , X_{k-1}) = Eh(p_0 \ast \beta_k)$$</center>  
 #### **Strict Polarization for Binary-Input Channels**  
 First notice that  
-<center>$$I(W^-) &= I(U_1; Y_1,Y_2) \\&=  I(X_1+X_2; Y_1,Y_2) \\&= H(X_1+X_2) - H(X_1+X_2|Y_1,Y_2)$$</center>  
+<center>$$\begin{align} I(W^-) &= I(U_1; Y_1,Y_2) \\&=  I(X_1+X_2; Y_1,Y_2) \\&= H(X_1+X_2) - H(X_1+X_2|Y_1,Y_2) \end{align}$$</center>  
 and  
 <center>$$I(W) = I(X_1; Y_1) = 1- H(X_1|Y_1)$$</center>  
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y_1})$$. Observe by applying Jensen’s inequality twice that  
