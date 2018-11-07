@@ -20,12 +20,12 @@ The convolution of $$a$$ and $$b$$ is denoted by
 Let $$X,Y$$ are two binary random variable, from$$^{[2]}$$  
 <center>$$H(X|Y) = \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \tag{conditional entropy definition}$$</center>  
 Let  
-<center>$$\beta_0(y) = p(X=1|Y=y) \tag{(1)}$$</center>  
+<center>$$\beta_0(y) = p(X=1|Y=y) \tag{1}$$</center>  
 <center>$$1 - \beta_0(y) = p(X=0|Y=y)$$</center>  
 Then    
-<center>$$\begin{align} H(X|Y=y) &= \sum_{x\in\{0,1\}} p(x|y)\log p(x|y) \tag{conditional entropy definition} \\&= h(\beta_0(y)) \tag{(2)}\end{align}$$</center>  
+<center>$$\begin{align} H(X|Y=y) &= \sum_{x\in\{0,1\}} p(x|y)\log p(x|y) \tag{conditional entropy definition} \\&= h(\beta_0(y)) \tag{2}\end{align}$$</center>  
 So that  
-<center>$$h^{-1}(H(X|Y=y)) = p(X=1|Y=y)$$</center>  
+<center>$$h^{-1}(H(X|Y=y)) = p(X=1|Y=y) \tag{3}$$</center>  
 and  
 <center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \\&= \sum_{y\in\{0,1\}} p(Y=y)h(\beta_0(y)) \\&= Eh(\beta_k) \tag{$\beta_0(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
 Let us consider first  
@@ -42,7 +42,7 @@ First notice that
 and  
 <center>$$I(W) = I(X_1; Y_1) = 1- H(X_1|Y_1)$$</center>  
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y_1})$$. Observe by applying Jensen’s inequality twice that  
-<center>$$\begin{align} H(X_1+X_2|Y_1,Y_2) &= \sum_{y_1,y_2} p(y_1)p(y_2)H(X_1+X_2|y_1y_2) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(\beta_0(y_1,y_2) \tag{from (2)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1+X_2 = 1|y_1y_2) \tag{from (1)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)p(X_2=0|y_2) + p(X_1=0|y_1)p(X_2=1|y_2)) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)\ast p(X_2=1|y_2)) \\&= \end{align}$$</center>  
+<center>$$\begin{align} H(X_1+X_2|Y_1,Y_2) &= \sum_{y_1,y_2} p(y_1)p(y_2)H(X_1+X_2|y_1y_2) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(\beta_0(y_1,y_2) \tag{from (2)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1+X_2 = 1|y_1y_2) \tag{from (1)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)p(X_2=0|y_2) + p(X_1=0|y_1)p(X_2=1|y_2)) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)\ast p(X_2=1|y_2)) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(h^{-1}(H(X_1|y_1)\ast h^{-1}(H(X_2|y_2)))) \tag{from (3)} \end{align}$$</center>  
 #### **Proof of Channel Polarization**  
   
 
