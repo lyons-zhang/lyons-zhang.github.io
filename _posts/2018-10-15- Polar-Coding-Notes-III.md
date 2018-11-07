@@ -42,7 +42,7 @@ First notice that
 and  
 <center>$$I(W) = I(X_1; Y_1) = 1- H(X_1|Y_1)$$</center>  
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$. We also write $$H(X_1|Y_1 = y_1) = h(p_{X_1|Y_1=y_1})$$. Observe by applying Jensen’s inequality twice that  
-<center>$$\begin{align} H(X_1+X_2|Y_1,Y_2) &= \sum_{y_1,y_2} p(y_1)p(y_2)H(X_1+X_2|y_1y_2) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(\beta_0(y_1,y_2) \tag{from (2)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1+X_2 = 1|y_1y_2) \tag{from (1)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)p(X_2=0|y_2) + p(X_1=0|y_1)p(X_2=1|y_2)) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(p(X_1=1|y_1)\ast p(X_2=1|y_2)) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h(h^{-1}(H(X_1|y_1)\ast h^{-1}(H(X_2|y_2)))) \tag{from (3)} \end{align}$$</center>  
+<center>$$\begin{align} H(X_1+X_2|Y_1,Y_2) &= \sum_{y_1,y_2} p(y_1)p(y_2)H(X_1+X_2|y_1y_2) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(\beta_0(y_1,y_2)\big) \tag{from (2)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1+X_2 = 1|y_1y_2)\big) \tag{from (1)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1=1|y_1)p(X_2=0|y_2) + p(X_1=0|y_1)p(X_2=1|y_2)\big) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1=1|y_1)\ast p(X_2=1|y_2)\big) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\Big(h^{-1}\big(H(X_1|y_1)\big)\ast h^{-1}\big(H(X_2|y_2)\big)\Big) \tag{from (3)} \\&\ge \end{align}$$</center>  
 #### **Proof of Channel Polarization**  
   
 
