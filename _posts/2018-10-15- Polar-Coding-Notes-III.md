@@ -10,9 +10,9 @@ categories: Digital Comunication
 Mrs. Gerber’s Lemma provides a lower bound on the entropy of the modulo-$$2$$ sum of two binary random vectors$$^{[2][3]}$$.  
 Let $$h^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function $$h(p) = -p\log p - (1-p)\log(1-p)$$.  
 Here we set a binary symmetric channal with crossover probability $$p_0$$.  
-The function $$f(u) = h(h^{-1}(u)\ast p_0), u \in [0,1]$$ is convex in $$u$$ for every fixed $$p_0 \in (0,1/2]^{[2]}$$.  
 The convolution of $$a$$ and $$b$$ is denoted by  
 <center>$$a \ast b := a(1 − b) + (1 − a)b$$</center>  
+**Convex**: The function $$f(u) = h(h^{-1}(u)\ast p_0), u \in [0,1]$$ is convex in $$u$$ for every fixed $$p_0 \in (0,1/2]^{[2]}$$.  
 **Scalar MGL**: Let $$X$$ be a binary random variable and let $$U$$ be an arbitrary random variable. If $$Z \sim Bern(p)$$ is independent of $$(X, U)$$ and $$Y = X \oplus Z$$, then
 <center>$$h(Y|U) \ge h(h^{−1}(h(X|U)) \ast p)$$</center> 
 **Vector MGL**: Let $$X^n$$ be a binary random vector and $$U$$ be an arbitrary random variable. If $$Z^n$$ is a vector of independent and identically distributed $$Bern(p)$$ random variables independent of $$(X^n, U)$$ and $$Y^n = X^n \oplus Z^n$$, then  
