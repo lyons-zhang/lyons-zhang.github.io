@@ -29,9 +29,7 @@ So that
 and  
 <center>$$\begin{align} H(X|Y) &= \sum_{y\in\{0,1\}} p(Y=y)H(X|Y=y) \\&= \sum_{y\in\{0,1\}} p(Y=y)h(\beta_0(y)) \\&= Eh(\beta_0) \tag{$\beta_0(y)=p(X=1|Y)$ as a RV} \end{align}$$</center>  
 Let us consider first  
-<center>$$\begin{align} H(X_1,X_2, ... ,X_n) &= \sum_{i=1}^n H(X_i|X_{i-1}, ... , X_1) \\&= \sum_{i=1}^n Eh(\beta_k) \end{align}$$</center>  
-where the random variable  
-<center>$$\beta_k = p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n$$</center>  
+<center>$$\begin{align} H(X_1,X_2, ... ,X_n) &= \sum_{i=1}^n H(X_i|X_{i-1}, ... , X_1) \\&= \sum_{i=1}^n Eh(\beta_k) \tag{$\beta_k = p(X_k=1 | X_1, ... , X_{k-1}), 1 \le k \le n$} \end{align}$$</center>  
 Now we have  
 <center>$$\begin{align} p(Y_k=1 | X_1, ... , X_{k-1}) &= \sum_{X_k \in \{0,1\}} p(Y_k | X_k) p(X_k | X_1, ... , X_{k-1}) \\&= p_0 \ast \beta_k \end{align}$$</center>  
 and  
