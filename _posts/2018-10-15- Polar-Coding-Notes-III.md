@@ -63,7 +63,8 @@ This means that for large enough $$n$$, the fraction of mediocre channels (i.e.,
 we automatically have  
 <center>$$\lim_{n \to \infty} \alpha_n(\delta) = I(W)$$</center>  
 <center>$$\lim_{n \to \infty} \theta_n(\delta) = 1 - I(W)$$</center>  
-  
+This proof is much simpler than the martingale convergence theorem used by Arıkan$$^[1]$$$.
+    
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
 2. A. D. Wyner and J. Ziv. *A theorem on the entropy of certain binary sequences and applications (Part I)*. IEEE Trans.Inform.Theory, vol.19, no.6, pp.769-772, Nov.1973.  
