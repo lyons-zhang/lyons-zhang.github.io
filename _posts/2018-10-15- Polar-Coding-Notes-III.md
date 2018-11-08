@@ -10,7 +10,7 @@ categories: Digital Comunication
 Mrs. Gerber’s Lemma provides a lower bound on the entropy of the modulo-$$2$$ sum of two binary random vectors$$^{[2][3]}$$.  
 Let $$h^{-1} : [0, 1] \to [0, 1/2]$$ be the inverse of the binary entropy function $$h(p) = -p\log p - (1-p)\log(1-p)$$.  
 Here we set a binary symmetric channal with crossover probability $$p_0$$.  
-The convolution of $$a$$ and $$b$$ is denoted by  
+The *convolution* of $$a$$ and $$b$$ is denoted by  
 <center>$$a \ast b := a(1 − b) + (1 − a)b$$</center>  
 **Convex**: The function $$f(u) = h(h^{-1}(u)\ast p_0), u \in [0,1]$$ is convex in $$u$$ for every fixed $$p_0 \in (0,1/2]^{[2]}$$.  
 **Scalar MGL**: Let $$X$$ be a binary random variable and let $$U$$ be an arbitrary random variable. If $$Z \sim Bern(p)$$ is independent of $$(X, U)$$ and $$Y = X \oplus Z$$, then
@@ -42,15 +42,17 @@ and
 Since $$H(X_1|Y_1) \in (0, 1)$$, there exists an $$\alpha \in (0, 1/2)$$ such that $$H(X_1|Y_1) = h(\alpha)$$.  
 <center>$$\begin{align} H(X_1+X_2|Y_1,Y_2) &= \sum_{y_1,y_2} p(y_1)p(y_2)H(X_1+X_2|y_1y_2) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(\beta_0(y_1,y_2)\big) \tag{from (2)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1+X_2 = 1|y_1y_2)\big) \tag{from (1)} \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1=1|y_1)p(X_2=0|y_2) + p(X_1=0|y_1)p(X_2=1|y_2)\big) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\big(p(X_1=1|y_1)\ast p(X_2=1|y_2)\big) \\&= \sum_{y_1,y_2} p(y_1)p(y_2)h\Big(h^{-1}\big(H(X_1|y_1)\big)\ast h^{-1}\big(H(X_2|y_2)\big)\Big) \tag{from (3)} \\&\ge \sum_{y_2} p(y_2)h\Big(h^{-1}\big(\sum_{y_1}p(y_1)H(X_1|y_1)\big)\ast h^{-1}\big(H(X_2|y_2)\big)\Big) \tag{Jensen’s inequality} \\&= \sum_{y_2} p(y_2)h\Big(h^{-1}\big(H(X_1|Y_1)\big)\ast h^{-1}\big(H(X_2|y_2)\big)\Big) \\&\ge h\Big(h^{-1}\big(H(X_1|Y_1)\big)\ast h^{-1}\big(H(X_2|Y_2)\big)\Big) \tag{Jensen’s inequality} \\&= h(\alpha \ast \alpha) \end{align}$$</center>  
 Thus, we have that  
-<center>$$I(W^-) \le 1 − h(\alpha \ast \alpha) < 1 − h(\alpha) = I(W):$$</center>  
+<center>$$I(W^-) \le 1 − h(\alpha \ast \alpha) < 1 − h(\alpha) = I(W)$$</center>  
 So what we have concluded is that for every $$\delta > 0$$, there exists $$\kappa(\delta) > 0$$ such that if $$I(W) \in (\delta, 1 − \delta)$$, we have  
-<center>$${1\over 2}[I(W^+) - I(W^-) \ge \kappa(\delta) >0$$</center>  
+<center>$$\Delta(W) = {1\over 2}[I(W^+) - I(W^-) \ge \kappa(\delta) >0$$</center>  
 #### **Proof of Channel Polarization**  
 Given $$W$$ and $$\delta > 0$$, define$$^{[4][5]}$$  
-<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\{s \in {+, −}^n : I(W^s) \in (\delta, 1-\delta])\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \end{align}$$</center>  
+<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$$\mathbb{1}_{\{\codt\}}=1$$ if \{\cdot\} is true} \end{align}$$</center>  
 Let  
-<center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s)$$</center>  
-<center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2$$</center>  
+<center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s), e.g. \mu_1 = {1\over 2}[I(W^+)+I(W^-)]$$</center>  
+<center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2, e.g. \nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$$</center>  
+<center>$$\begin{align} \mu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} I(W^s) \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I(W^{t+})+I(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} I(W^t) \\&= \mu_n = \mu_0 = I(W) \end{align}$$</center>
+<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I^2(W^{t+})+I^2(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^{t+})]^2+[\Delta(W^t)]^2 \tag{${{a^2+b^2}\over 2} = ({{a+b}\over 2})^2+({{a-b}\over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta) \end{align}$$</center>  
 
 
 
