@@ -52,7 +52,7 @@ Let
 <center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s), e.g. \mu_1 = {1\over 2}[I(W^+)+I(W^-)]$$</center>  
 <center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2, e.g. \nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$$</center>  
 <center>$$\begin{align} \mu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} I(W^s) \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I(W^{t+})+I(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} I(W^t) \\&= \mu_n = \mu_0 = I(W) \end{align}$$</center>
-<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I^2(W^{t+})+I^2(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^{t+})]^2+[\Delta(W^t)]^2 \tag{${{a^2+b^2}\over 2} = ({{a+b}\over 2})^2+({{a-b}\over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta) \end{align}$$</center>  
+<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I^2(W^{t+})+I^2(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^{t+})]^2+[\Delta(W^t)]^2 \tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta) \end{align}$$</center>  
 
 
 
