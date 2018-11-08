@@ -47,12 +47,12 @@ So what we have concluded is that for every $$\delta > 0$$, there exists $$\kapp
 <center>$$\Delta(W) = {1\over 2}[I(W^+) - I(W^-) \ge \kappa(\delta) >0$$</center>  
 #### **Proof of Channel Polarization**  
 Given $$W$$ and $$\delta > 0$$, define$$^{[4][5]}$$  
-<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$$\mathbb{1}_{\{\codt\}}=1$$ if \{\cdot\} is true} \end{align}$$</center>  
+<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$$\mathbb{1}_{\{\cdot\}}=1$$ if {$\cdot\$} is true} \end{align}$$</center>  
 Let  
 <center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s) \tag{e.g. $\mu_1 = {1\over 2}[I(W^+)+I(W^-)]$}$$</center>  
 <center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2 \tag{e.g. $\nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$}$$</center>  
 <center>$$\begin{align} \mu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} I(W^s) \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I(W^{t+})+I(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} I(W^t) \\&= \mu_n = \mu_0 = I(W) \end{align}$$</center>
-<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {[I(W^{t+})]^2+[I(W^{t-}]^2 \over 2} \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^t)]^2+[\Delta(W^t)]^2 \big\tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta)^2 \tag{definition of $\theta_n(\delta)$} \end{align}$$</center>  
+<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {[I(W^{t+})]^2+[I(W^{t-}]^2 \over 2} \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^t)]^2+[\Delta(W^t)]^2 \tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta)^2 \tag{definition of $\theta_n(\delta)$} \end{align}$$</center>  
 The sequence $$\nu_n$$ is thus bounded and monotone and consequently convergent; in particular $$\nu_{n+1}−\nu_n$$ converges to zero. As $$\theta_n$$ is sandwiched by  
 <center>$$0 \le \theta_n(\delta) \le {\nu_{n+1} - \nu_n \over \kappa(\delta)^2}$$</center>  
 between two quantities both convergent to zero, we conclude  
