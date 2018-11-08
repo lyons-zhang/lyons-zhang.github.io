@@ -49,14 +49,20 @@ So what we have concluded is that for every $$\delta > 0$$, there exists $$\kapp
 Given $$W$$ and $$\delta > 0$$, define$$^{[4][5]}$$  
 <center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$$\mathbb{1}_{\{\codt\}}=1$$ if \{\cdot\} is true} \end{align}$$</center>  
 Let  
-<center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s), e.g. \mu_1 = {1\over 2}[I(W^+)+I(W^-)]$$</center>  
-<center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2, e.g. \nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$$</center>  
+<center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s) \tag{e.g. $\mu_1 = {1\over 2}[I(W^+)+I(W^-)]$}$$</center>  
+<center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2 \tag{e.g. $\nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$}$$</center>  
 <center>$$\begin{align} \mu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} I(W^s) \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I(W^{t+})+I(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} I(W^t) \\&= \mu_n = \mu_0 = I(W) \end{align}$$</center>
-<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I^2(W^{t+})+I^2(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^{t+})]^2+[\Delta(W^t)]^2 \tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta) \end{align}$$</center>  
-
-
-
-
+<center>$$\begin{align} \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {[I(W^{t+})]^2+[I(W^{t-}]^2 \over 2} \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^t)]^2+[\Delta(W^t)]^2 \big\tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta)^2 \tag{definition of $\theta_n(\delta)$} \end{align}$$</center>  
+The sequence $$\nu_n$$ is thus bounded and monotone and consequently convergent; in particular $$\nu_{n+1}−\nu_n$$ converges to zero. As $$\theta_n$$ is sandwiched by  
+<center>$$0 \le \theta_n(\delta) \le {\nu_{n+1} - \nu_n \over \kappa(\delta)^2}$$</center>  
+between two quantities both convergent to zero, we conclude  
+<center>$$\lim_{n \to \infty} \theta_n(\delta) = 0, \forall\delta > 0$$</center>  
+This means that for large enough $$n$$, the fraction of mediocre channels (i.e., those with symmetric capacities in $$(\delta, 1 − \delta)$$ vanishes to zero. But by preservation of mutual information, we also know that if we define  
+<center>$$\alpha_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \ge 1-\delta\}}$$</center>  
+<center>$$\beta_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \le \delta\}}$$</center>  
+we automatically have  
+<center>$$\lim_{n \to \infty} \alpha_n(\delta) = I(W)$$</center>  
+<center>$$\lim_{n \to \infty} \theta_n(\delta) = 1 - I(W)$$</center>  
   
 Reference:  
 1. E. Arikan. *Channel polarization: A method for constructing capacity-achieving codes for symmetric binary-input memoryless channels*. IEEE Trans. on Information Theory, vol.55, no.7, pp.3051–3073, July 2009.  
