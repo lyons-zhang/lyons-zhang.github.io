@@ -47,7 +47,7 @@ So what we have concluded is that for every $$\delta > 0$$, there exists $$\kapp
 <center>$$\Delta(W) = {1\over 2}[I(W^+) - I(W^-) \ge \kappa(\delta) >0$$</center>  
 #### **Proof of Channel Polarization**  
 Given $$W$$ and $$\delta > 0$$, define$$^{[4][5]}$$  
-<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$$\mathbb{1}_{\{\cdot\}}=1$$ if {$\cdot\$} is true} \end{align}$$</center>  
+<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$\mathbb{1}_{\{\cdot\}}=1$ if {$\cdot\$} is true} \end{align}$$</center>  
 Let  
 <center>$$\mu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s) \tag{e.g. $\mu_1 = {1\over 2}[I(W^+)+I(W^-)]$}$$</center>  
 <center>$$\nu_n = {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2 \tag{e.g. $\nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$}$$</center>  
