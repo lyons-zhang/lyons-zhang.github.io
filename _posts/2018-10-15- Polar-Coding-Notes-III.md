@@ -60,7 +60,7 @@ This means that for large enough $$n$$, the fraction of mediocre channels (i.e.,
 <center>$$\beta_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathbb{1}_{\{I(W^s) \le \delta\}}$$</center>  
 we automatically have  
 <center>$$\lim_{n \to \infty} \alpha_n(\delta) = I(W)$$</center>  
-<center>$$\lim_{n \to \infty} \theta_n(\delta) = 1 - I(W)$$</center>  
+<center>$$\lim_{n \to \infty} \beta_n(\delta) = 1 - I(W)$$</center>  
 This proof is much simpler than the martingale convergence theorem used by Arıkan$$^{[1]}$$$.
     
 Reference:  
