@@ -47,7 +47,7 @@ So what we have concluded is that for every $$\delta > 0$$, there exists $$\kapp
 <center>$$\Delta(W) = {1\over 2}[I(W^+) - I(W^-) \ge \kappa(\delta) >0$$</center>  
 #### **Proof of Channel Polarization**  
 Given $$W$$ and $$\delta > 0$$, define$$^{[4][5]}$$  
-<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathds{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$\mathds{1}_{\{\cdot\}}=1$ if {$\cdot$} is true else $=0$} \end{align}$$</center>  
+<center>$$\begin{align} \theta_n(\delta) &:= {1\over 2^n} \#\big\{s \in \{+, −\}^n : I(W^s) \in (\delta, 1-\delta)\big\} \tag{$\#$ means the cardinality of a set} \\&=  {1\over 2^n} \sum_{s \in \{\pm\}^n} \Bbb{1}_{\{I(W^s) \in (\delta, 1-\delta])\}} \tag{$\Bbb{1}_{\{\cdot\}}=1$ if {$\cdot$} is true else $=0$} \end{align}$$</center>  
 Let  
 <center>$$\begin{align} \mu_n &= {1\over 2^n} \sum_{s \in \{\pm\}^n} I(W^s) \tag{e.g. $\mu_1 = {1\over 2}[I(W^+)+I(W^-)]$} \\ \nu_n &= {1\over 2^n} \sum_{s \in \{\pm\}^n} [I(W^s)]^2 \tag{e.g. $\nu_1 = {1\over 2} [I^2(W^+)+I^2(W^-)]$} \end{align}$$</center>  
 <center>$$\begin{align} \mu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} I(W^s) \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {1\over 2} [I(W^{t+})+I(W^{t-})] \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} I(W^t) \\&= \mu_n = \mu_0 = I(W) \\ \nu_{n+1} &= {1\over 2^{n+1}} \sum_{s \in \{\pm\}^{n+1}} [I(W^s)]^2 \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} {[I(W^{t+})]^2+[I(W^{t-}]^2 \over 2} \\&= {1\over 2^n} \sum_{t \in \{\pm\}^n} [I(W^t)]^2+[\Delta(W^t)]^2 \tag{${a^2+b^2 \over 2} = ({a+b \over 2})^2+({a-b \over 2})^2$} \\&\ge \nu_n + \theta_n(\delta)\kappa(\delta)^2 \tag{definition of $\theta_n(\delta)$} \end{align}$$</center>  
@@ -56,8 +56,8 @@ The sequence $$\nu_n$$ is thus bounded and monotone and consequently convergent;
 between two quantities both convergent to zero, we conclude  
 <center>$$\lim_{n \to \infty} \theta_n(\delta) = 0, \forall\delta > 0$$</center>  
 This means that for large enough $$n$$, the fraction of mediocre channels (i.e., those with symmetric capacities in $$(\delta, 1 − \delta)$$ vanishes to zero. But by preservation of mutual information, we also know that if we define  
-<center>$$\alpha_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathds{1}_{\{I(W^s) \ge 1-\delta\}}$$</center>  
-<center>$$\beta_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \mathds{1}_{\{I(W^s) \le \delta\}}$$</center>  
+<center>$$\alpha_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \Bbb{1}_{\{I(W^s) \ge 1-\delta\}}$$</center>  
+<center>$$\beta_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \Bbb{1}_{\{I(W^s) \le \delta\}}$$</center>  
 we automatically have  
 <center>$$\lim_{n \to \infty} \alpha_n(\delta) = I(W)$$</center>  
 <center>$$\lim_{n \to \infty} \beta_n(\delta) = 1 - I(W)$$</center>  
