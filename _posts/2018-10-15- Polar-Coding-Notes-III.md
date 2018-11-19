@@ -55,7 +55,7 @@ The sequence $$\nu_n$$ is thus bounded and monotone and consequently convergent;
 <center>$$0 \le \theta_n(\delta) \le {\nu_{n+1} - \nu_n \over \kappa(\delta)^2}$$</center>  
 between two quantities both convergent to zero, we conclude  
 <center>$$\lim_{n \to \infty} \theta_n(\delta) = 0, \forall\delta > 0$$</center>  
-This means that for large enough $$n$$, the fraction of mediocre channels (i.e., those with symmetric capacities in $$(\delta, 1 − \delta)$$ vanishes to zero. But by preservation of mutual information, we also know that if we define  
+This means that for large enough $$n$$, the fraction of mediocre channels (i.e., those with symmetric capacities in $$(\delta, 1 − \delta)$$) vanishes to zero. But by preservation of mutual information, we also know that if we define  
 <center>$$\alpha_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \Bbb{1}_{\{I(W^s) \ge 1-\delta\}}$$</center>  
 <center>$$\beta_n(\delta) = {1\over 2^n} \sum_{s \in \{\pm\}^n} \Bbb{1}_{\{I(W^s) \le \delta\}}$$</center>  
 we automatically have  
