@@ -8,8 +8,9 @@ categories: Digital Communication
     
 	
 At the request of company, it's in Chinese.   
-[Get the PDF]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201706/fpga_qs.pdf){:.aligncenter}  
+[FPGA Questions 2017]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201706/fpga_qs.pdf){:.aligncenter}  
 
-
+This question was designed by me for the coding.  
+[Coding Questions 2018]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201809/CodingQuestion.pdf){:.aligncenter}  
 Reference:  
 1. MIT Opencourse.  
