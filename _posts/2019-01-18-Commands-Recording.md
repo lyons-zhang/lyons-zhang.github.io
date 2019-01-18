@@ -1,5 +1,5 @@
 ---
-title:   Commands Recording
+title: Commands Recording
 description: 
 categories: 
 ---
