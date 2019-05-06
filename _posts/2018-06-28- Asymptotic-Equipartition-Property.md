@@ -6,10 +6,10 @@ categories: Information Theory
 
 >  The asymptotic equiparitition property (AEP) is central in information theory and is the consequence of the law of large numbers.   
   
-### **Types of Convergence**    
+### **Types of Convergence**   
 A random variable is: a mapping from its set of sample values $$\Omega$$ onto $$\cal R$$.   
 <center>$$X : \Omega \to \cal R$$</center>
-<center>$$~~~~~ \xi \to X(\xi)$$</center>    
+<center>$$~~~~~ \xi \to X(\xi)$$</center>
 In the cases we have been discussing, $$\Omega = \cal X$$ and we map onto $$[0,1]$$.
 ##### **Sure Convergence**  
 A random sequence $$X_1, . . .$$ converges surely to r.v. $$X$$ if $$\forall \xi \in \Omega$$ the sequence $$X_n(\xi)$$ converges to $$X(\xi)$$ as $$n \to \infty$$.   
@@ -41,7 +41,13 @@ E.g. Sample sequence consisting of eight i.i.d samples:
 * Weekly typical: $$-\log p(x) = nH(x)$$   
   $$\clubsuit\clubsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit\diamondsuit \Rightarrow -\log p(x) = 14 = 8H(x)$$.   
   
-### **Strong versus Weak Typicality Intuition**    
+### **Asymptotic Equipartition Propert(AEP)**   
+##### **APE**  
+If $$X_1, X_2, ... , X_n {{i.i.d}\over {\~}} p$$, then  
+<center>$$-{1\above n}\log p(X_1, X_2, ... , X_n) = -{1\above n}\sum_{i=1}^n\log p(X_i) {p \over \to} -E[\log p(X)] = H(X) $$</center>
+##### ** Typical Set**  
+
+
 
   
 Reference:  
