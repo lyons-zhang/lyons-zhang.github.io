@@ -44,7 +44,7 @@ E.g. Sample sequence consisting of eight i.i.d samples:
 ### **Asymptotic Equipartition Propert(AEP)**   
 ##### **APE**   
 If $$X_1, X_2, ... , X_n {i.i.d. \atop \sim} p$$, then  
-<center>$$\align -{1\above n}\log p(X_1, X_2, ... , X_n) = -{1\above n}\sum_{i=1}^n\log p(X_i) {p \atop \to} -E[\log p(X)] = H(X) $$</center>
+<center>$$\align -{1\above n}\log p(X_1, X_2, ... , X_n) = -{1\above n}\sum_{i=1}^n\log p(X_i) \stackrel{p}{\to} -E[\log p(X)] = H(X) $$</center>
 ##### ** Typical Set**  
 
 
