@@ -6,9 +6,9 @@ categories: Digital Comunication
 
 >  Consider a $$G_N$$-coset code with parameter $$(N, K, \cal A , u_{\cal A^c})$$. Let $$u_1^N$$ be encoded into a codeword $$x_1^N$$, let $$x_1^N$$ be sent over the channel $$W^N$$, and let a channel output $$y_1^N$$ be received. The decoder’s task is to generate an estimate $$\hat u_1^N$$ of $$u_1^N$$, given knowledge of $$\cal A$$, $$u_{\cal A^c}$$, and $$y_1^N^[1]$$.  
 #### **Successive Cancellation Decoder**    
-Individual $$G_N$$-coset codes will be identified by a parameter vector $$(N, K, \cal A, u_{{\cal A}^c})$$, where $$K$$ is the code dimension and specifies the size of $$\cal A$$. The ratio $$K/N$$ is called the code rate. We will refer to $$\cal A$$ as the information set and to $$u_{{\cal A}^c} \in {\cal X}^{N−K}$$ as frozen bits or vector.  
+Individual $$G_N$$-coset codes will be identified by a parameter vector $$(N, K, \cal A, u_{\cal A^c})$$, where $$K$$ is the code dimension and specifies the size of $$\cal A$$. The ratio $$K/N$$ is called the code rate. We will refer to $$\cal A$$ as the information set and to $$u_{\cal A^c} \in {\cal X}^{N−K}$$ as frozen bits or vector.  
 We obtain a mapping from source blocks $$u_{\cal A}$$ to codeword blocks $$x_1^N$$ as  
-<center>$$x_1^N = u_1^N G_N = u_{\cal A}G_N(\cal A) \oplus u_{{\cal A}^c}G_N({\cal A}^c)$$</center>  
+<center>$$x_1^N = u_1^N G_N = u_{\cal A}G_N(\cal A) \oplus u_{\cal A^c}G_N(\cal A^c)$$</center>  
 
 
 Reference:  
