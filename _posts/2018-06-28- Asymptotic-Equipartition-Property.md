@@ -46,8 +46,7 @@ E.g. Sample sequence consisting of eight i.i.d samples:
 If $$X_1, X_2, ... , X_n {i.i.d. \atop \sim} p$$, then  
 <center>$$\align -{1\above n}\log p(X_1, X_2, ... , X_n) = -{1\above n}\sum_{i=1}^n\log p(X_i) \stackrel{p}{\to} -E[\log p(X)] = H(X) $$</center>
 ##### ** Typical Set**  
-
-
+[Jointly Typical](https://lyons-zhang.github.io/2017/11/16/Channel-Capacity/#Inter-Page)   
 
   
 Reference:  
