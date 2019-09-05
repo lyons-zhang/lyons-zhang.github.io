@@ -39,7 +39,14 @@ The $$H$$ can be partitioned into six matrices:
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-There are 2 types of $$H_B = B$$ both in BG1 and BG2, for easy here use $$-1, 0, 1, ...$$ denotes $$Q(-1), Q(0), Q(1)...$$.  
+For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}.  
+<center>$$A = \begin{bmatrix}
+a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
+a_{2,1} & a_{2,2} & \ldots & a_{1,k_b}\cr
+a_{3,1} & a_{3,2} & \ldots & a_{1,k_b}\cr
+a_{4,1} & a_{4,2} & \ldots & a_{1,k_b}\cr
+\end{bmatrix}$$</center>
+There are 2 types of $$B \in \{H_{B1\_BG1}, H_{B2\_BG1}, H_{B1\_BG2}, H_{B2\_BG2}\}$$ both in BG1 and BG2.  
 <center>$$H_{B1\_BG1} = \begin{bmatrix}
 1 &  0 & -1 & -1\cr
 0 &  0 &  0 & -1\cr
@@ -75,10 +82,13 @@ C_1 & C_2 & I\cr
 s\cr
 p_b\cr
 p_c\cr
-\end{bmatrix} = 0^T \text{, that is, } 
-\eqalign{
-A S^T + B p_b^T &= 0^T \\
-C_1 S^T + C_2 p_b^T + p_c^T &= 0^T}$$</center>
+\end{bmatrix} = 0^T$$</center>
+that is,  
+<center>\begin{align}
+A s^T + B p_b^T &= 0^T \tag {1} \\
+C_1 s^T + C_2 p_b^T + p_c^T &= 0^T} \tag {2} \end{align}$$</center>  
+
+
 
 
 Reference:  
