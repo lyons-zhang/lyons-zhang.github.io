@@ -53,21 +53,24 @@ There are 2 types of $$H_B$$ both in BG1 and BG2.
 0 &  0 &  0 & -1\cr
 1 & -1 &  0 &  0\cr
 1 & -1 & -1 &  0\cr
-\end{bmatrix}\tag{$Z set index i_LS = 0, 1, 2, 3, 4, 5, 7$} H_{BG1}_2 = \begin{bmatrix}
+\end{bmatrix}\tag{$Z set index i_LS = 0, 1, 2, 3, 4, 5, 7$} H_{B\_BG1\_2} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 105 & 0 & 0 & -1\cr
 -1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
 \end{bmatrix}\tag{$Z set index i_LS = 6$}$$</center>
 
-<center>$$\begin{bmatrix}
-A & B & 0\cr
-C_1 & C_2 & I\cr
-\end{bmatrix} \begin{bmatrix}
-s\cr
-p_b\cr
-p_c\cr
-\end{bmatrix} = 0^T$$</center>
+<center>$$H_{B\_BG2\_1} = \begin{bmatrix}
+0 & 0 & -1 & -1\cr
+-1 & 0 & 0 & -1\cr
+1 & -1 & 0 & 0\cr
+0 & -1 & -1 & 0\cr
+\end{bmatrix}\tag{$Z set index i_LS = 0, 1, 2, 4, 5, 6$} H_{B\_BG2\_2} = \begin{bmatrix}
+1 & 0 & -1 & -1\cr
+-1 & 0 & 0 & -1\cr
+0 & -1 & 0 & 0\cr
+1 & -1 & -1 & 0\cr
+\end{bmatrix}\tag{$Z set index i_LS = 3, 7$}$$</center>
   
 Reference:  
 1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.
