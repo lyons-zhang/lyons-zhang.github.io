@@ -75,7 +75,10 @@ C_1 & C_2 & I\cr
 s\cr
 p_b\cr
 p_c\cr
-\end{bmatrix} = 0^T$$</center>
+\end{bmatrix} = 0^T, \text{that is, } \left\{
+\eqalign{
+A S^T + B p_b^T &= 0^T\\
+C_1 S^T + C_2 p_b^T + p_c^T &= 0^T\\}$$</center>
 
 
 Reference:  
