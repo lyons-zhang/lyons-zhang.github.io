@@ -39,31 +39,31 @@ The $$H$$ can be partitioned into six matrices:
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-There are 2 types of $$H_B = B$$ both in BG1 and BG2. 
+There are 2 types of $$H_B = B$$ both in BG1 and BG2.  
 <center>$$H_{B1\_BG1} = \begin{bmatrix}
 1 &  0 & -1 & -1\cr
 0 &  0 &  0 & -1\cr
-1 & -1 &  0 &  0\cr
+-1 & -1 &  0 &  0\cr
 1 & -1 & -1 &  0\cr
-\end{bmatrix}, \;\;\; H_{B2\_BG1 = \begin{bmatrix}
+\end{bmatrix} ~~ H_{B2\_BG1 = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 105 & 0 & 0 & -1\cr
 -1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>
-$$H_{B1\_BG1} is for Z set index $$(i_LS = 0, 1, 2, 3, 4, 5, 7)$$, $$H_{B1\_BG2} is for $$(i_LS = 6)$$.  
+$$H_{B1\_BG1}$$ is for Z set index $$(i_{LS} = 0, 1, 2, 3, 4, 5, 7)$$, $$H_{B1\_BG2} is for $$(i_{LS} = 6)$$.  
 <center>$$H_{B\_BG2\_1} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
 1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
-\end{bmatrix} H_{B\_BG2\_2} = \begin{bmatrix}
+\end{bmatrix} ~~ H_{B\_BG2\_2} = \begin{bmatrix}
 1 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
 0 & -1 & 0 & 0\cr
 1 & -1 & -1 & 0\cr
-\end{bmatrix}$$</center>
-$$H_{B2\_BG1} is for Z set index $$(i_LS = 0, 1, 2, 4, 5, 6)$$, $$H_{B2\_BG2} is for $$(i_LS = 3, 7)$$.  
+\end{bmatrix}$$</center>  
+$$H_{B2\_BG1}$$ is for Z set index $$(i_{LS} = 0, 1, 2, 4, 5, 6)$$, $$H_{B2\_BG2}$$ is for $$(i_{LS} = 3, 7)$$.  
 ### **Encoding Algorithm**  
 Let the codeword  
 <center>$$C = [s \; p_b \; p_c] = [s_1, s_2, \ldots, s_{k_b}, p_{b_1}, p_{b_2}, p_{b_3}, p_{b_4}, p_{c_1}, p_{c_2}, \ldots, p_{c_{m_b-4}}]$$</center>  
