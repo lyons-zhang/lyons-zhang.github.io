@@ -17,7 +17,8 @@ A circular permutation matrix $${\bf I}(P_{i,j})$$ of size $$Z_c \times Z_c$$ is
 1 & 0 & 0 & \ldots & 0\cr
 \end{bmatrix}$$</center>
 For simple notation, $$Q(−1)$$ denotes the null matrix.  
-All possible lifting sizes $$Z_c$$ are grouped into 8 sets, listed as $$\text{follow}^{[1]}$$:  
+All possible lifting sizes $$Z_c$$ are grouped into **8** sets, listed as $$\text{follow}^{[1]}$$:  
+  
 ![ldpcLift]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201909/ldpcLift.png){:.aligncenter}  
 The parity-check matrix $$\bf H$$ of QC-LDPC code expressed by the following $$m_b \times n_b$$ array of $$Z \times Z$$ circulants over GF(2):  
 <center>$$H = \begin{bmatrix}
