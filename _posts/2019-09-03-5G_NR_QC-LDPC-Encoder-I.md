@@ -58,7 +58,7 @@ tag{$Z set index i_LS = 0, 1, 2, 3, 4, 5, 7$}
 -1 & 0 & 0 & -1\cr
 1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
-\end{bmatrix} H_{B\_BG2\_2} = \begin{bmatrix}
+\end{bmatrix}\tag{Z set index i_LS = 3, 7} H_{B\_BG2\_2} = \begin{bmatrix}
 1 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
 0 & -1 & 0 & 0\cr
