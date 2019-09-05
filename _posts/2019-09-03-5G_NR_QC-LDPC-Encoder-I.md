@@ -39,7 +39,7 @@ The $$H$$ can be partitioned into six matrices:
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-There are 2 types of $$H_B = B$$ both in BG1 and BG2.  
+There are 2 types of $$H_B = B$$ both in BG1 and BG2, for easy here use $$-1, 0, 1, ...$$ denotes $$Q(-1), Q(0), Q(1)...$$.  
 <center>$$H_{B1\_BG1} = \begin{bmatrix}
 1 &  0 & -1 & -1\cr
 0 &  0 &  0 & -1\cr
