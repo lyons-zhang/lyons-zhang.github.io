@@ -85,16 +85,41 @@ p_c\cr
 \end{bmatrix} = 0^T$$</center>
 that is,  
 <center>$$\begin{align}
-A s^T + B p_b^T &= 0^T \tag {1} \\
-C_1 s^T + C_2 p_b^T + p_c^T &= 0^T} \tag {2} \end{align}$$</center>  
+A s^T + B p_b^T &= 0^T \tag{1} \\
+C_1 s^T + C_2 p_b^T + p_c^T &= 0^T \tag{2} \end{align}$$</center>  
+First we determinate the $$p_b$$ part  
+<center>$$\begin{cases} 
+\sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
+\sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
+\end{cases} \tag{$H_{BG1\_B1}$},~~~~~~ \begin{cases} 
+\sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105 mod Z)} + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
+\sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
+\end{cases} \tag{$H_{BG1\_B2}$}$$</center>  
+
+<center>$$\begin{cases} 
+\sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105 mod Z)} + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
+\sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
+\end{cases} \tag{$H_{BG1\_B2}$}$$</center>  
+
+<center>$$\begin{cases} 
+\sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1}^{(1)} + p_{b_3} + p_{b_4} = 0\\
+\sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
+\end{cases} \tag{$H_{BG1\_B1}$}$$</center>  
+
 <center>$$\begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
 \end{cases} \tag{$H_{BG1\_B1}$}$$</center>  
-
-
 
 
 Reference:  
