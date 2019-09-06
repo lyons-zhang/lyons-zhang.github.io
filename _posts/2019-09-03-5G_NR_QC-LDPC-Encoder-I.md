@@ -116,8 +116,8 @@ First we determinate the $$p_b$$ part
 
 <center>$$\begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
-\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
-\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
 \end{cases} \tag{$H_{BG1\_B1}$}$$</center>  
 
