@@ -39,7 +39,7 @@ The $$H$$ can be partitioned into six matrices:
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}.  
+For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}$$.  
 <center>$$A = \begin{bmatrix}
 a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
 a_{2,1} & a_{2,2} & \ldots & a_{1,k_b}\cr
