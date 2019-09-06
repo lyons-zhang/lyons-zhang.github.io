@@ -74,6 +74,7 @@ $$H_{BG1\_B2}$$ is for Z set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2
 ### **Encoding Algorithm**  
 Let the codeword  
 <center>$$C = [s \; p_b \; p_c] = [s_1, s_2, \ldots, s_{k_b}, p_{b_1}, p_{b_2}, p_{b_3}, p_{b_4}, p_{c_1}, p_{c_2}, \ldots, p_{c_{m_b-4}}]$$</center>  
+where each element of element is a vector of length $$Z$$.  
 The encoding of LDPC codes is carried out as follow:  
 <center>$$HC^T = \begin{bmatrix}
 A & B & 0\cr
@@ -88,30 +89,32 @@ that is,
 A s^T + B p_b^T &= 0^T \tag{1} \\
 C_1 s^T + C_2 p_b^T + p_c^T &= 0^T \tag{2} \end{align}$$</center>  
 First we determinate the $$p_b$$ part from equation (1):  
-<center>$$H_{BG1\_B1} : \begin{cases} 
+<center>$$\begin{align}
+H_{BG1\_B1} &: \begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 \\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
-\end{cases}; ~~
+\end{cases};~~
 H_{BG1\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105~mod~Z)} + p_{b_2} + p_{b_3} = 0\\
-\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 & (H_{BG1\_B2})\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases}; \cr
-H_{BG2\_B1} : \begin{cases} 
+\end{cases};\\
+H_{BG2\_B1} &: \begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1}^{(1)} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases}; ~~ 
+\end{cases};~~
 H_{BG2\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
-\end{cases}$$</center>  
+\end{cases}.
+\end{align}$$</center>  
 
 
 Reference:  
