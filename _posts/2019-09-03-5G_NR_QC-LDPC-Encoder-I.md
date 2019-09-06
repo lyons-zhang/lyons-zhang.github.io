@@ -95,19 +95,19 @@ H_{BG1\_B1} &: \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 \\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
-\end{cases};~~
+\end{cases};~~~~~~
 H_{BG1\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105~mod~Z)} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases};\\
+\end{cases};\\ \\
 H_{BG2\_B1} &: \begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1}^{(1)} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases};~~
+\end{cases};~~~~~~
 H_{BG2\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
@@ -115,6 +115,7 @@ H_{BG2\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
 \end{cases}.
 \end{align}$$</center>  
+where $$p_{b_1}^{\alpha}$$ denotes the $$\alpha -th$$ right cyclic shifted version of $$p_{b_1}$$ for $$0 ≤ \alpha ≤ Z$$.  
 
 
 Reference:  
