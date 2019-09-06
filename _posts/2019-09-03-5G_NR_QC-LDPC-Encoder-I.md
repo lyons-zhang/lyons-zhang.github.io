@@ -131,9 +131,9 @@ H_{BG2\_B2} : \begin{cases}
 \end{align}$$</center>  
 where $$p_{b_1}^{(\alpha)}$$ denotes the $$\alpha^{th}$$ right cyclic shifted version of $$p_{b_1}$$ for $$0 ≤ \alpha ≤ Z$$.  
 Based on the definition below,  
-<center>\lambda_i = \sum\limits_{j=1}^{k_b}a_{i,j}s_j; ~~ i = 1, 2, 3, 4.</center>  
+<center>$$\lambda_i = \sum\limits_{j=1}^{k_b}a_{i,j}s_j; ~~ i = 1, 2, 3, 4$$.</center>  
 the following can be obtained:  
-<center>H_{BG1\_B1} : \begin{cases} 
+<center>$$H_{BG1\_B1} : \begin{cases} 
 p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
 p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
 p_{b_4} = \lambda_4 + p_{b_1}^{(1)}\\
@@ -156,8 +156,9 @@ p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
 p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
 p_{b_3} = \lambda_2 + p_{b_2}\\
 p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
-\end{cases}.</center> 
+\end{cases}.$$</center> 
 Secondly, the $$p_c$$ can be easily determined based on equation(2):  
 
 Reference:  
-1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.
+1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.  
+2. Tram Thi Bao Nguyen, Tuy Nguyen Tan, Hanho Lee. *Efficient QC-LDPC Encoder for 5G New Radio*. https://www.mdpi.com .
