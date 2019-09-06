@@ -31,8 +31,8 @@ Q(P_{m_b,1}) & Q(P_{m_b,2}) & \ldots & Q(P_{m_b,n_b})\cr
 There are two rate-compatible base graphs with similar structures in 5G NR, denoted by **BG1** and **BG2**.  
 BG1 is targeted for larger block lengths$$(500 \le K \le 8448)$$ and higher rates $$(1/3 ≤ R ≤ 8/9)$$.  
 BG2 is targeted for smaller block lengths$$(40 \le K \le 2560)$$ and lower rates $$(1/5 \le R \le 2/3)$$.  
-For BG1, a matrix of $${\bf H}_{BG}$$ with a size of $$m_b \times n_b(m_b = 46, n_b = 68, k_b = n_b - m_b = 22)$$.  
-For BG2, a matrix of $${\bf H}_{BG}$$ with a size of $$m_b \times n_b(m_b = 42, n_b = 52, k_b = n_b - m_b = 10)$$.  
+For BG1, a matrix of $$H_{BG1}$$ with a size of $$m_b \times n_b(m_b = 46, n_b = 68, k_b = n_b - m_b = 22)$$.  
+For BG2, a matrix of $$H_{BG2}$$ with a size of $$m_b \times n_b(m_b = 42, n_b = 52, k_b = n_b - m_b = 10)$$.  
 The information bit columns are $$k_b \times Z$$.  
 The $$H$$ can be partitioned into six matrices:  
 <center>$$H = \begin{bmatrix}
@@ -46,31 +46,31 @@ a_{2,1} & a_{2,2} & \ldots & a_{1,k_b}\cr
 a_{3,1} & a_{3,2} & \ldots & a_{1,k_b}\cr
 a_{4,1} & a_{4,2} & \ldots & a_{1,k_b}\cr
 \end{bmatrix}$$</center>
-There are 2 types of $$B \in \{H_{B1\_BG1}, H_{B2\_BG1}, H_{B1\_BG2}, H_{B2\_BG2}\}$$ both in BG1 and BG2.  
-<center>$$H_{B1\_BG1} = \begin{bmatrix}
+There are 2 types of $$B \in \{H_{BG1\_B1}, H_{BG1\_B2}, H_{BG2\_B1}, H_{BG2\_B2}\}$$ in both BG1 and BG2.  
+<center>$$H_{BG1\_B1} = \begin{bmatrix}
 1 &  0 & -1 & -1\cr
 0 &  0 &  0 & -1\cr
 -1 & -1 &  0 &  0\cr
 1 & -1 & -1 &  0\cr
-\end{bmatrix} ~~ H_{B2\_BG1} = \begin{bmatrix}
+\end{bmatrix} ~~ H_{BG1\_B2} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 105 & 0 & 0 & -1\cr
 -1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{B1\_BG1}$$ is for Z set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{B1\_BG2}$$ is for $$i_{LS} = (6)$$.  
-<center>$$H_{B1\_BG2} = \begin{bmatrix}
+$$H_{BG1\_B1}$$ is for Z set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG2\_B1}$$ is for $$i_{LS} = (6)$$.  
+<center>$$H_{BG2\_B1} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
 1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
-\end{bmatrix} ~~ H_{B2\_BG2} = \begin{bmatrix}
+\end{bmatrix} ~~ H_{BG2\_B2} = \begin{bmatrix}
 1 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
 0 & -1 & 0 & 0\cr
 1 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{B2\_BG1}$$ is for Z set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{B2\_BG2}$$ is for $$i_{LS} = (3, 7)$$.  
+$$H_{BG1\_B2}$$ is for Z set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2}$$ is for $$i_{LS} = (3, 7)$$.  
 ### **Encoding Algorithm**  
 Let the codeword  
 <center>$$C = [s \; p_b \; p_c] = [s_1, s_2, \ldots, s_{k_b}, p_{b_1}, p_{b_2}, p_{b_3}, p_{b_4}, p_{c_1}, p_{c_2}, \ldots, p_{c_{m_b-4}}]$$</center>  
@@ -92,7 +92,7 @@ C_1 s^T + C_2 p_b^T + p_c^T &= 0^T} \tag {2} \end{align}$$</center>
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
-\end{cases} \tag{$H_{B1\_BG1}$}$$</center>  
+\end{cases} \tag{$H_{BG1\_B1}$}$$</center>  
 
 
 
