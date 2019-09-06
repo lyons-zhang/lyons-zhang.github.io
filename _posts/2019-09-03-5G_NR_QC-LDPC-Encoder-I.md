@@ -39,13 +39,26 @@ The $$H \in \{H_{BG1},H_{BG2}\}$$ can be partitioned into six matrices:
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-There are 8 different $$A$$ for each $$i_LS$$ for both BG1 and BG2.  
+There are 8 different $$A, C_1, C_2$$ for each $$i_LS$$ for both BG1 and BG2.  
 <center>$$A = \begin{bmatrix}
 a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
 a_{2,1} & a_{2,2} & \ldots & a_{2,k_b}\cr
 a_{3,1} & a_{3,2} & \ldots & a_{3,k_b}\cr
 a_{4,1} & a_{4,2} & \ldots & a_{4,k_b}\cr
-\end{bmatrix}$$</center>
+\end{bmatrix}
+C_1 = \begin{bmatrix}
+c_{1,1} & c_{1,2} & \ldots & c_{1,k_b}\cr
+c_{2,1} & c_{2,2} & \ldots & c_{2,k_b}\cr
+\vdots & \vdots & \ddots & \vdots \cr
+c_{m_b-4,1} & c_{m_b-4,2} & \ldots & c_{m_b-4,k_b}\cr
+\end{bmatrix}
+C_2 = \begin{bmatrix}
+c_{1,k_b+1} & c_{1,k_b+2} & c_{1,k_b+3} & c_{1,k_b+4}\cr
+c_{2,k_b+1} & c_{2,k_b+2} & c_{1,k_b+3} & c_{2,k_b+4}\cr
+\vdots & \vdots & \vdots & \vdots \cr
+c_{m_b-4,k_b+1} & c_{m_b-4,k_b+2} & c_{m_b-4,k_b+3} & c_{m_b-4,k_b+4}\cr
+\end{bmatrix}
+$$</center>
 For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}$$.  
 There are 2 types of $$B \in \{H_{BG1\_B1}, H_{BG1\_B2}, H_{BG2\_B1}, H_{BG2\_B2}\}$$ in both BG1 and BG2.  
 <center>$$H_{BG1\_B1} = \begin{bmatrix}
@@ -144,6 +157,7 @@ p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
 p_{b_3} = \lambda_2 + p_{b_2}\\
 p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
 \end{cases}.</center> 
+Secondly, the $$p_c$$ can be easily determined based on equation(2):  
 
 Reference:  
 1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.
