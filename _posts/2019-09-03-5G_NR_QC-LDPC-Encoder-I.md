@@ -38,7 +38,8 @@ The $$H \in \{H_{BG1},H_{BG2}\}$$ can be partitioned into six matrices:
 <center>$$H = \begin{bmatrix}
 A & B & 0\cr
 C_1 & C_2 & I\cr
-\end{bmatrix}$$</center>  
+\end{bmatrix}$$ 
+![ldpcLift]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201909/ldpcbg.png){:.aligncenter}  </center>    
 There are 8 different $$A, C_1, C_2$$ for each $$i_LS$$ for both BG1 and BG2.  
 <center>$$A = \begin{bmatrix}
 a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
@@ -102,6 +103,7 @@ that is,
 <center>$$\begin{align}
 A s^T + B p_b^T &= 0^T \tag{1} \\
 C_1 s^T + C_2 p_b^T + p_c^T &= 0^T \tag{2} \end{align}$$</center>  
+#### **$$Computation of p_b$$**  
 First we determinate the $$p_b$$ part from equation (1):  
 <center>$$\begin{align}
 H_{BG1\_B1} &: \begin{cases} 
@@ -133,30 +135,33 @@ where $$p_{b_1}^{(\alpha)}$$ denotes the $$\alpha^{th}$$ right cyclic shifted ve
 Based on the definition below,  
 <center>$$\lambda_i = \sum\limits_{j=1}^{k_b}a_{i,j}s_j; ~~ i = 1, 2, 3, 4$$.</center>  
 the following can be obtained:  
-<center>$$H_{BG1\_B1} : \begin{cases} 
+<center>$$$$\begin{align}
+H_{BG1\_B1} &: \begin{cases} 
 p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
 p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
 p_{b_4} = \lambda_4 + p_{b_1}^{(1)}\\
 p_{b_3} = \lambda_3 + p_{b_4}
-\end{cases};
+\end{cases};~~~~~~
 H_{BG1\_B2} : \begin{cases}
 p_{b_1}^{(105~mod~Z)} = \sum\limits_{i=1}^{4} \lambda_i \to p_{b_1}\\
 p_{b_2} = \lambda_1 + p_{b_1}\\
 p_{b_4} = \lambda_4 + p_{b_1}\\
 p_{b_3} = \lambda_3 + p_{b_4}
 \end{cases};\\ \\
-H_{BG2\_B1} : \begin{cases} 
+H_{BG2\_B1} &: \begin{cases} 
 p_{b_1}^{(1)} = \sum\limits_{i=1}^{4} \lambda_i \to p_{b_1}\\
 p_{b_2} = \lambda_1 + p_{b_1}\\
 p_{b_3} = \lambda_2 + p_{b_2}\\
 p_{b_4} = \lambda_4 + p_{b_1}
-\end{cases};
+\end{cases};~~~~~~
 H_{BG2\_B2} : \begin{cases}
 p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
 p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
 p_{b_3} = \lambda_2 + p_{b_2}\\
 p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
-\end{cases}.$$</center> 
+\end{cases}.
+\end{align}$$</center>  
+#### **$$Computation of p_c$$**  
 Secondly, the $$p_c$$ can be easily determined based on equation(2):  
 <center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4\$$</center> 
 Reference:  
