@@ -34,18 +34,19 @@ BG2 is targeted for smaller block lengths$$(40 \le K \le 2560)$$ and lower rates
 For BG1, a matrix of $$H_{BG1}$$ with a size of $$m_b \times n_b(m_b = 46, n_b = 68, k_b = n_b - m_b = 22)$$.  
 For BG2, a matrix of $$H_{BG2}$$ with a size of $$m_b \times n_b(m_b = 42, n_b = 52, k_b = n_b - m_b = 10)$$.  
 The information bit columns are $$k_b \times Z$$.  
-The $$H$$ can be partitioned into six matrices:  
+The $$H \in \{H_{BG1},H_{BG2}\}$$ can be partitioned into six matrices:  
 <center>$$H = \begin{bmatrix}
 A & B & 0\cr
 C_1 & C_2 & I\cr
 \end{bmatrix}$$</center>  
-For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}$$.  
+There are 8 different $$A$$ for each $$i_LS$$ for both BG1 and BG2.  
 <center>$$A = \begin{bmatrix}
 a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
-a_{2,1} & a_{2,2} & \ldots & a_{1,k_b}\cr
-a_{3,1} & a_{3,2} & \ldots & a_{1,k_b}\cr
-a_{4,1} & a_{4,2} & \ldots & a_{1,k_b}\cr
+a_{2,1} & a_{2,2} & \ldots & a_{2,k_b}\cr
+a_{3,1} & a_{3,2} & \ldots & a_{3,k_b}\cr
+a_{4,1} & a_{4,2} & \ldots & a_{4,k_b}\cr
 \end{bmatrix}$$</center>
+For simple notation, $$\{-1, 0, 1, ...\}$$ denotes the $$\{Q(-1), Q(0), Q(1)...\}$$.  
 There are 2 types of $$B \in \{H_{BG1\_B1}, H_{BG1\_B2}, H_{BG2\_B1}, H_{BG2\_B2}\}$$ in both BG1 and BG2.  
 <center>$$H_{BG1\_B1} = \begin{bmatrix}
 1 &  0 & -1 & -1\cr
@@ -115,8 +116,34 @@ H_{BG2\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
 \end{cases}.
 \end{align}$$</center>  
-where $$p_{b_1}^{\alpha}$$ denotes the $$\alpha -th$$ right cyclic shifted version of $$p_{b_1}$$ for $$0 ≤ \alpha ≤ Z$$.  
-
+where $$p_{b_1}^{(\alpha)}$$ denotes the $$\alpha^{th}$$ right cyclic shifted version of $$p_{b_1}$$ for $$0 ≤ \alpha ≤ Z$$.  
+Based on the definition below,  
+<center>\lambda_i = \sum\limits_{j=1}^{k_b}a_{i,j}s_j; ~~ i = 1, 2, 3, 4.</center>  
+the following can be obtained:  
+<center>H_{BG1\_B1} : \begin{cases} 
+p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
+p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
+p_{b_4} = \lambda_4 + p_{b_1}^{(1)}\\
+p_{b_3} = \lambda_3 + p_{b_4}
+\end{cases};
+H_{BG1\_B2} : \begin{cases}
+p_{b_1}^{(105~mod~Z)} = \sum\limits_{i=1}^{4} \lambda_i \to p_{b_1}\\
+p_{b_2} = \lambda_1 + p_{b_1}\\
+p_{b_4} = \lambda_4 + p_{b_1}\\
+p_{b_3} = \lambda_3 + p_{b_4}
+\end{cases};\\ \\
+H_{BG2\_B1} : \begin{cases} 
+p_{b_1}^{(1)} = \sum\limits_{i=1}^{4} \lambda_i \to p_{b_1}\\
+p_{b_2} = \lambda_1 + p_{b_1}\\
+p_{b_3} = \lambda_2 + p_{b_2}\\
+p_{b_4} = \lambda_4 + p_{b_1}
+\end{cases};
+H_{BG2\_B2} : \begin{cases}
+p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
+p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
+p_{b_3} = \lambda_2 + p_{b_2}\\
+p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
+\end{cases}.</center> 
 
 Reference:  
 1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.
