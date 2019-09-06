@@ -88,29 +88,28 @@ that is,
 A s^T + B p_b^T &= 0^T \tag{1} \\
 C_1 s^T + C_2 p_b^T + p_c^T &= 0^T \tag{2} \end{align}$$</center>  
 First we determinate the $$p_b$$ part from equation (1):  
-<center>$$\begin{cases} 
+<center>$$H_{BG1\_B1} : \begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1} + p_{b_2} + p_{b_3} = 0\\
-\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 & (H_{BG1\_B1})\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 \\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
-\end{cases} ~~;~~
-\begin{cases} 
+\end{cases}; ~~
+H_{BG1\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
-\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105 mod Z)} + p_{b_2} + p_{b_3} = 0\\
+\sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_1}^{(105~mod~Z)} + p_{b_2} + p_{b_3} = 0\\
 \sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_3} + p_{b_4} = 0 & (H_{BG1\_B2})\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases} $$</center>  
-
-<center>$$\begin{cases} 
+\end{cases}; \cr
+H_{BG2\_B1} : \begin{cases} 
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
-\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1}^{(1)} + p_{b_3} + p_{b_4} = 0 & (H_{BG2\_B1})\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1}^{(1)} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1} + p_{b_4} = 0
-\end{cases} ~~;~~
-\begin{cases}
+\end{cases}; ~~ 
+H_{BG2\_B2} : \begin{cases}
 \sum\limits_{j=1}^{k_b}a_{1,j}s_j + p_{b_1}^{(1)} + p_{b_2} = 0\\
 \sum\limits_{j=1}^{k_b}a_{2,j}s_j + p_{b_2} + p_{b_3} = 0\\
-\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1} + p_{b_3} + p_{b_4} = 0 & (H_{BG2\_B2})\\
+\sum\limits_{j=1}^{k_b}a_{3,j}s_j + p_{b_1} + p_{b_3} + p_{b_4} = 0\\
 \sum\limits_{j=1}^{k_b}a_{4,j}s_j + p_{b_1}^{(1)} + p_{b_4} = 0
 \end{cases}$$</center>  
 
