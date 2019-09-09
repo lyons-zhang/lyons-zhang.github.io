@@ -167,5 +167,5 @@ p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
 Secondly, the $$p_c$$ can be easily determined based on equation (2):  
 <center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4$$.</center> 
 Reference:  
-1. 3GPP TS 38.212. "NR; Multiplexing and channel coding." 3rd Generation Partnership Project. Technical Specification Group Radio Access Network.  
-2. Tram Thi Bao Nguyen, Tuy Nguyen Tan, Hanho Lee. *Efficient QC-LDPC Encoder for 5G New Radio*. https://www.mdpi.com .
+1. 3GPP TS 38.212. *NR; Multiplexing and channel coding*. 3rd Generation Partnership Project. www.3gpp.org.  
+2. Tram Thi Bao Nguyen, Tuy Nguyen Tan, Hanho Lee. *Efficient QC-LDPC Encoder for 5G New Radio*. www.mdpi.com.  
