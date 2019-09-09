@@ -75,7 +75,7 @@ There are 2 types of $$B \in \{H_{BG1\_B1}, H_{BG1\_B2}, H_{BG2\_B1}, H_{BG2\_B2
 -1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{BG1\_B1}$$ is for Z set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG2\_B1}$$ is for $$i_{LS} = (6)$$.  
+$$H_{BG1\_B1}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG2\_B1}$$ is for $$i_{LS} = (6)$$.  
 <center>$$H_{BG2\_B1} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
@@ -87,7 +87,7 @@ $$H_{BG1\_B1}$$ is for Z set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG2\
 0 & -1 & 0 & 0\cr
 1 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{BG1\_B2}$$ is for Z set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2}$$ is for $$i_{LS} = (3, 7)$$.  
+$$H_{BG1\_B2}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2}$$ is for $$i_{LS} = (3, 7)$$.  
 ### **Encoding Algorithm**  
 Let the codeword  
 <center>$$C = [s \; p_b \; p_c] = [s_1, s_2, \ldots, s_{k_b}, p_{b_1}, p_{b_2}, p_{b_3}, p_{b_4}, p_{c_1}, p_{c_2}, \ldots, p_{c_{m_b-4}}]$$</center>  
@@ -165,7 +165,10 @@ p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
 \end{align}$$</center>  
 #### **Computation of $$p_c$$**  
 Secondly, the $$p_c$$ can be easily determined based on equation (2):  
-<center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4$$.</center> 
+<center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4$$.</center>  
+#### **Systematic Bit Puncturing**  
+5G NR directly delete the first $$2 \times Z$$ systematic bits. In this article we didn't care about the rate-matching.  
+
 Reference:  
 1. 3GPP TS 38.212. *NR; Multiplexing and channel coding*. 3rd Generation Partnership Project. www.3gpp.org.  
 2. Tram Thi Bao Nguyen, Tuy Nguyen Tan, Hanho Lee. *Efficient QC-LDPC Encoder for 5G New Radio*. www.mdpi.com.  
