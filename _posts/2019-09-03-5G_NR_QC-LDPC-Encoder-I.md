@@ -42,7 +42,7 @@ C_1 & C_2 & I\cr
 </center>  
   
 ![ldpcLift]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201909/ldpcbg.png){:.aligncenter}  
-There are 8 different $$A, C_1, C_2$$ for each $$i_LS$$ for both BG1 and BG2.  
+There are 8 different $$i_{LS}$$ for BG1 and 8 different $$i_{LS}$$ for BG2, that corresponding to 16 different $$A, C_1, C_2$$.  
 <center>$$A = \begin{bmatrix}
 a_{1,1} & a_{1,2} & \ldots & a_{1,k_b}\cr
 a_{2,1} & a_{2,2} & \ldots & a_{2,k_b}\cr
@@ -167,7 +167,7 @@ p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
 Secondly, the $$p_c$$ can be easily determined based on equation (2):  
 <center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4$$.</center>  
 #### **Systematic Bit Puncturing**  
-5G NR directly delete the first $$2 \times Z$$ systematic bits. In this article we didn't care about the rate-matching.  
+5G NR directly delete the first $$2 \times Z$$ systematic bits. In this article we ignore the procedures of CRC, rate-matching, HARQ and so on in complete channel coding link.  
 
 Reference:  
 1. 3GPP TS 38.212. *NR; Multiplexing and channel coding*. 3rd Generation Partnership Project. www.3gpp.org.  
