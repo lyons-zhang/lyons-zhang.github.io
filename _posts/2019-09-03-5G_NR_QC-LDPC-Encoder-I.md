@@ -94,12 +94,12 @@ Let the codeword
 where each element of element is a vector of length $$Z$$.  
 The encoding of LDPC codes is carried out as follow:  
 <center>$$HC^T = \begin{bmatrix}
-A & B & 0\cr
-C_1 & C_2 & I\cr
+A & B & 0\\
+C_1 & C_2 & I\\
 \end{bmatrix} \begin{bmatrix}
-s\cr
-p_b\cr
-p_c\cr
+s^T\\
+p_b^T\\
+p_c^T\\
 \end{bmatrix} = 0^T$$</center>
 that is,  
 <center>$$\begin{align}
@@ -137,7 +137,7 @@ where $$p_{b_1}^{(\alpha)}$$ denotes the $$\alpha^{th}$$ right cyclic shifted ve
 Based on the definition below,  
 <center>$$\lambda_i = \sum\limits_{j=1}^{k_b}a_{i,j}s_j; ~~ i = 1, 2, 3, 4$$.</center>  
 the following can be obtained:  
-<center>$$$$\begin{align}
+<center>$$\begin{align}
 H_{BG1\_B1} &: \begin{cases} 
 p_{b_1} = \sum\limits_{i=1}^{4} \lambda_i\\
 p_{b_2} = \lambda_1 + p_{b_1}^{(1)}\\
