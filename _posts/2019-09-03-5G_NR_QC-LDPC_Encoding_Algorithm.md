@@ -1,10 +1,10 @@
 ---
-title: 5G NR QC-LDPC Encoder I
+title: 5G NR QC-LDPC Encoding Algorithm
 description: 
 categories: 
 ---
 
->  5G has been focused on structured LDPC codes known as quasi-cyclic low-density parity-check (QC-LDPC) codes, which exhibit advantages over other types of LDPC codes with respect to the hardware implementations of encoding and decoding using simple shift registers and logic circuits.  
+>  3GPP 5G has been focused on structured LDPC codes known as quasi-cyclic low-density parity-check (QC-LDPC) codes, which exhibit advantages over other types of LDPC codes with respect to the hardware implementations of encoding and decoding using simple shift registers and logic circuits.  
 
 ### **5G NR QC-LDPC**  
 #### **Circulant Permutation Matrix**  
@@ -20,7 +20,7 @@ For simple notation, $$Q(−1)$$ denotes the null matrix.
 All possible lifting sizes $$Z_c$$ are grouped into **8** sets, listed as $$\text{follow}^{[1]}$$:  
   
 ![ldpcLift]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201909/ldpcLift.png){:.aligncenter}  
-The parity-check matrix $$\bf H$$ of QC-LDPC code expressed by the following $$m_b \times n_b$$ array of $$Z \times Z$$ circulants over GF(2):  
+The parity-check matrix $$\bf H$$ of QC-LDPC code expressed by the following $$m_b \times n_b$$ array of $$Z \times Z$$ circulants over $$GF(2)$$:  
 <center>$$H = \begin{bmatrix}
 Q(P_{1,1}) & Q(P_{1,2}) & \ldots & Q(P_{1,n_b})\cr
 Q(P_{2,1}) & Q(P_{2,2}) & \ldots & Q(P_{2,n_b})\cr
@@ -75,7 +75,7 @@ There are 2 types of $$B \in \{H_{BG1\_B1}, H_{BG1\_B2}, H_{BG2\_B1}, H_{BG2\_B2
 -1 & -1 & 0 & 0\cr
 0 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{BG1\_B1}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG2\_B1}$$ is for $$i_{LS} = (6)$$.  
+$$H_{BG1\_B1}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{BG1\_B2}$$ is for $$i_{LS} = (6)$$.  
 <center>$$H_{BG2\_B1} = \begin{bmatrix}
 0 & 0 & -1 & -1\cr
 -1 & 0 & 0 & -1\cr
@@ -87,7 +87,7 @@ $$H_{BG1\_B1}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 3, 4, 5, 7)$$, $$H_{
 0 & -1 & 0 & 0\cr
 1 & -1 & -1 & 0\cr
 \end{bmatrix}$$</center>  
-$$H_{BG1\_B2}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2}$$ is for $$i_{LS} = (3, 7)$$.  
+$$H_{BG2\_B1}$$ is for $$Z$$ set index $$i_{LS} = (0, 1, 2, 4, 5, 6)$$, $$H_{BG2\_B2}$$ is for $$i_{LS} = (3, 7)$$.  
 ### **Encoding Algorithm**  
 Let the codeword  
 <center>$$C = [s \; p_b \; p_c] = [s_1, s_2, \ldots, s_{k_b}, p_{b_1}, p_{b_2}, p_{b_3}, p_{b_4}, p_{c_1}, p_{c_2}, \ldots, p_{c_{m_b-4}}]$$</center>  
@@ -167,7 +167,7 @@ p_{b_4} = \lambda_3 + p_{b_1}^{(1)}
 Secondly, the $$p_c$$ can be easily determined based on equation (2):  
 <center>$$p_{c_i} = \sum\limits_{j=1}^{k_b}c_{i,j}s_j + \sum\limits_{j=1}^4 c_{i,k_b+j}p_{b_j},~~i=1,2,\ldots, m_b-4$$.</center>  
 #### **Systematic Bit Puncturing**  
-5G NR directly delete the first $$2 \times Z$$ systematic bits. In this article we ignore the procedures of CRC, rate-matching, HARQ and so on in complete channel coding link.  
+5G NR directly delete the first $$2 \times Z$$ systematic bits. Here ignore the procedures of CRC, rate-matching, HARQ and so on which included in a complete channel coding link.  
 
 Reference:  
 1. 3GPP TS 38.212. *NR; Multiplexing and channel coding*. 3rd Generation Partnership Project. www.3gpp.org.  
